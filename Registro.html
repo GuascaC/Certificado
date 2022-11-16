@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Bienvenido</h1>
+            <h2>Para Registrarse, Ingrese los datos solicitados</h2>
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Correo electrónico Institucional" autofocus="true" autocomplete="on" required name="email"><br>
+                <label>Cedula de Ciudadadania</label>
+                <input type="number" placeholder="Cedula" required autofocus="true" autocomplete="on" name="CC"><br>
+                <label>Contraseña</label>
+                <input type="password" placeholder="Contraseña" required autofocus="true"><br>
+                <label>Seleccione su Cargo</label>
+                <select name="opcion" required>
+                    <option value="0" selected>Seleccione una opción</option>
+                    <option value="aprendiz">Aprendiz</option>
+                    <option value="profesorC">Profesor Catedra</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="profesorP">Profesor Planta</option>
+                </select><br>
+                <button class="btnRegistrar">Registrar</button>       
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
