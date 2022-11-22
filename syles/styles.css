@@ -1,0 +1,28 @@
+.sectionTitulo{
+    margin-top: 8px;
+    width: 100%;
+    height: 55vh;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: sticky;
+}
+
+.sectionTitulo div{
+}
+
+div h2{
+    background-color: #b71819;
+    color: white;
+    width: 40vw;
+    height: 12vh;
+    padding: 18px 30px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
