@@ -10,61 +10,46 @@
     <header>
         <div class="header1">
             <div>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-solid fa-envelope"> Mail corporativo</i>
+                <i class="fa-brands fa-whatsapp" onclick="redirigir01()" ></i>
+                <i class="fa-brands fa-instagram" onclick="redirigir02()"></i>
+                <i class="fa-brands fa-facebook-f" onclick="redirigir03()"></i>
+                <i class="fa-brands fa-twitter" onclick="redirigir04()"></i>
+                <i class="fa-solid fa-envelope" onclick="redirigir05()"> Mail corporativo</i>
             </div>
         </div>
         <div class="header2">
             <img src="../img/ue.JPG" alt="Logo Uniempresarial">
             <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
             <button><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</button>
-            <button><i class="fa-solid fa-user"></i> Cerrar Sesión</button>
+             <button onclick="redirigir06()"><i class="fa-solid fa-user" ></i>Cerrar Sesión</button>
         </div>
     </header>
     <main>
         <section>
-            <h1>Registrar Nuevo Usuario</h1>
-            <input id="form">
-                <label>Nombres</label><br>
-                <input id="" type="" autofocus="true" autocomplete="on" required><br>
-                <label>Apellidos</label><br>
-                <input id="" type="" autofocus="true" autocomplete="on" required><br>
-                <label>Correo Institucional</label><br>
-                <input id="iMail" type="email" autofocus="true" autocomplete="on" required name="email"><br>
-                <label>Cédula de Ciudadanía</label><br>
-                <input id="iCC" type="number" required autofocus="true" autocomplete="on" name="CC"><br>
-                <label>Contraseña</label>
-                <label>Confirmar contraseña</label><br>
-                <input id="ipass" type="password" required autofocus="true">
-                <input id="ipassC" type="password" required autofocus="true"><br>
-                <p>La contraseña debe contener entre 8 y 15 Caracteres, puede incluir letras y números</p>
-                <label>Rol</label>
-                <label>Tipo de Contrato</label><br>
-                <select name="opcion" required id="iRol">
-                    <option value="0" selected>Seleccione una opción</option>
-                    <option value="aprendiz">Aprendiz</option>
-                    <option value="profesorC">Profesor Cátedra</option>
-                    <option value="administrativo">Administrativo</option>
-                    <option value="profesorP">Profesor Planta</option>
-                    <option value="talleri">Tallerista</option>
-                </select>
-                <select name="opcion" required id="">
+            <h1>Editar Salario</h1>
+            <form id="form">
+                <select name="Rol" required id="">
                     <option value="0" selected>Seleccione una opción</option>
                     <option value=""></option>
-                </select><br>
-                <label>Salario</label>
-                <input type="number" required></input>
-                <button type="submit">Continuar</button>       
-                <button>Cancelar</button>  
             </form>
+        </section>
+        <section>
+          <p>Rol Seleccionado:</p>
+          <p>Rol Seleccionado.</p>
+          <form>
+            <p>Nuevo Salario:</p>
+            <input type="number">
+            <p>Este Cambio se vera Reflejado a Partir de:</p>
+            <input type="date">
+          </form>
+          <button>Volver</button>
+          <button>Guardar</button>
         </section>
     </main>
     <footer>
         <img src="../img/footer.JPG" alt="Logo Uniempresarial y Cámara de comercio">
     </footer>
     <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+    <script src="../Scripts/Redirigir.js"></script>
 </body>
 </html>
