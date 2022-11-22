@@ -9,9 +9,9 @@ const form = document.querySelector("#form");
 form,addEventListener("submit", (e)=>{
     e.preventDefault();
     if (validFieldsForm() === -1){ 
-        alert("Informacion Validada");
+        modalAlerta("Informacion Validada");
     }else {
-        alert("Error");
+        modalAlerta("Error");
 }
 
 })
@@ -67,5 +67,19 @@ passC.addEventListener('change',(event)=>{
     } 
     console.log(Object.values(validFields));
 });
+
+function modalAlerta(cadena){
+    const alert=document.createElement("div");
+    const texto=document.createElement("p");
+    texto.setAttribute("Class","textAlerta");
+    alert.setAttribute("id","alerta");
+    alert.setAttribute("class","alerta");
+    texto.innerHTML=`<strong>${cadena}</strong>`;
+    alert.appendChild(texto);
+    document.body.appendChild(alert);
+    alert.onclick=function(){
+        document.getElementById("alerta").remove();
+    }
+}
     
 
