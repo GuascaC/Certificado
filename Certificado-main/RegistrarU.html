@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <header><button>Cerrar Sesión</button></header>
+    <main>
+        <section>
+            <h1>Registrar Nuevo Usuario</h1>
+            <input id="form">
+                <label>Nombres</label><br>
+                <input id="" type="" autofocus="true" autocomplete="on" required><br>
+                <label>Apellidos</label><br>
+                <input id="" type="" autofocus="true" autocomplete="on" required><br>
+                <label>Correo Institucional</label><br>
+                <input id="iMail" type="email" autofocus="true" autocomplete="on" required name="email"><br>
+                <label>Cédula de Ciudadanía</label><br>
+                <input id="iCC" type="number" required autofocus="true" autocomplete="on" name="CC"><br>
+                <label>Contraseña</label>
+                <label>Confirmar contraseña</label><br>
+                <input id="ipass" type="password" required autofocus="true">
+                <input id="ipassC" type="password" required autofocus="true"><br>
+                <p>La contraseña debe contener entre 8 y 15 Caracteres, puede incluir letras y números</p>
+                <label>Rol</label>
+                <label>Tipo de Contrato</label><br>
+                <select name="opcion" required id="iRol">
+                    <option value="0" selected>Seleccione una opción</option>
+                    <option value="aprendiz">Aprendiz</option>
+                    <option value="profesorC">Profesor Cátedra</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="profesorP">Profesor Planta</option>
+                    <option value="talleri">Tallerista</option>
+                </select>
+                <select name="opcion" required id="">
+                    <option value="0" selected>Seleccione una opción</option>
+                    <option value=""></option>
+                </select><br>
+                <label>Salario</label>
+                <input type="number" required></input>
+                <button type="submit">Continuar</button>       
+                <button>Cancelar</button>  
+            </form>
+        </section>
+    </main>
+</body>
+</html>
