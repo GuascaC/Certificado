@@ -9,7 +9,7 @@ const form = document.querySelector("#form");
 form,addEventListener("submit", (e)=>{
     e.preventDefault();
     if (validFieldsForm() === -1){ 
-        modalAlerta("Informacion Validada");
+        modalAlerta("Información Validada");
     }else {
         modalAlerta("Error");
 }
@@ -42,25 +42,27 @@ email.addEventListener('change', function(e) {
 });
 CC.addEventListener('change', function(e) {
     const inputCC = e.target.value;
-    const patronCC = /^[0-9]{7,10}$/gm; //Santiago
+    const patronCC = /^[0-9]{7,10}$/gm; 
     validFields.email = inputCC.match(patronCC) ? true: false;
     console.log(Object.values(validFields));
 });
 rol.addEventListener('change', function(e) {
-    const inputRol = e.target.value;
-    const patronRol = /^(.)$/g //Santiago
-    validFields.email = inputRol.match(patronRol) ? true: false;
-    console.log(Object.values(validFields));
+    if(rol.value === "ok"){  
+        validFields.rol = rol.value ? true : false;
+        console.log(Object.values(validFields));}
+        else{  
+        validFields.rol = ciudad.value ? false : true;
+        console.log(Object.values(validFields));}
 });
 pass.addEventListener('change',(event)=>{
     const inputPass = event.target.value; 
-    const patronPass = /([a-zA-Z0-9]{8,15})$/gm; //Santiago
+    const patronPass = /([a-zA-Z0-9]{8,15})$/gm; 
     validFields.pass = inputPass.match(patronPass) ? true: false;
     console.log(Object.values(validFields));
 });
 passC.addEventListener('change',(event)=>{
     const inputPassC = event.target.value; 
-    const patronPassC = /([a-zA-Z0-9]{8,15})$/gm; //Santiago
+    const patronPassC = /([a-zA-Z0-9]{8,15})$/gm; 
     validFields.pass = inputPassC.match(patronPassC) ? true: false;
     if (validFields.pass === false){
         modalAlerta("Las contraseñas no coinciden");
