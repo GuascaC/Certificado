@@ -29,14 +29,14 @@ let validFields = {
 
 email.addEventListener('change', function(e) {
     const inputEmail = e.target.value;
-    const patronEmail = /^[a-zA-Z.]+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm //Santiago
+    const patronEmail = /^[a-zA-Z.]+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm 
     validFields.email = inputEmail.match(patronEmail) ? true: false;
     console.log(Object.values(validFields));
 
 });
 pass.addEventListener('change',(event)=>{
     const inputPass = event.target.value; 
-    const patronPass = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})(^[0-9]{1,2}$)$/g; //Santiago
+    const patronPass = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})(^[0-9]{1,2}$)$/g; 
     validFields.pass = inputPass.match(patronPass) ? true: false;
     console.log(Object.values(validFields));
 });
