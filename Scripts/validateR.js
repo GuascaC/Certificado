@@ -47,27 +47,33 @@ email.addEventListener('change', function(e) {
 CC.addEventListener('change', function(e) {
     const inputCC = e.target.value;
     const patronCC = /^[0-9]{10}$/gm;
-      if (CC.value.length > 10) {
+    if (CC.value.length > 10) {
         CC.value = CC.value.slice(0,10);}//Condicional
     validFields.CC = inputCC.match(patronCC) ? true: false;
     console.log(Object.values(validFields));
+});
 Rol.addEventListener('change', function(e) {
     validFields.rol = Rol.selectedIndex > 0 ? true : false;
+    if(validFields.rol==false){
+      modalAlerta("Seleccione un rol")
+    }
+  console.log(Object.values(validFields));
     console.log(Object.values(validFields));
 });
-pass.addEventListener('change',(e)=>{
+
+pass.addEventListener('submit',(e)=>{
     const inputPass = e.target.value; 
     const patronPass = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,15})/gm; 
     validFields.pass = inputPass.match(patronPass) ? true: false;
     console.log(Object.values(validFields));
 });
-passC.addEventListener('change',(event)=>{
-    const inputPassC = event.target.value; 
-    const patronPassC = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,15})/gm; 
-    validFields.pass = inputPassC.match(patronPassC) ? true: false;
-    if (passC.value !== pass.value){
-        modalAlerta("Las contraseñas no coinciden");
-    } console.log(Object.values(validFields));  
+
+passC.addEventListener('submit',(event)=>{
+    if (pass.value === passC.value) {
+        validFields.passC =true;
+        passC.value = passC.value.slice(0,15);}
+    validFields.passC = inputPassC.match(patronPassC) ? true: false;
+    console.log(Object.values(validFields));  
 });
 
 function modalAlerta(cadena){
@@ -84,21 +90,27 @@ function modalAlerta(cadena){
     }
 }
 function PassV() {
-   var x = document.getElementById("ipass");
-    if (x.type === "password") {
+   var Passv = document.getElementById("ipass");
+    if (Passv.type === "password") {
         console.log("Funciona")
-      x.type = "text";
+      Passv.type = "text";
     } else {
-      x.type = "password";
+      Passv.type = "password";
     }
 }
 function PassV02() {
-    let y = document.getElementById("ipassC");
-     if (y.type === "password") {
-       y.type = "text";
+    let Passv = document.getElementById("ipassC");
+     if (Passv.type === "password") {
+       Passv.type = "text";
      } else {
-       y.type = "password";
+       Passv.type = "password";
      }
 }
-    
-
+function PassV03() {
+    let Passv = document.getElementById("ipassN");
+     if (Passv.type === "password") {
+       Passv.type = "text";
+     } else {
+       Passv.type = "password";
+     }
+}

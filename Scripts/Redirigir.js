@@ -17,3 +17,7 @@ function redirigir05(){
 function redirigir06(){
    window.location.href="../index.html";
 }
+function redirigir07(){
+    window.location.href="../Certificado-main/CContraseña.html";
+ }
+ 

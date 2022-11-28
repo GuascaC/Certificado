@@ -9,99 +9,132 @@
   <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png" sizes="192x192" />
 </head>
 <body>
- <header>
-        <div class="header1">
+ <div class="header1">
             <div class="divHeader">
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
             </div>
-                <a class="mail" href=""><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
         </div>
         <div class="header2">
-            <div>
+            <div class="imagenesHeader">
             <img src="../img/ue.JPG" alt="Logo Uniempresarial">
             <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
             </div>
-            <a href=""><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
-            <a href=""><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+            <a onclick="redirigir07()"><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
+ <a onclick="redirigir06()"<i class="fa-solid fa-user"></i> Cerrar Sesión</a>
         </div>
     </header>
-    <h2>Usuario registrado</h2>
-    <select id="">
-        <option selected value="0">Selecciona</option>
-        <option value=""></option>      
+    <section class="sectionTitulo">
+        <div class="divTitulo">
+        <h2>Usuarios registrados</h2>
+        </div>
+    </section> 
+    <section class="sectionBotones">
+    <select id="filtro">
+        <option selected value="0">Filtros</option>
+        <option value="">Docentes cátedra</option>      
+        <option value="">Docentes cátedra</option>      
+        <option value="">Docentes planta</option>       
+        <option value="">Talleristas bienestar</option>      
+        <option value="">Aprendices</option>      
+        <option value="">Retirados</option>      
+     
     </select>
+    <button id="back"><i class="fa-solid fa-arrow-left"></i></button>
+    </section>
         <a name="Back" class="fa-solid fa-arrow-left icon"></a>
-       <table>
+       <table class="tableHistorial">
         <tr>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Rol</td>
-            <td></td>
-            <td>Fecha de registro</td>
+            <td class="tdTitulo">Certificados Laborales</td>
+            <td class="tdInvisible"></td>
+            <td class="tdInvisible"></td>
+            <td class="tdTitulo">Fecha</td>
         </tr>
         <tr>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Rol</td>
-            <td>Estado</td>
-            <td></td>
-            <td>date</td>
-            <td>hour</td>
-            <td><button><i class="fa-solid fa-user-pen"></i></button></td>
-            <td><button><i class="fa-solid fa-user-slash"></i></button></td>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado">Activo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
         </tr>
         <tr>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Rol</td>
-            <td>Estado</td>
-            <td></td>
-            <td>date</td>
-            <td>hour</td>
-            <td><button><i class="fa-solid fa-user-pen"></i></button></td>
-            <td><button><i class="fa-solid fa-user-slash"></i></button></td>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado">Activo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
         </tr>
         <tr>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Rol</td>
-            <td>Estado</td>
-            <td></td>
-            <td>date</td>
-            <td>hour</td>
-            <td><button><i class="fa-solid fa-user-pen"></i></button></td>
-            <td><button><i class="fa-solid fa-user-slash"></i></button></td>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado">Activo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
         </tr>
         <tr>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Rol</td>
-            <td>Estado</td>
-            <td></td>
-            <td>date</td>
-            <td>hour</td>
-            <td><button><i class="fa-solid fa-user-pen"></i></button></td>
-            <td><button><i class="fa-solid fa-user-slash"></i></button></td>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado2">Desactivo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
         </tr>
         <tr>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Rol</td>
-            <td>Estado</td>
-            <td></td>
-            <td>date</td>
-            <td>hour</td>
-            <td><button><i class="fa-solid fa-user-pen"></i></button></td>
-            <td><button><i class="fa-solid fa-user-slash"></i></button></td>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado2">Desactivo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
+        </tr>
+        <tr>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado">Activo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
+        </tr>
+        <tr>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado">Activo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
+        </tr>
+        <tr>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado">Activo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
+        </tr>
+        <tr>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado2">Desactivo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
+        </tr>
+        <tr>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado2">Desactivo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
+        </tr>
+        <tr>
+            <td class="tdNombre">Nombre Completo</td>
+            <td class="tdRol">Rol</td>
+            <td class="tdEstado2">Desactivo</td>
+            <td class="tdFecha2">Fecha</td>
+            <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i class="fa-solid fa-user-slash"></i></td>
         </tr>
     </table>
     <button>Agregar</button>
   <footer>
         <div class="footer1">
-            <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
+            <img src="./img/logos footer.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
         </div>
         <div class="footer2">

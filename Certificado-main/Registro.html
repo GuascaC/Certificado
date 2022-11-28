@@ -8,24 +8,20 @@
     <title>Registro</title>
   <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png" sizes="192x192" />
 </head>
-<body>
-<header>
-        <div class="header1">
+<div class="header1">
             <div class="divHeader">
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
             </div>
-                <a class="mail" href=""><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
         </div>
         <div class="header2">
-            <div>
+            <div class="imagenesHeader">
             <img src="../img/ue.JPG" alt="Logo Uniempresarial">
             <img src="../img/comercio.JPG" alt="Logo cámara de comercio">
             </div>
-            <a href=""><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
-            <a href=""><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
         </div>
     </header>
     <main>
@@ -35,7 +31,7 @@
                 <label>Email</label>
                 <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus="true" autocomplete="on" required name="email"><br>
                 <label>Cédula de Ciudadanía</label>
-                <input id="iCC" type="number" max="10" min="7" placeholder="Cedula" required autofocus="true" autocomplete="on" name="CC"><br>
+<input maxlength="10" oninput="if(CC.value.length > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC" type="number"min="7" placeholder="Cedula" required autofocus="true" autocomplete="on" name="CC"><br>
                 <label>Rol</label>
                 <select name="opcion" required id="iRol">
                     <option value="0" selected>Seleccione una opción</option>
@@ -46,10 +42,10 @@
                     <option value="talleri">Tallerista</option>
                 </select><br>
                 <label>Contraseña</label>
-                <input id="ipass" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
+<input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipass" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
                 <input type="checkbox" onclick="PassV()">Mostrar Contraseña<br>
                 <label>Confirmar contraseña</label>
-                <input id="ipassC" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
+                <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipassC" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
                 <input type="checkbox" onclick="PassV02()">Mostrar Contraseña<br>
                 <button type="submit">Continuar</button>       
                 <button>Cancelar</button>  
@@ -58,7 +54,7 @@
     </main>
   <footer>
         <div class="footer1">
-            <img src="../img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
+            <img src="./img/logos footer.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
         </div>
         <div class="footer2">
