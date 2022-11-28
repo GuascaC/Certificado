@@ -40,22 +40,15 @@
     <label>Tipo de Contrato</label><br>
     <input class="form-check-input" type="checkbox" id="">
     <label>Fecha de Ingreso</label><br>
-    <button type="submit" id="Modal">Generar</button>
-
-    <button id="open">
-      Hacer Click
-    </button>
-    
-    <div id="modal_container" >
-      <div >
-        <h1>Ventana Modal</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque assumenda dignissimos illo explicabo natus quia repellat, praesentium voluptatibus harum ipsam dolorem cumque labore sunt dicta consectetur, nesciunt maiores delectus maxime?
-        </p>
-        <button id="close">Cerrar</button>
-      </div>
-    </div>
-    
+       <button type="submit" id="btn-abrir-modal">Generar</button>
+    <dialog id="modal">
+      <h2>Para continuar, valida la fecha de Expedición de tu Documento</h2>
+      <form>
+        <input type="date">
+        <button>Continuar</button>
+      </form>
+      <button id="btn-cerrar-modal">Cerrar</button>
+    </dialog>
   </form>
   <footer>
         <div class="footer1">
