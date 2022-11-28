@@ -6,7 +6,7 @@ const pass = document.querySelector("#ipass");
 const passC = document.querySelector("#ipassC");
 const form = document.querySelector("#form");
 
-form,addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e)=>{
     e.preventDefault();
     if (validFieldsForm() === -1){ 
         modalAlerta("Información Validada");
