@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,7 +11,7 @@
   <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png"
     sizes="192x192" />
 </head>
-<body>
+<body id="ALL">
  <div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -46,9 +47,8 @@
         <label><i class="fa-solid fa-lock"></i>Contraseña</label><br>
  <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipass" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
                 <input type="checkbox" onclick="PassV()">Mostrar Contraseña<br>
-        <input type="checkbox" onclick="PassV()">Mostrar Contraseña<br>
         <a href="./Certificado-main/Registro.html" class="registro">Registrate aquí</a><br>
-        <button type="submit" class="button1">Ingresar</button>
+        <button onclick="redirigir08()" class="button1">Ingresar</button>
       </form>
     </section>
   </main>

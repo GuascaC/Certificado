@@ -20,12 +20,6 @@ function redirigir06(){
 function redirigir07(){
     window.location.href="../Certificado-main/CContraseña.html";
  }
-const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
-const btnAbrirModal = document.querySelector("#btn-abrir-modal");
-const modal = document.querySelector("#modal");
-
-btnAbrirModal.addEventListener("click",(e)=>{
-    e.preventDefault();
-    modal.showModal();})
-btnCerrarModal.addEventListener("click",()=>{
-    modal.close();});
+ function redirigir08(){
+    window.location.href="../Certificado-main/principal.html";
+ }

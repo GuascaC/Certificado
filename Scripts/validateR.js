@@ -2,11 +2,11 @@
 const email = document.querySelector("#iMail");
 const CC = document.querySelector("#iCC");
 const Rol = document.querySelector("#iRol");
-const pass = document.querySelector("#ipass");
-const passC = document.querySelector("#ipassC");
+const pass = document.querySelector("#iPass");
+const passC = document.querySelector("#iPassC");
 const form = document.querySelector("#form");
 
-form.addEventListener("submit", (e)=>{
+form,addEventListener("submit", (e)=>{
     e.preventDefault();
     if (validFieldsForm() === -1){ 
         modalAlerta("Información Validada");
@@ -61,20 +61,18 @@ Rol.addEventListener('change', function(e) {
     console.log(Object.values(validFields));
 });
 
-pass.addEventListener('change',(e)=>{
+pass.addEventListener('submit',(e)=>{
     const inputPass = e.target.value; 
-    const patronPass = /([a-zA-Z0-9]{8,})$/g; 
+    const patronPass = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,15})/gm; 
     validFields.pass = inputPass.match(patronPass) ? true: false;
     console.log(Object.values(validFields));
 });
 
-passC.addEventListener('change',(event)=>{
+passC.addEventListener('submit',(event)=>{
     if (pass.value === passC.value) {
         validFields.passC =true;
-        passC.value = passC.value.slice(0,15);
-      }else{
-      modalAlerta("Las contraseñas no coinciden")
-    }
+        passC.value = passC.value.slice(0,15);}
+    validFields.passC = inputPassC.match(patronPassC) ? true: false;
     console.log(Object.values(validFields));  
 });
 
