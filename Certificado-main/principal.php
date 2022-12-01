@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../syles/styles.css">
+  <link rel="stylesheet" href="../../syles/styles.css">
   <title>index</title>
   <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png" sizes="192x192" />
 </head>
@@ -43,9 +43,9 @@
     <button id="btn-abrir-modal">Generar</button>
     <dialog id="modal">
       <h2>Para continuar, valida la fecha de Expedición de tu Documento</h2>
-      <form >
+      <form method="post" action="generate.php">
         <input type="date">
-        <button >Continuar</button>
+        <button type="submit" method="post">Continuar</button>
       </form>
       <button id="btn-cerrar-modal">Cerrar</button>
     </dialog>
@@ -61,6 +61,6 @@
     </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../Scripts/Redirigir.js"></script>
-  <script src="/Scripts/Modal.js"></script>
+  <script src="../../Scripts/Modal.js"></script>
 </body>
 </html>
