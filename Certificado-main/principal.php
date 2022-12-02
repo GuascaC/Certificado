@@ -33,7 +33,7 @@
   <h2>Genera tu certificado</h2>
   <p>El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a
     Continuación.</p>
-  <form>
+  <form method="post" action="generate.php">
     <input class="form-check-input" type="checkbox" id="">
     <label>Salario</label><br>
     <input class="form-check-input" type="checkbox" id="">
@@ -44,8 +44,9 @@
     <dialog id="modal">
       <h2>Para continuar, valida la fecha de Expedición de tu Documento</h2>
       <form method="post" action="generate.php">
-        <input type="date">
-        <button type="submit" method="post">Continuar</button>
+        <!--<input type="date">-->
+        <input type="submit" value="Generate PDF">
+        <!--<a href="../../Assets/Modelo de Certificacion Catedratico 1.pdf" download>Test</a>-->
       </form>
       <button id="btn-cerrar-modal">Cerrar</button>
     </dialog>
@@ -60,7 +61,7 @@
         </div>
     </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
-  <script src="../Scripts/Redirigir.js"></script>
+  <script src="../../Scripts/Redirigir.js"></script>
   <script src="../../Scripts/Modal.js"></script>
 </body>
 </html>
