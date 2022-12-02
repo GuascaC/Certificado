@@ -43,10 +43,9 @@
     <button id="btn-abrir-modal">Generar</button>
     <dialog id="modal">
       <h2>Para continuar, valida la fecha de Expedición de tu Documento</h2>
-      <form method="post" action="generate.php">
-        <!--<input type="date">-->
+      <form method="post" action="Catedratico.php">
+        <input type="date">
         <input type="submit" value="Generate PDF">
-        <!--<a href="../../Assets/Modelo de Certificacion Catedratico 1.pdf" download>Test</a>-->
       </form>
       <button id="btn-cerrar-modal">Cerrar</button>
     </dialog>
