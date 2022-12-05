@@ -20,6 +20,20 @@ function redirigir06(){
 function redirigir07(){
     window.location.href="../Certificado-main/CContraseña.html";
  }
- function redirigir08(){
+ 
+//Historial
+function redirigir08(){
+    window.location.href="../Certificado-main/Historial.html";
+}
+//Usuarios Registrados
+function redirigir09(){
+    window.location.href="../Certificado-main/URegistrados.html";
+}
+//Generar certificados
+function redirigir10(){
     window.location.href="../Certificado-main/principal.html";
- }
+}
+//Editar salarios
+function redirigir11(){
+    window.location.href="../Certificado-main/ESalario.html";
+}

@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+input:focus{
+    outline: 2px outset #b71819;
 }
 
 .header1{
@@ -43,7 +53,7 @@
 }
 
 .headerIng{
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     align-items: center;
     justify-content: center;
@@ -110,6 +120,8 @@ footer{
 .footer1 p{
     margin-left: 300px;
     width: 50vw;
+    color: white;
+    text-decoration: none;
 }
 
 .footer1 img{
@@ -126,11 +138,60 @@ footer{
     padding: 8px;
 }
 
+.backTitle{
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.title1{
+    width: 45%;
+    height: 12vh;
+    background-color: #b71819;
+    margin-top: 18vh;
+}
+
+.title1 h2{
+    background-color: #b71819;
+    color: white;
+    padding: 1vh 3vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.title2{
+    width: 52%;
+    height: 12vh;
+    background-color: #161A4A;
+    margin-top: 5vh;
+}
+
+.title2 h2{
+    background-color: #161A4A;
+    color: white;
+    padding: 2vh 3vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
 .sectionTitulo{
     width: 100%;
     height: 55vh;
     margin-top: 10px;
-    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(./img/historialCertificados.jpg);
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historialCertificados.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -169,11 +230,16 @@ footer{
 #filtro{
     height: 30px;
     width: 200px;
-    margin-inline-end: 63vw;
+    margin-left: 1.5vw;
+    margin-inline-end: 67vw;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+#filtro:focus{
+    outline: 2px outset #b71819;
 }
 
 #back{
@@ -185,6 +251,15 @@ footer{
     width: 49px;
     height: 28px;
     font-size: 20px;
+}
+
+#back a{
+    color: white;
+    text-decoration: none;
+}
+
+#back:hover{
+    background-color: grey;
 }
 
 .tableHistorial{
@@ -256,11 +331,13 @@ td{
     padding-left: 15px;
 }
 
-
-td i:hover{
+#editarUsuario:hover{
     color: grey;
 }
 
+#desactivarUsuario:hover{
+    color:grey;
+}
 .botonAñadir{
     width: 15vw;
     height: 8vh;
@@ -280,4 +357,658 @@ td i:hover{
     color: white;
     border: none;
 }
+.botonAñadir a{
+  color: white;
+  text-decoration: none;
+}
 
+.sectionTitulo2{
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/perfilAdministrador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo2{
+    width: 60%;
+    height: 60%;
+    margin-top: 70px;
+}
+
+.divTitulo2 h2{
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.h2Titulo{
+    border: 2px solid #b71819;
+    width: 50%;
+    height: 40%;
+    padding: 15px;
+    background-color: #b71819;
+    margin: 20px 0px;
+}
+
+.h2Titulo2{
+    width: 70%;
+    height: 40%;
+    padding: 15px;
+    background-color: #0e2b49;
+}
+.menuAdministrador{
+    margin: 420px auto;
+    margin-bottom: 0vh;
+    width: 80%;
+}
+
+.divAdministrador{
+    display: inline-block;
+}
+
+.divAdministrador button{
+    color: white;
+    width: 20vw;
+    height: 40vh;
+    margin-left: 12vw;
+    background-color: #b71819;
+    text-align: center;
+    font-size: 150px;
+    border-radius: 10%;
+    border: none;
+}
+
+.divAdministrador button:hover{
+    color: white;
+    background-color: grey;
+}
+
+.divAdministrador p{
+    color: black;
+    width: 20vw;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px auto;
+    margin-left: 12vw;
+    margin-bottom: 10vh;
+}
+
+
+.infoSalario{
+    margin: 30px auto;
+    width: 90%;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.rolSalario{
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+
+.pSalario0{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.pSalario{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.editarSalario{
+    border: 5px outset #b71819;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 50%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+
+#inputSalario{
+    width: 90%;
+    height: 5vh;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    border-style: none !important;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+#inputSalario:focus{
+    outline: 2px outset #b71819;
+    
+}
+
+.sectionBotones2{
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.botonVolver{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 10vw;
+    color: white;
+    background-color: #b71819;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+
+.botonVolver:hover{
+    background-color: grey;
+}
+
+.botonGuardar{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 10vw;
+    color: white;
+    background-color: #0c243d;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+
+.botonGuardar:hover{
+    background-color: grey;
+}
+
+.tituloEditar{
+    margin: 20px auto;
+    width: fit-content;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.editarUsuario{
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 50%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.editarUsuario label{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.editarUsuario input{
+    width: 70%;
+    height: 5vh;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.editarUsuario input:focus{
+    outline: 2px solid #b71819;
+}
+
+.editarUsuario select{
+    width: 70%;
+    height: 5vh;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.estadoUsuario{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.estadoUsuario i{
+    color: green;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.inicioSesion{
+  margin: 55vh 30vw 3vh 30vw;
+  padding: 20px;
+  border: 40px solid #b71819;
+  border-radius: 10px;
+}
+.inicioSesion h3{
+  text-align: center;
+  color: #0c243d;
+  font-size: 30px;
+}
+
+.inicioSesion label{
+  font-size: 20px;
+  padding-left: 10%;
+}
+.form{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 1vh 10%;
+}
+.chet{
+  font-size: 15px;
+}
+.inicioSesion select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0vh 10%;
+}
+.link{
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 35%;
+  font-size: 15px;
+  color: #2C6BFF;
+}
+.button1{
+  height: 6vh;
+  margin: 4vh 37%;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.button1 a{
+  text-decoration: none;
+  color:white;
+}
+.button1:hover{
+  color: white;
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  color: #0c243d;
+  font-size: 35px;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+}
+.registro{
+  margin: 1vh 20% 5vh 20%;
+  
+}
+.registro label{
+  font-size: 24px;
+  margin: 10%;
+}
+.registro input{
+  width: 80%;
+  height: 5vh;
+  margin:1vh 10%;
+  border-radiues: 5px;
+}
+.registro select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0vh 10%;
+}
+.contra{
+  font-size: 15px;
+  color: #2C6BFF;
+  text-aling: center;
+  margin: 1vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.continue{
+  height: 6vh;
+  margin: 0vh 4.7vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.continue a{
+  text-decoration: none;
+  color:white;
+}
+.continue:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel{
+  height: 6vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel a{
+  text-decoration: none;
+  color:white;
+}
+.cancel:hover{
+  color: white;
+  background-color: grey;
+}
+.certificados{
+  margin: 56vh 10vw 5vh 10vw;
+  font-size: 25px;
+}
+.chetCerti{
+  border: 1px solid black;
+  width: 25%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  box-shadow: 2px 3px gray;
+}
+.descargar{
+  margin: auto 25%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.date{
+  width: 70%;
+  margin-left: 15%;
+  height: 5vh;
+}
+.continue1{
+  height: 6vh;
+  margin: 0vh 6vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.continue1 a{
+  text-decoration: none;
+  color:white;
+}
+.continue1:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel1{
+  height: 6vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel1 a{
+  text-decoration: none;
+  color:white;
+}
+.cancel1:hover{
+  color: white;
+  background-color: grey;
+}
+.cambiarContra{
+  margin: 2vh 10vw;
+  font-size: 18px;
+}
+.cambiarContra input{
+  height: 4vh;
+  width: 23%;
+}
+.continue2{
+  height: 6vh;
+  margin: 0vh 12vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.continue2 a{
+  text-decoration: none;
+  color:white;
+}
+.continue2:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel2{
+  height: 6vh;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel2 a{
+  text-decoration: none;
+  color:white;
+}
+.cancel2:hover{
+  color: white;
+  background-color: grey;
+}
+.divAdministrador i{
+  color: white;
+  text-decoration: none;
+}
+.sectionBotones i{
+  color: white;
+  text-decoration: none;
+}
+
+#cargo{
+  margin-top: 420px;
+}
+#cargo2{
+    margin: 65vh 0vw 2vh 5vw;
+    width: 15vw;
+    height: 5vh;
+    font-size: 18px;
+}
+
+#cargo2:focus{
+    outline: 2px outset #b71819;
+}
+
+#usuariosSimilares{
+    margin: 2vh 0vw 2vh 5vw;
+    margin-left: 5vw;
+    width: 25vw;
+    height: 5vh;
+    font-size: 18px;
+}
+
+#usuariosSimilares:focus{
+    outline: 2px outset #b71819;
+}
+
+.usuarioCertificado{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.UsuarioSelec{
+    margin-top: 5vh;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+.nombreUsuario{
+    margin-bottom: 5vh;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.certificados2{
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+  
+.registro2{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.registro2 label{
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 10vh 10%;
+}
+
+.registro2 input{
+    width: 80%;
+    height: 5vh;
+    margin:2vh 10%;
+    border-radius: 5px;
+}
+
+.registro2 select{
+    width: 80%;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 2vh 10%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#tipoDocumento{
+    width: 20%;
+    margin-inline-end: -10vh;
+}
+
+#iCC{
+    width: 58%;
+}
+
+.contras{
+    width: 90%;
+    margin: 0 6%;
+    margin-bottom: 2vh;
+}
+
+.contras1{
+    width: 48%;
+    text-align: left;
+    display: inline-block;
+}
+
+.contras2{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.rolContrato{
+    width: 90%;
+    margin: 0 6%;
+    margin-bottom: 2vh;
+}
+
+.rol{
+    width: 48%;
+    text-align: left;
+    display: inline-block;
+}
+
+#iRol{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.Contrato{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+.salarioHora{
+    width: 90%;
+    margin: 0 6%;
+    margin-bottom: 10vh;
+}
+
+.salario{
+    width: 48%;
+    display: inline-block;
+
+}
+
+#checkSalario, #checkPago{
+    width: fit-content;
+    height: 2vh;
+    margin-inline-end: -4vh;
+}
+
+.pagoHora{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}

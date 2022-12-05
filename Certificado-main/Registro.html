@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../syles/styles.css">
+    <title>Registro</title>
+  <link rel="icon" href="https://www.uniempresarial.edu.co/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png" sizes="192x192" />
+</head>
+<div class="header1">
+            <div class="divHeader">
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+        </div>
+        <div class="headerIng">
+            <div>
+      <img src="../img/logo uniempresarial.png" alt="Logo Uniempresarial">
+      <img src="../img/logo camara comercio.png" alt="Logo cámara de comercio">
+    </div>
+        </div>
+    </header>
+    <main>
+        <section class="registro">
+          <br><br>
+            <h1>Regístrate</h1>
+            <form id="form" class="registro">
+                <label> Email</label>
+              <br>
+                <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus="true" autocomplete="on" required name="email"><br>
+                <label></i>Cédula de Ciudadanía</label><br>
+<input maxlength="10" oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC" type="number"min="7" placeholder="Cedula" required autofocus="true" autocomplete="on" name="CC"><br>
+          <label> Rol </label><br>
+                <select name="opcion" required id="iRol">
+                    <option value="0" selected>Seleccione una opción</option>
+                    <option value="aprendiz">Aprendiz</option>
+                    <option value="profesorC">Profesor Cátedra</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="profesorP">Profesor Planta</option>
+                    <option value="talleri">Tallerista</option>
+                </select><br>
+              
+         <label>Contraseña</label><br>
+<input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipass" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
+                
+                <label>Confirmar contraseña</label><br>
+                <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipassC" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br>
+              <p class="contra"> La contraseña debe contener 8 carácteres y máximo 15. Debe incluir mayúsculas, minúsculas y números.</p>
+              <br>
+              <div class="boton">
+                <button id="cntn" type="submit" class="continue">Continuar</button>            
+                <button class="cancel"><a href="../index.html"> Cancelar</a></button>  
+              </div>
+            </form>
+        </section>
+    </main>
+  <footer>
+        <div class="footer1">
+            <img src="../img/logos footer.png" alt="Logo uniempresarial y cámara de comercio">
+            <label>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</label>
+        </div>
+        <div class="footer2">
+            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+    <script src="../Scripts/validateR.js"></script>
+    <script src="../Scripts/Redirigir.js"></script>
+</body>
+</html>
