@@ -31,16 +31,15 @@
 
 		protected function normalize($word)
 		{
-		$word = str_replace("Á","%C1",$word);
-		$word = str_replace("É","%C9",$word);
-		$word = str_replace("Í","%CD",$word);
-		$word = str_replace("Ó","%D3",$word);
-		$word = str_replace("á","%E1",$word);
-		$word = str_replace("é","%E9",$word);
-		$word = str_replace("í","%ED",$word);
-		$word = str_replace("ó","%F3",$word);
-		$word = str_replace("ñ","%F1",$word);
-		return urldecode($word);
+			$word = str_replace("Á","%C1",$word);
+			$word = str_replace("É","%C9",$word);
+			$word = str_replace("Í","%CD",$word);
+			$word = str_replace("Ó","%D3",$word);
+			$word = str_replace("á","%E1",$word);
+			$word = str_replace("é","%E9",$word);
+			$word = str_replace("í","%ED",$word);
+			$word = str_replace("ó","%F3",$word);
+			$word = str_replace("ñ","%F1",$word);
 			return urldecode($word);
 		}
 	}
@@ -64,16 +63,17 @@
     $pdf->Cell(0,10,'CERTIFICA',0,0,'C');
     $pdf->Ln();
     $pdf->SetFont('Arial','',11);
-    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No. ________, ',);
+    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No., ',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'esta vinculado con la Fundación Universitaria Empresarial de la Cámara de ',);
+    $pdf->Cell(0,10,'_____________, está vinculada con la Fundación Universitaria Empresarial de la ',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'Comercio de Bogotá Uniempresarial con NIT 830.084.876-6, mediante un contrato ');
+    $pdf->Cell(0,10,'Cámara de Comercio de Bogotá Uniempresarial con NIT 830.084.876-6,');
     $pdf->Ln();
-    $pdf->Cell(0,10,'de aprendizaje desde el _____________ hasta el ___________________ en el área ');
+    $pdf->Cell(0,10,'desempeñando el cargo de ___________________, mediante un contrato a término');
     $pdf->Ln();
-    $pdf->Cell(0,10,'de _______________.');
+    $pdf->Cell(0,10,'indefinido desde el ________________,devengando un salario integral mensual de (en ');
     $pdf->Ln();
+	$pdf->Cell(0,10,'letras y números) _______________  .');
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();

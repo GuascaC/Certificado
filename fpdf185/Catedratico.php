@@ -86,7 +86,7 @@
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
-    $pdf->Cell(0,10,'El presente certificado se expide a solicitud del interesado a los veintiocho (28) días del mes de octubre de 2022.');
+    $pdf->Cell(0,10,'El presente certificado se expide a solicitud del interesado a los días del mes de de .');
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Cell(0,10,'Atentamente,');
@@ -107,11 +107,3 @@
     $pdf->Cell(0,10,'Contratación 202211028-347');
     $pdf->Output();
 ?>
-
-
-
-
-
-
-
-
