@@ -38,7 +38,7 @@
 	}
     $pdf = new TextNormalizerFPDF('P','mm','Letter');
     $pdf->AddPage();
-    $pdf->Image('001.jpg', 0, 0, 210, 299);
+    $pdf->Image('001.jpg', 0, 0, 210, 280);
     $pdf->SetFont('Arial','B',14);
 	$pdf->Cell(0,10,'.',0,0,'C');
     $pdf->Ln();
@@ -56,19 +56,19 @@
     $pdf->Cell(0,10,'CERTIFICA',0,0,'C');
     $pdf->Ln();
     $pdf->SetFont('Arial','',11);
-    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No. _________, está',);
+    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No. _________, está vinculado con la',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'vinculado con la Fundación Universitaria Empresarial de la Cámara de Comercio de Bogotá',);
+    $pdf->Cell(0,10,'Fundación Universitaria Empresarial de la Cámara de Comercio de Bogotá Uniempresarial con NIT',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'Uniempresarial con NIT 830.084.876-6, desempeñando el cargo de');
+    $pdf->Cell(0,10,' 830.084.876-6, desempeñando el cargo de');
     $pdf->SetFont('Arial','B',11);
-    $pdf->Cell(-39,10,'DOCENTE HORA','0','0','R');
+    $pdf->Cell(-80,10,'DOCENTE HORA','0','0','R');
     $pdf->Cell(20,10,'CATEDRA','0','0','R');
     $pdf->SetFont('Arial','',11);
+    $pdf->Cell(0,10,'mediante contratos por obra ');
     $pdf->Ln();
-    $pdf->Cell(0,10,'mediante contratos por obra o labor en los siguientes periodos:');
+    $pdf->Cell(0,10,'o labor en los siguientes periodos:');
     $pdf->Ln();
-    $pdf->Cell(0,10,'de octubre de 2022.');
     $pdf->Ln();
     $pdf->SetLeftMargin(28);
     $pdf->SetFont('Arial','',10);
@@ -90,8 +90,6 @@
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Cell(0,10,'Atentamente,');
-    $pdf->Ln();
-    $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();

@@ -46,7 +46,7 @@
 	}
     $pdf = new TextNormalizerFPDF('P','mm','Letter');
     $pdf->AddPage();
-    $pdf->Image('001.jpg', 0, 0, 210, 299);
+    $pdf->Image('001.jpg', 0, 0, 210, 280);
     $pdf->SetFont('Arial','B',14);
 	$pdf->Cell(0,10,'.',0,0,'C');
     $pdf->Ln();
@@ -64,15 +64,14 @@
     $pdf->Cell(0,10,'CERTIFICA',0,0,'C');
     $pdf->Ln();
     $pdf->SetFont('Arial','',11);
-    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No. ________, ',);
+    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No. ________, esta vinculado con ',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'esta vinculado con la Fundación Universitaria Empresarial de la Cámara de ',);
+    $pdf->Cell(0,10,'la Fundación Universitaria Empresarial de la Cámara de Comercio de Bogotá Uniempresarial con NIT',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'Comercio de Bogotá Uniempresarial con NIT 830.084.876-6, mediante un contrato ');
+    $pdf->Cell(0,10,' 830.084.876-6, mediante un contrato de aprendizaje desde el _____________ hasta el');
     $pdf->Ln();
-    $pdf->Cell(0,10,'de aprendizaje desde el _____________ hasta el ___________________ en el área ');
+    $pdf->Cell(0,10,' ___________________ en el área de _______________.');
     $pdf->Ln();
-    $pdf->Cell(0,10,'de _______________.');
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
@@ -82,8 +81,6 @@
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Cell(0,10,'Atentamente,');
-    $pdf->Ln();
-    $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
     $pdf->SetFont('Arial','B',12);

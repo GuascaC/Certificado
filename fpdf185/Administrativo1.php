@@ -40,12 +40,13 @@
 			$word = str_replace("í","%ED",$word);
 			$word = str_replace("ó","%F3",$word);
 			$word = str_replace("ñ","%F1",$word);
+            $word = str_replace("ú","%FA",$word);
 			return urldecode($word);
 		}
 	}
     $pdf = new TextNormalizerFPDF('P','mm','Letter');
     $pdf->AddPage();
-    $pdf->Image('001.jpg', 0, 0, 210, 299);
+    $pdf->Image('001.jpg', 0, 0, 210, 280);
     $pdf->SetFont('Arial','B',14);
 	$pdf->Cell(0,10,'.',0,0,'C');
     $pdf->Ln();
@@ -63,17 +64,13 @@
     $pdf->Cell(0,10,'CERTIFICA',0,0,'C');
     $pdf->Ln();
     $pdf->SetFont('Arial','',11);
-    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No., ',);
+    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No._____________, está vinculado con ',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'_____________, está vinculada con la Fundación Universitaria Empresarial de la ',);
+    $pdf->Cell(0,10,'la Fundación Universitaria Empresarial de la Cámara de Comercio de Bogotá Uniempresarial con NIT',);
     $pdf->Ln();
-    $pdf->Cell(0,10,'Cámara de Comercio de Bogotá Uniempresarial con NIT ');
+    $pdf->Cell(0,10,'830.084.876-6, desempeñando el cargo de ___________________, mediante un contrato a término');
     $pdf->Ln();
-    $pdf->Cell(0,10,'830.084.876-6, desempeñando el cargo de ___________________, mediante un ');
-    $pdf->Ln();
-    $pdf->Cell(0,10,'contrato a término indefinido desde el ________________. Actualmente devenga un ');
-    $pdf->Ln();
-	$pdf->Cell(0,10,'salario de (letras y números) ____________).');
+    $pdf->Cell(0,10,'indefinido desde el ________________. Actualmente devenga un salario de (letras y números) ____________).');
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
@@ -82,7 +79,6 @@
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Cell(0,10,'Atentamente,');
-    $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
     $pdf->Ln();
