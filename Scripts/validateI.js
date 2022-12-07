@@ -59,11 +59,40 @@ function modalAlerta(cadena){
         document.getElementById("alerta").remove();
     }
 }
-function PassV() {
-   var x = document.getElementById("iPass");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
+function PassV02() {
+    var x = document.getElementById("iPass");
+     if (x.type === "password") {
+       x.type = "text";
+     } else {
+       x.type = "password";
+     }
+ }
+ function PassV03() {
+    var x = document.getElementById("iPass");
+     if (x.type === "password") {
+       x.type = "text";
+     } else {
+       x.type = "password";
+     }
+ }
+function Cargo() {
+    //if(rol.value === 0){
+
+    //}
+    if(rol.value == 1){
+        console.log("1");
+        window.location.href="../Certificado-main/perfiladministrador.html";
+    }
+    else if(rol.value == 2){
+        console.log("2");
+        window.location.href="../Certificado-main/Docente.html";
+    }
+    else if(rol.value == 3){
+        console.log("3");
+        window.location.href="../Certificado-main/Catedratico.html";
+    }
+    else if(rol.value == 4){
+        console.log("4");
+        window.location.href="../Certificado-main/Practicante.html";
     }
 }

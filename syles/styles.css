@@ -201,14 +201,10 @@ footer{
 }
 
 .divTitulo{
-    width: 30%;
+    width: 70%;
     height: 50px;
     background-color: #b71819;
     margin-top: 200px;
-}
-
-.divTitulo h2{
-    background-color: #b71819;
     color: white;
     width: 40vw;
     height: 12vh;
@@ -218,12 +214,13 @@ footer{
     font-size: 40px;
     letter-spacing: 1px;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .sectionBotones{
     width: 90%;
     height: 30px;
-    margin: 420px 0px 30px 95px;
+    margin:60vh 0px 30px 95px;
     display: inline-block;
 }
 
@@ -231,7 +228,7 @@ footer{
     height: 30px;
     width: 200px;
     margin-left: 1.5vw;
-    margin-inline-end: 67vw;
+    margin-inline-end: 58vw;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -407,12 +404,14 @@ td{
 }
 .menuAdministrador{
     margin: 420px auto;
-    margin-bottom: 0vh;
+    margin-bottom: 2vh;
     width: 80%;
 }
 
+
 .divAdministrador{
-    display: inline-block;
+  display: inline-block;
+  align-items: baseline;
 }
 
 .divAdministrador button{
@@ -420,6 +419,7 @@ td{
     width: 20vw;
     height: 40vh;
     margin-left: 12vw;
+    margin-bottom: 2vh;
     background-color: #b71819;
     text-align: center;
     font-size: 150px;
@@ -434,13 +434,13 @@ td{
 
 .divAdministrador p{
     color: black;
-    width: 20vw;
+    width: 18vw;
     text-align: center;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin: 5px auto;
+    letter-spacing: 2px;
+    margin: 2vh auto;
     margin-left: 12vw;
     margin-bottom: 10vh;
 }
@@ -626,6 +626,12 @@ td{
   font-size: 20px;
   padding-left: 10%;
 }
+
+.inicioSesion i{
+    margin-inline-end: 1vw;
+    color: #171616;
+  }
+
 .form{
   width: 80%;
   height: 5vh;
@@ -644,7 +650,7 @@ td{
 .link{
   text-align: center;
   text-decoration: underline;
-  margin-left: 35%;
+  margin-left: 37%;
   font-size: 15px;
   color: #2C6BFF;
 }
@@ -652,12 +658,15 @@ td{
   height: 6vh;
   margin: 4vh 37%;
   width: 25%;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   background-color:  #0c243d;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .button1 a{
   text-decoration: none;
@@ -681,23 +690,30 @@ h1{
 .registro label{
   font-size: 24px;
   margin: 10%;
+  margin-top: 2vh;
+}
+#ipass{
+  width: 80%;
 }
 .registro input{
   width: 80%;
   height: 5vh;
   margin:1vh 10%;
-  border-radiues: 5px;
+  margin-bottom: 2vh;
+  border-radius: 5px;
 }
 .registro select{
   width: 80%;
   height: 5vh;
   border-radius: 5px;
-  margin: 0vh 10%;
+  margin: 1vh 10%;
+  text-align: left;
+  font-size: 15px;
 }
 .contra{
   font-size: 15px;
   color: #2C6BFF;
-  text-aling: center;
+  text-align: center;
   margin: 1vh 10%;
 }
 .boton{
@@ -809,7 +825,7 @@ h1{
 }
 .cambiarContra input{
   height: 4vh;
-  width: 23%;
+  width: 80%;
 }
 .continue2{
   height: 6vh;
@@ -976,7 +992,7 @@ h1{
     display: inline-block;
 }
 
-#iRol{
+.iRol{
     font-size: 20px;
     text-align: center;
     letter-spacing: 1px;
@@ -1011,4 +1027,769 @@ h1{
     width: 50%;
     height: 100%;
     display: inline-block;
+}
+.desactivar{
+  margin: auto 30%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.continue3{
+  height: 6vh;
+  margin: 0vh 4.3vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.continue3 a{
+  text-decoration: none;
+  color:white;
+}
+.continue3:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel3{
+  height: 6vh;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel3 a{
+  text-decoration: none;
+  color:white;
+}
+.cancel3:hover{
+  color: white;
+  background-color: grey;
+}
+.modulCer{
+  margin: auto 32%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  
+}
+.modulCer h2, button{
+  margin: 2vh 4vw;
+}
+.modulCer i{
+  text-align:right;
+  margin-left: 90%;
+  color: #b71819;
+  font-size: 40px;
+  padding: 1px;
+}
+.paraMi{
+  height: 7vh;
+  margin: 2vh 3vw;
+  width: 25%;
+  font-size: 15px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.paraMi a{
+  text-decoration: none;
+  color:white;
+}
+.paraMi:hover{
+  color: white;
+  background-color: grey;
+}
+.otraP{
+  height: 7vh;
+  width: 45%;
+  margin: 1vh 2vw 1vh 0vw;
+  font-size: 15px;
+  color: white;
+  background-color:#0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.otraP a{
+  text-decoration: none;
+  color:white;
+}
+.otraP:hover{
+  color: white;
+  background-color: grey;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+.headerIng{
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.headerIng img{
+  height: 10vh;
+
+}
+  .header2{
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #0e2b49;
+}
+.header2 img{
+    height: 5vh;
+}
+  .footer1{
+    height: 20vh;
+    padding: 0px 80px;
+    background-color: #0e2b49;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer1 p{
+    margin-left: 200px;
+    width: 30vw;
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 img{
+    height: 10vh;
+    margin-top: 10px;
+}
+
+.footer2{
+  width:100%;
+    height: 5vh;
+    background-color: #878787;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px;
+}
+.backTitle{
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.title1{
+    width: 50%;
+    height: 6vh;
+    background-color: #b71819;
+    margin-top: 12vh;
+}
+
+.title1 h2{
+    background-color: #b71819;
+    color: white;
+    padding: 1vh 2vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.title2{
+    width: 60%;
+    height: 6vh;
+    background-color: #161A4A;
+    margin-top: 2vh;
+}
+
+.title2 h2{
+    background-color: #161A4A;
+    color: white;
+    padding: 2vh 2vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.sectionTitulo{
+    width: 100%;
+    height: 25vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historialCertificados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo{
+    width: 65%;
+    height: 7vh;
+    background-color: #b71819;
+    margin-top: 10vh;
+    padding: 2vh 1vw;
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sectionBotones{
+    width: 90%;
+    height: 3vh;
+    margin: 30vh 0px 4vh 3vh;
+    display: inline-block;
+}
+  #back{
+    background-color: #b71819;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 49px;
+    height: 28px;
+    font-size: 20px;
+}
+  #filtro{
+    height: 3vh;
+    width: 25vw;
+    margin-left: 3vw;
+    margin-inline-end: 47vw;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  .sectionTitulo2{
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/perfilAdministrador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo2{
+    width: 80%;
+    height: 20vh;
+    margin-top: 10vh;
+}
+
+.divTitulo2 h2{
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.h2Titulo{
+    border: 2px solid #b71819;
+    width: 60%;
+    height: 40%;
+    padding: 4%;
+    background-color: #b71819;
+    margin: 20px 0px;
+}
+
+.h2Titulo2{
+    width: 90%;
+    height: 40%;
+    padding: 4%;
+    background-color: #0e2b49;
+}
+  .inicioSesion{
+  margin: 30vh 10vw 3vh 10vw;
+  padding: 4%;
+  border: 30px solid #b71819;
+  border-radius: 10px;
+}
+.inicioSesion h3{
+  text-align: center;
+  color: #0c243d;
+  font-size: 40px;
+}
+
+.inicioSesion label{
+  font-size: 25px;
+  padding-left: 10%;
+}
+
+.form{
+  width: 80%;
+  height: 4vh;
+  font-size:20px;
+  border-radius: 5px;
+  margin: 1vh 10%;
+}
+.chet{
+  font-size: 15px;
+}
+.inicioSesion select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0vh 10%;
+  font-size:20px;
+}
+.inicioSesion option{
+  font-size: 25px;
+}
+.link{
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 35%;
+  font-size: 25px;
+  color: #2C6BFF;
+}
+  .button1{
+  height: 5vh;
+  margin: 2vh 37%;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+  .registro{
+  margin: 1vh 5% 5vh 5%;
+}
+  .registro h1{
+    font-size: 50px;
+  }
+.registro label{
+  font-size: 30px;
+  margin: 10%;
+  margin-top: 2vh;
+}
+.registro input{
+  width: 80%;
+  height: 4vh;
+  margin:1vh 10%;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.registro select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 1vh 10%;
+  text-align: left;
+  font-size: 25px;
+}
+.contra{
+  font-size: 25px;
+  color: #2C6BFF;
+  text-align: center;
+  margin: 1vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.continue{
+  height: 5vh;
+  margin: 0vh 8vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cancel{
+  height: 5vh;
+  margin: 0vh 2vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.certificados{
+  margin: 28vh 10vw 5vh 10vw;
+  font-size: 25px;
+}
+.chetCerti{
+  border: 1px solid black;
+  width: 40%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  box-shadow: 2px 3px gray;
+}
+.descargar{
+  margin: auto 15%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.date{
+  width: 70%;
+  margin-left: 15%;
+  height: 4vh;
+  font-size: 25px;
+}
+.continue1{
+  height: 5vh;
+  margin: 0vh 9vw;
+  width: 25%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel1{
+  height: 5vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+  .cambiarContra{
+  margin: 2vh 10vw;
+  font-size: 30px;
+}
+.cambiarContra input{
+  height: 4vh;
+  width: 80%;
+}
+.continue2{
+  height: 5vh;
+  margin: 0vh 8vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cancel2{
+  height: 5vh;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.divAdministrador button{
+    color: white;
+    width: 23vw;
+    height: 20vh;
+    margin-left: 12vw;
+    margin-bottom: 2vh;
+    background-color: #b71819;
+    text-align: center;
+    font-size: 150px;
+    border-radius: 10%;
+    border: none;
+}
+  .divAdministrador p{
+    color: black;
+    width: 21vw;
+    text-align: center;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 2vh auto;
+    margin-left: 12vw;
+    margin-bottom: 4vh;
+}
+  .botonAñadir{
+    width: 18vw;
+    height: 6vh;
+    margin-left: 42vw;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #b71819;
+    color: white;
+    border: none;
+    border-radius: 4%;
+    font-size:20px;
+}
+ .modulCer{
+  margin: auto 23%;
+  border: 20px solid #0c243d;
+  font-size: 25px;
+  border-radius: 20px;
+  
+}
+.modulCer h2, button{
+  margin: 2vh 3vw;
+}
+.modulCer i{
+  text-align:right;
+  margin-left: 90%;
+  color: #b71819;
+  font-size: 50px;
+  padding: 1px;
+}
+.paraMi{
+  height: 4vh;
+  margin: 2vh 3vw;
+  width: 25%;
+  font-size: 22px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.otraP{
+  height: 4vh;
+  width: 45%;
+  margin: 1vh 2vw 1vh 0vw;
+  font-size: 22px;
+  color: white;
+  background-color:#0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+  .divHeader{
+    width: 25vw;
+  }
+
+  .header1 i{
+    font-size: 15px;
+  }
+
+  .header1 a{
+    font-size: 12px;
+  }
+
+
+.mail i{
+    font-size: 12px;
+}
+
+  .headerIng img{
+    height: 6vh;
+  }
+
+  .imagenesHeader{
+    width: 60vw;
+  }
+
+  .header2{
+    padding: 5px;
+  }
+
+  .header2 a{
+    font-size: 10px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .imagenesHeader img{
+    height: 8vh;
+  }
+
+  .footer1 p{
+    margin-left: -15vw;
+    width: 80vw;
+    font-size: 10px;
+  }
+
+  .footer1 img{
+    height: 10vh;
+    margin: 5vh -15vw 2vh -15vw;
+  }
+
+  .footer2{
+    font-size: 9px;
+    padding: 8px;
+  }
+
+  .title1{
+    width: 65vw;
+    height: 12vh;
+    margin-top: 17vh;
+  }
+
+  .title1 h2{
+    font-size: 30px;
+    padding: 2vh 5vw;
+  }
+
+  .title2{
+    width: 77vw;
+    height: 12vh;
+  }
+
+  .title2 h2{
+    font-size: 30px;
+    padding: 2vh 5vw;
+  }
+  
+  .inicioSesion{
+    width: 90%;
+    margin: 50vh auto 5vh auto;
+    border: 30px solid #b71819;
+  }
+
+  .inicioSesion h3{
+    font-size: 25px;
+  }
+
+  .inicioSesion label{
+    font-size: 18px;
+  }
+
+    .button1{
+    height: 8vh;
+    margin: 1vh 35%;
+    width: 25vw;
+    font-size: 15px;
+  }
+  
+  .registro2 h1{
+    font-size: 28px;
+  }
+
+  #form{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #form label{
+    font-size: 17px;
+  }
+
+  #tipoDocumento{
+    width: 17vw;
+    margin-inline-end: -5vh;
+    font-size: 12px;
+  }
+
+  #iCC{
+    width: 50vw;
+  }
+
+  .contras2{
+    padding: 0;
+    text-align: center;
+  }
+
+  .contras2 label{
+    margin-left: -5vw;
+  }
+
+  .contra{
+    font-size: 12px;
+  }
+
+  .botonVolver{
+    width: 20vw;
+    font-size: 14px;
+  }
+
+  .botonGuardar{
+    width: 20vw;
+    font-size: 14px;
+    margin-inline-end: 0vh;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
+  .cambiarContra{
+    font-size: 10px;
+  }
+
+  .cambiarContra p{
+    font-size: 17px;
+  }
+
+  #ipass{
+    width: 60%;
+    height: 6vh;
+  }
+
+  #ipassC{
+    width: 60%;
+    height: 6vh;
+  }
+}
+  
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+  
 }

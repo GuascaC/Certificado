@@ -20,7 +20,6 @@ function redirigir06(){
 function redirigir07(){
     window.location.href="../Certificado-main/CContraseña.html";
  }
- 
 //Historial
 function redirigir08(){
     window.location.href="../Certificado-main/Historial.html";
@@ -31,9 +30,12 @@ function redirigir09(){
 }
 //Generar certificados
 function redirigir10(){
-    window.location.href="../Certificado-main/principal.html";
+    window.location.href="../fpdf185/certificadoAdmin.html";
 }
 //Editar salarios
 function redirigir11(){
     window.location.href="../Certificado-main/ESalario.html";
+}
+function redirigir12(){
+    window.location.href="../Certificado-main/perfiladministrador.html";
 }
