@@ -50,7 +50,7 @@
           oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
           max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br><br>
         <label><i class="fa-solid fa-briefcase"></i> Rol </label><br>
-        <select >
+        <select id="iRol">
           <option>Seleccione Cargo</option>
           <option>Administrativos</option>
           <option>Profesores de planta</option>
@@ -60,14 +60,14 @@
         </select>
         <br><br>
         <a class="link" href="./Certificado-main/Registro.html" class="registro">Registrate aquí</a><br><br>
-        <button type="submit" class="button1"><a href="./Certificado-main/perfiladministrador.html">Ingresar</a></button>
+        <button type="submit" class="button1" onclick="Cargo()">Ingresar</button>
       </form>
     </section>
   </main>
   <br><br>
   <footer>
     <div class="footer1">
-      <img src="./Certificado-main/img/logos footer.png" alt="Logo uniempresarial y cámara de comercio">
+      <img src="./img/footer.JPG" alt="Logo uniempresarial y cámara de comercio">
       <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738
       </p>
     </div>
@@ -77,9 +77,9 @@
         Registro Icfes 2738.</p>
     </div>
   </footer>
-  <script src="/Scripts/validateI.js"></script>
+  <script src="./Scripts/validateI.js"></script>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
-  <script src="../Scripts/Redirigir.js"></script>
+  <script src="./Scripts/Redirigir.js"></script>
 </body>
 
 </html>

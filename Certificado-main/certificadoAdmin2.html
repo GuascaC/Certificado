@@ -10,27 +10,27 @@
 </head>
 
 <body>
-  <header>
-    <div class="header1">
-        <div class="divHeader">
-            <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
-            <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
-            <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
-            <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+<header>
+        <div class="header1">
+            <div class="divHeader">
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>    
         </div>
-            <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>    
-    </div>
-    <div class="header2">
-        <div>
-        <img src="../img/logo uniempresarial.png" alt="Logo Uniempresarial">
-        <img src="../img/logo camara comercio.png" alt="Logo cámara de comercio">
+        <div class="header2">
+            <div>
+            <img src="../img/logo uniempresarial.png" alt="Logo Uniempresarial">
+            <img src="../img/logo camara comercio.png" alt="Logo cámara de comercio">
+            </div>
+            <a onclick="redirigir06()" href="../index.html"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
         </div>
-        <a onclick="redirigir06()" href="../index.html"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
-    </div>
-</header>
+    </header>
   <section class="sectionTitulo">
         <div class="divTitulo">
-        <h2>Genera tu certificado</h2>
+        Genera tu certificado
         </div>
     </section> 
     <select id="cargo2">
@@ -56,7 +56,7 @@
   <section class="certificados2">
   <br>
   <p class="infoCert">El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
-  <form>
+  <form method="post" action="">
     <div class="chetCerti">
     <input class="form-check-input" type="checkbox" id="salario">
     <label for="salario">Salario</label>
@@ -73,7 +73,7 @@
     </div>
     <br>
     <section class="sectionBotones2">
-        <button class="botonVolver" type="submit" id="btn-abrir-modal">Volver</button>
+        <button class="botonVolver" type="submit"><a href="./perfiladministrador.html"> Volver</a></button>
         <button class="botonGuardar" type="submit" id="btn-abrir-modal">Generar</button>
     </section>
 
@@ -84,7 +84,7 @@
       <form>
         <input type="date" class="date">
         <br><br>
-        <button class="continue">Continuar</button>
+        <button type="submit" class="continue">Continuar</button>
         
       </form>
       <button id="btn-cerrar-modal" class="cancel">Cerrar</button>

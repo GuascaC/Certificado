@@ -17,11 +17,13 @@
             </div>
                 <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
         </div>
-        <div class="headerIng">
-            <div>
-      <img src="../img/logo uniempresarial.png" alt="Logo Uniempresarial">
-      <img src="../img/logo camara comercio.png" alt="Logo cámara de comercio">
-    </div>
+        <div class="header2">
+            <div class="imagenesHeader">
+            <img src="../img/logo uniempresarial.png" alt="Logo Uniempresarial">
+            <img src="../img/logo camara comercio.png" alt="Logo cámara de comercio">
+            </div>
+            <a onclick="redirigir07()"><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
+            <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
         </div>
     </header>
     <main>
@@ -50,10 +52,12 @@
                 <div class="contras1">
                     <label>Contraseña</label><br>
                     <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipass" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true">
+                   <br>
                 </div>
                 <div class="contras2">
                     <label>Confirmar contraseña</label><br>
                     <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipassC" max="15" min="8" type="password" placeholder="Confirmar contraseña" required autofocus="true">
+                   <br>
                 </div>
                 <p class="contra"> La contraseña debe contener 8 carácteres y máximo 15. Debe incluir mayúsculas, minúsculas y números.</p>          
             </div>
@@ -61,7 +65,7 @@
             <div class="rolContrato">
                 <div class="rol">
                     <label> Rol </label><br>
-                <select name="opcion" required id="iRol">
+                <select name="opcion" required id="iRol" class="iRol">
                   <option value="0" selected>Seleccione una opción</option>
                   <option value="aprendiz">Aprendiz</option>
                   <option value="profesorC">Profesor Cátedra</option>
@@ -95,8 +99,8 @@
             </form>
         </section>
         <section class="sectionBotones2">
-            <button class="botonVolver"><a href="./"> Volver</a></button>
-            <button class="botonGuardar"><a href="./perfiladministrador.html">Guardar</a></button>
+            <button class="botonVolver"><a href="./URegistrados.html"> Volver</a></button>
+            <button class="botonGuardar"><a href="./URegistrados.html">Guardar</a></button>
         </section>
     </main>
   <footer>

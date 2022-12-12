@@ -1,7 +1,8 @@
 'use strict';
 const email = document.querySelector("#iMail");
-const pass = document.querySelector("#ipass");
+const pass = document.querySelector("#iPass");
 const form = document.querySelector("#form");
+const rol = document.querySelector("#iRol");
 
 form,addEventListener("submit", (e)=>{
     e.preventDefault();
