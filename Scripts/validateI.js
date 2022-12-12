@@ -1,6 +1,6 @@
 'use strict';
 const email = document.querySelector("#iMail");
-const pass = document.querySelector("#iPass");
+const pass = document.querySelector("#ipass");
 const form = document.querySelector("#form");
 const rol = document.querySelector("#iRol");
 
