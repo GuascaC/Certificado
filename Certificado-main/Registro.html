@@ -20,6 +20,7 @@
   <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
 </div>
 <div class="headerIng">
+  
   <div>
     <img src="../img/logo uniempresarial.png" alt="Logo Uniempresarial">
     <img src="../img/logo camara comercio.png" alt="Logo cámara de comercio">
@@ -37,7 +38,7 @@
         required name="email"><br>
       <label>Cédula de Ciudadanía</label><br>
       <input maxlength="10" oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);"
-        id="iCC" type="number" min="7" placeholder="Cedula" required autofocus="true" autocomplete="on" name="CC" class="iden"><br>
+        id="iCC" class="cedulaRegistro" type="number" min="7" placeholder="Cédula de ciudadanía" required autofocus="true" autocomplete="on" name="CC" class="iden"><br>
       <label> Rol </label><br>
       <select name="opcion" required id="iRol">
         <option value="0" selected>Seleccione una opción</option>
@@ -60,18 +61,18 @@
       <p class="contra"> La contraseña debe contener 8 carácteres y máximo 15. Debe incluir mayúsculas, minúsculas y
         números.</p>
       <br>
-      <div class="boton">
-        <button id="cntn" type="submit" class="continue">Continuar</button>
-        <button class="cancel"><a href="../index.html"> Cancelar</a></button>
-      </div>
+      <section class="sectionBotones3">
+            <button class="botonGuardar"><a href="./Docente.html">Continuar</a></button>
+            <button class="botonVolver"><a href="../index.html">Cancelar</a></button>
+        </section>
     </form>
   </section>
 </main>
 <footer>
   <div class="footer1">
     <img src="../img/logos footer.png" alt="Logo uniempresarial y cámara de comercio">
-    <label>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES
-      2738</label>
+    <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES
+      2738</p>
   </div>
   <div class="footer2">
     <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá

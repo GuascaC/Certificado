@@ -224,6 +224,11 @@ footer{
     display: inline-block;
 }
 
+.sectionBotones3{
+  width: fit-content;
+  margin: 0 auto;
+}
+
 #filtro{
     height: 30px;
     width: 200px;
@@ -696,9 +701,7 @@ h1{
   margin: 10%;
   margin-top: 2vh;
 }
-#ipass{
-  width: 80%;
-}
+
 .registro input{
   width: 80%;
   height: 5vh;
@@ -966,7 +969,7 @@ h1{
     margin-inline-end: -10vh;
 }
 
-#iCC{
+.cedulaRegistro{
     width: 58%;
 }
 
@@ -1636,7 +1639,7 @@ h1{
   margin-inline-end: -10vh;
   height: 4vh;
 }
-  #iCC{
+  .cedulaRegistro{
     width: 62%;
     margin-left: 20%;
 }
@@ -1893,6 +1896,7 @@ h1{
     height: 20vh;
   }
 
+
   .footer1 p{
     margin-left: -15vw;
     width: 80vw;
@@ -1905,24 +1909,30 @@ h1{
   }
 
   .footer2{
+    height: fit-content;
     font-size: 9px;
     padding: 8px;
   }
 
+  .backTitle{
+    height: 30vh;
+  }
+  
   .title1{
-    width: 75vw;
-    height: 10vh;
-    margin-top: 17vh;
+    width: 70vw;
+    height: 8vh;
+    margin-top: 8vh;
   }
 
   .title1 h2{
-    font-size: 30px;
+    font-size: 27px;
     padding: 2vh 5vw;
   }
 
   .title2{
+    margin-top: 3vh;
     width: 90vw;
-    height: 10vh;
+    height: 8vh;
   }
 
   .title2 h2{
@@ -1933,7 +1943,7 @@ h1{
   .inicioSesion{
     width: 90%;
     height: 70%;
-    margin: 60vh auto 5vh auto;
+    margin: 30vh auto 3vh auto;
     border: 30px solid #b71819;
   }
 
@@ -1967,7 +1977,6 @@ h1{
   }
   
 .registro{
-  border: 2px solid red;
   width: 100%;
   margin: 0 auto;
 }
@@ -1986,10 +1995,6 @@ h1{
     font-size: 12px;
   }
 
-  #iCC{
-    width: 50vw;
-  }
-
   .contras2{
     padding: 0;
     text-align: center;
@@ -2004,12 +2009,12 @@ h1{
   }
 
   .botonVolver{
-    width: 20vw;
+    width: 24vw;
     font-size: 14px;
   }
 
   .botonGuardar{
-    width: 20vw;
+    width: 24vw;
     font-size: 14px;
     margin-inline-end: 0vh;
   }
@@ -2026,15 +2031,34 @@ h1{
     font-size: 17px;
   }
 
-  #ipass{
-    width: 60%;
-    height: 6vh;
+  .sectionTitulo{
+    height: 25vh;
   }
 
-  #ipassC{
-    width: 60%;
-    height: 6vh;
+  .divTitulo{
+    margin-top: 10vh;
+    width: 85vw;
+    height: 8vh;
+    padding: 2vh 5vw;
+    text-align: right;
+    font-size: 25px;
   }
+
+  .certificados{
+    margin: 26vh 5vw 5vh 5vw;
+    width: 90%;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .chetCerti{
+    width: 45vw;
+  }
+
+  .button1{
+    margin-top: 2vh;
+  }
+  
 }
   
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px){
@@ -2537,7 +2561,7 @@ h1{
   margin-inline-end: -10vh;
   height: 4vh;
 }
-  #iCC{
+  .cedulaRegistro{
     width: 62%;
     margin-left: 20%;
 }
