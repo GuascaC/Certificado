@@ -4,27 +4,26 @@ const pass = document.querySelector("#ipass");
 const form = document.querySelector("#form");
 const rol = document.querySelector("#iRol");
 
-form,addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e)=>{
     e.preventDefault();
     if (validFieldsForm() === -1){ 
         modalAlerta("Informacion Validada");
         if(rol.value == 1){
-            console.log("1");
-            window.location.href="../Certificado-main/perfiladministrador.html";
+            window.location.href="../../Certificado-main/Certificado-main/perfiladministrador.html";
         }
         else if(rol.value == 2){
-            console.log("2");
-            window.location.href="../Certificado-main/Docente.html";
+            window.location.href="../../Certificado-main/Certificado-main/Docente.html";
         }
         else if(rol.value == 3){
-            console.log("3");
-            window.location.href="../Certificado-main/Catedratico.html";
+            window.location.href="../../Certificado-main/Certificado-main/Catedratico.html";
         }
         else if(rol.value == 4){
-            console.log("4");
-            window.location.href="../Certificado-main/Practicante.html";
+            window.location.href="../../Certificado-main/Certificado-main/Practicante.html";
         }
-    }else {
+        // else if(rol.value ==5){
+        //     window.location.href="../Certificado-main/";
+        // }
+    }else{
         modalAlerta("Error");
 }
 
@@ -40,7 +39,8 @@ const validFieldsForm = () =>{
 
 let validFields = {
     email:false,
-    pass: false
+    pass: false,
+    rol: false
 
 }
 
@@ -50,16 +50,18 @@ email.addEventListener('change', function(e) {
     validFields.email = inputEmail.match(patronEmail) ? true: false;
     console.log(Object.values(validFields));
     if (validFields.email===false){
-      modalAlerta("El correo no es institucional");
+        modalAlerta("El correo no es institucional");
     }
-
 });
-pass.addEventListener('change',(event)=>{
-    const inputPass = event.target.value; 
-    const patronPass = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})(^[0-9]{1,2}$)$/g; 
-      if (pass.value.length > 15) {
-        pass.value = pass.value.slice(0,15);}
+pass.addEventListener('change',(e)=>{
+    const inputPass = e.target.value; 
+    const patronPass = /([a-zA-Z0-9]{8,})$/g; 
     validFields.pass = inputPass.match(patronPass) ? true: false;
+    console.log(Object.values(validFields));
+});
+
+rol.addEventListener('change', (e)=>{
+    validFields.rol = rol.selectedIndex > 0 ? true : false;
     console.log(Object.values(validFields));
 });
 
@@ -78,18 +80,19 @@ function modalAlerta(cadena){
 }
 function PassV02() {
     var x = document.getElementById("iPass");
-     if (x.type === "password") {
-       x.type = "text";
-     } else {
-       x.type = "password";
-     }
- }
- function PassV03() {
+    if (x.type === "password") {
+        x.type = "text";
+        } else {
+        x.type = "password";
+    }
+}
+function PassV03() {
     var x = document.getElementById("iPass");
-     if (x.type === "password") {
-       x.type = "text";
-     } else {
-       x.type = "password";
-     }
- }
+    if (x.type === "password") {
+        x.type = "text";
+        } else {
+        x.type = "password";
+        }
+}
+
 
