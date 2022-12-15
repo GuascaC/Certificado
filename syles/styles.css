@@ -9,9 +9,37 @@ a{
     text-decoration: none;
     color: white;
 }
-
+.alerta{
+  height: 15vh;
+  width:22vw; 
+  margin: 2vh 40%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #dd0034;
+  text-align: center;
+  height: 3vh;
+  width: 4vw;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
+}
 input:focus{
-    outline: 2px outset #b71819;
+    outline: 2px outset #dd0034;
 }
 
 .header1{
@@ -64,7 +92,7 @@ input:focus{
 }
 
 .headerIng img{
-    height: 13vh;
+    height: 12vh;
 }
 
 .header2{
@@ -93,11 +121,11 @@ input:focus{
 }
 
 .header2 a:hover{
-    color: #b71819;
+    color: #dd0034;
 }
 
 .header2 img{
-    height: 14vh;
+    height: 10vh;
 }
 
 footer{
@@ -154,12 +182,12 @@ footer{
 .title1{
     width: 45%;
     height: 12vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin-top: 18vh;
 }
 
 .title1 h2{
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     padding: 1vh 3vw;
     text-align: right;
@@ -203,7 +231,7 @@ footer{
 .divTitulo{
     width: 70%;
     height: 50px;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin-top: 200px;
     color: white;
     width: 40vw;
@@ -241,11 +269,11 @@ footer{
 }
 
 #filtro:focus{
-    outline: 2px outset #b71819;
+    outline: 2px outset #dd0034;
 }
 
 #back{
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     font-weight: bold;
     border: none;
@@ -320,7 +348,7 @@ td{
 .tdEstado2{
     width: 15%;
     font-weight: bold;
-    color: #b71819;
+    color: #dd0034;
 }
 
 #editarUsuario{
@@ -329,7 +357,7 @@ td{
 }
 
 .tdIconos{
-    color: #b71819;
+    color: #dd0034;
     padding-left: 15px;
 }
 
@@ -348,7 +376,7 @@ td{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     border: none;
     border-radius: 4%;
@@ -393,11 +421,11 @@ td{
 }
 
 .h2Titulo{
-    border: 2px solid #b71819;
+    border: 2px solid #dd0034;
     width: 50%;
     height: 40%;
     padding: 15px;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin: 20px 0px;
 }
 
@@ -425,7 +453,7 @@ td{
     height: 40vh;
     margin-left: 12vw;
     margin-bottom: 2vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     text-align: center;
     font-size: 150px;
     border-radius: 10%;
@@ -487,7 +515,7 @@ td{
 }
 
 .editarSalario{
-    border: 5px outset #b71819;
+    border: 5px outset #dd0034;
     border-radius: 5px;
     box-shadow: 10px 10px 10px grey;
     width: 50%;
@@ -513,7 +541,7 @@ td{
 }
 
 #inputSalario:focus{
-    outline: 2px outset #b71819;
+    outline: 2px outset #dd0034;
     
 }
 
@@ -530,7 +558,7 @@ td{
     padding: 10px;
     width: 10vw;
     color: white;
-    background-color: #b71819;
+    background-color: #dd0034;
     border: none;
     border-radius: 2px;
     box-shadow: 2px 2px 3px gray;
@@ -595,7 +623,7 @@ td{
 }
 
 .editarUsuario input:focus{
-    outline: 2px solid #b71819;
+    outline: 2px solid #dd0034;
 }
 
 .editarUsuario select{
@@ -622,7 +650,7 @@ td{
 .inicioSesion{
   margin: 55vh 30vw 3vh 30vw;
   padding: 20px;
-  border: 40px solid #b71819;
+  border: 40px solid #dd0034;
   border-radius: 10px;
 }
 .inicioSesion h3{
@@ -665,7 +693,7 @@ td{
 }
 .button1{
   height: 6vh;
-  margin: 4vh 37%;
+  margin: 3vh 36%;
   width: 25%;
   font-size: 15px;
   color: white;
@@ -733,7 +761,7 @@ h1{
   width: 25%;
   font-size: 18px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -792,12 +820,15 @@ h1{
   height: 6vh;
   margin: 0vh 6vw;
   width: 25%;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .continue1 a{
   text-decoration: none;
@@ -811,12 +842,16 @@ h1{
   height: 6vh;
   margin: 0vh 1vw;
   width: 25%;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
   background-color:  #0c243d;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-transform: uppercase;  
+  letter-spacing: 1px;
+
 }
 .cancel1 a{
   text-decoration: none;
@@ -840,7 +875,7 @@ h1{
   width: 25%;
   font-size: 18px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -895,7 +930,7 @@ h1{
 }
 
 #cargo2:focus{
-    outline: 2px outset #b71819;
+    outline: 2px outset #dd0034;
 }
 
 #usuariosSimilares{
@@ -907,7 +942,7 @@ h1{
 }
 
 #usuariosSimilares:focus{
-    outline: 2px outset #b71819;
+    outline: 2px outset #dd0034;
 }
 
 .usuarioCertificado{
@@ -1050,12 +1085,15 @@ h1{
   height: 6vh;
   margin: 0vh 4.3vw;
   width: 25%;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing:1px;
 }
 .continue3 a{
   text-decoration: none;
@@ -1068,12 +1106,15 @@ h1{
 .cancel3{
   height: 6vh;
   width: 25%;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
   background-color:  #0c243d;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing:1px;
 }
 .cancel3 a{
   text-decoration: none;
@@ -1094,22 +1135,26 @@ h1{
   margin: 2vh 4vw;
 }
 .modulCer i{
+  margin: -2vh 88%;
+  padding: 6px;
   text-align:right;
   margin-left: 90%;
   color: #b71819;
   font-size: 40px;
-  padding: 1px;
 }
 .paraMi{
   height: 7vh;
   margin: 2vh 2vw;
   width: 25%;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: bold;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .paraMi a{
   text-decoration: none;
@@ -1123,12 +1168,14 @@ h1{
   height: 7vh;
   width: 45%;
   margin: 1vh 2vw 1vh 0vw;
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: bold;
   color: white;
   background-color:#0c243d;
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .otraP a{
   text-decoration: none;
@@ -1172,6 +1219,35 @@ h1{
 }
 .header2 img{
     height: 5vh;
+}
+  .alerta{
+  height: 25vh;
+  width:25vw; 
+  margin: 2vh 40%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #dd0034;
+  text-aling: center;
+  height: 4vh;
+  width: 5vw;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
 }
   .footer1{
     height: 20vh;
@@ -1223,12 +1299,12 @@ h1{
 .title1{
     width: 50%;
     height: 7vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin-top: 10vh;
 }
 
 .title1 h2{
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     padding: 1vh 2vw;
     text-align: right;
@@ -1271,7 +1347,7 @@ h1{
 .divTitulo{
     width: 65%;
     height: 7vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin-top: 10vh;
     padding: 2vh 1vw;
     color: white;
@@ -1290,7 +1366,7 @@ h1{
     display: inline-block;
 }
   #back{
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     font-weight: bold;
     border: none;
@@ -1338,11 +1414,11 @@ h1{
 }
 
 .h2Titulo{
-    border: 2px solid #b71819;
+    border: 2px solid #dd0034;
     width: 60%;
     height: 40%;
     padding: 4%;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin: 20px 0px;
 }
 
@@ -1355,7 +1431,7 @@ h1{
   .inicioSesion{
   margin: 30vh 10vw 3vh 10vw;
   padding: 4%;
-  border: 30px solid #b71819;
+  border: 30px solid #dd0034;
   border-radius: 10px;
 }
 .inicioSesion h3{
@@ -1457,7 +1533,7 @@ h1{
   width: 30%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -1504,7 +1580,7 @@ h1{
   width: 25%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -1535,7 +1611,7 @@ h1{
   width: 30%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -1562,7 +1638,7 @@ h1{
     height: 20vh;
     margin-left: 12vw;
     margin-bottom: 2vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     text-align: center;
     font-size: 150px;
     border-radius: 10%;
@@ -1588,7 +1664,7 @@ h1{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     border: none;
     border-radius: 4%;
@@ -1607,7 +1683,7 @@ h1{
 .modulCer i{
   text-align:right;
   margin-left: 90%;
-  color: #b71819;
+  color: #dd0034;
   font-size: 50px;
   padding: 1px;
 }
@@ -1617,7 +1693,7 @@ h1{
   width: 25%;
   font-size: 22px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -1668,7 +1744,7 @@ h1{
     padding: 10px;
     width: 20vw;
     color: white;
-    background-color: #b71819;
+    background-color: #dd0034;
     border: none;
     border-radius: 2px;
     box-shadow: 2px 2px 3px gray;
@@ -1736,7 +1812,7 @@ h1{
   width: 30%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -1823,7 +1899,7 @@ h1{
 }
 
 .editarSalario{
-    border: 8px outset #b71819;
+    border: 8px outset #dd0034;
     border-radius: 5px;
     box-shadow: 10px 10px 10px grey;
     width: 60%;
@@ -1864,7 +1940,6 @@ h1{
     font-size: 12px;
   }
 
-
 .mail i{
     font-size: 12px;
 }
@@ -1896,12 +1971,42 @@ h1{
     height: 20vh;
   }
 
-
   .footer1 p{
     margin-left: -15vw;
     width: 80vw;
     font-size: 10px;
   }
+  
+ .alerta{
+  height: 26vh;
+  width:60vw; 
+  margin: 2vh 20%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #dd0034;
+  text-aling: center;
+  height: 4vh;
+  width: 12vw;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
 
   .footer1 img{
     height: 5vh;
@@ -1944,7 +2049,7 @@ h1{
     width: 90%;
     height: 70%;
     margin: 30vh auto 3vh auto;
-    border: 30px solid #b71819;
+    border: 30px solid #dd0034;
   }
 
   .inicioSesion h3{
@@ -1969,17 +2074,17 @@ h1{
     margin-left: 35%;
   }
 
-    .button1{
+  .button1{
     height: 5vh;
     margin: 0vh 33%;
     width: 25vw;
     font-size: 10px;
   }
   
-.registro{
-  width: 100%;
-  margin: 0 auto;
-}
+  .registro{
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .registro2 h1{
     font-size: 24px;
@@ -1998,10 +2103,6 @@ h1{
   .contras2{
     padding: 0;
     text-align: center;
-  }
-
-  .contras2 label{
-    margin-left: -5vw;
   }
 
   .contra{
@@ -2053,12 +2154,399 @@ h1{
 
   .chetCerti{
     width: 45vw;
+    font-size: 18px;
   }
 
   .button1{
     margin-top: 2vh;
   }
+
+  main h1{
+    font-size: 18px;
+  }
+
+  .cambiarContra{
+    width: 70%;
+    margin-bottom: 3vh;
+  }
+
+  .cambiarContra p{
+    text-align: justify;
+    font-size: 15px;
+    margin: 2vh auto;
+  }
+
+  .formContra label{
+    font-size: 15px;
+  }
+
+  .formContra input{
+    border: 2px outset gray;
+    border-radius: 1px;
+  }
+
+  .contraInput{
+    margin: 1vh auto;
+  }
+
+  .sectionBotones{
+    width: 90%;
+    height: fit-content;
+    margin: 30vh 5vw 1vh 5vw;
+    justify-content: space-between;
+  }
+
+  #filtro{
+  width: 35vw;
+  margin-left: 0;
+  margin-right: 43vw;
+  font-size: 14px;
+  }
+
+  #back{
+    font-size: 15px;
+    width: 10vw;
+    margin: 0;
+  }
   
+  .tableHistorial{
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  .tableHistorial td{
+    font-size: 12px;
+  }
+  
+  .tdTitulo{
+    font-size: 12px;
+  }
+
+  .tdRol{
+    width: 60%;
+  }
+
+  .tdIconos{
+    width: 40%;
+    padding: 2px;
+  }
+  
+  #editarUsuario{
+    padding-inline-end: 0vw;
+    float: left;
+  }
+  
+  #desactivarUsuario{
+    float: left;
+  }
+  
+  .botonAñadir{
+    margin-top: -5vh;
+    margin-left: 38vw;
+    width: 23vw;
+    height: 6vh;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  .tituloEditar{
+    font-size: 28px;
+    margin: 3vh auto;
+  }
+
+  .editarUsuario{
+    width: 90%;
+    padding: 3vh 4vw;
+  }
+
+  .editarUsuario label{
+    font-size: 20px;
+  }
+
+  .editarUsuario input{
+    width: 90%;
+    height: 4vh;
+  }
+
+  .editarUsuario select{
+    width: 90%;
+    height: 4vh;
+  }
+
+  .estadoUsuario{
+    font-size: 20px;
+}
+
+  .estadoUsuario input{
+    height: 1vh;
+}
+
+.estadoUsuario i{
+    font-size: 15px;
+    padding: 2px;
+}
+
+  .contra{
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  .contras2{
+    margin-left: -5vw;
+  }
+  
+  .contras2 label{
+    margin-inline: -10vw;
+    font-size: 14px;
+  }
+
+  .contras input{
+     width: 90%;
+  }
+
+  .Contrato{
+    margin-inline: -5vw;
+  }
+
+  .Contrato label{
+    margin-left: 3vw;
+  }
+
+  .rolContrato select{
+     width: 90%;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  .pagoHora{
+    margin-inline: -5vw;
+  }
+  
+  .salarioHora{
+    margin-bottom: 0;
+  }
+  
+  .salarioHora label{
+    margin-inline: 8vw;
+    font-size: 14px;
+  }
+
+  .pagoHora label{
+    margin-inline: 7vw;
+  }
+  
+  .salarioHora input{
+     width: 90%;
+  }
+
+  .sectionBotones2{
+      margin: 1vh auto;
+  }
+
+  .sectionTitulo2{
+    height: 30vh;
+  }
+
+  .divTitulo2{
+    width: 100%;
+  }
+  
+  .divTitulo2 h2{
+    font-size: 20px;
+    align-content: center;
+  }
+
+  .h2Titulo{
+    width: 55%;
+    height: 6vh;
+  }
+  
+  .h2Titulo2{
+    width: 80%;
+    height: 6vh;
+  }
+
+  .menuAdministrador{
+    width: 100%;
+    margin-top: 35vh;
+  }
+
+  .divAdministrador button{
+    width: 40vw;
+    height: 20vh;
+    margin-left: 4vw;
+    margin-bottom: 2vh;
+    font-size: 100px;
+  }
+
+  .divAdministrador p{
+    width: 40vw;
+    font-size: 16px;
+    margin: 2vh auto;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  #cargo{
+    margin-top: 32vh;
+    margin-bottom: 3vh ;
+    width: 50vw;
+    font-size: 15px;
+  }
+
+  .pSalario0{
+    font-size: 24px;  
+  }
+  
+  .rolSalario{
+    margin-bottom: 3vw;
+    font-size: 20px;
+  }
+
+  .editarSalario{
+    width: 90%;
+    border: 10px outset ##dd0034;
+  }
+
+  .editarSalario p{
+    font-size: 24px;
+    margin-left: 5vw;
+  }
+
+  #inputSalario{
+    width: 85%;
+    margin-left: 5vw;
+  }
+
+  #cargo2{
+    margin-top: 32vh;
+    margin-bottom: 1vh ;
+    width: 40vw;
+    font-size: 15px;
+  }
+
+  #usuariosSimilares{
+    width: 60vw;
+    font-size: 15px;
+  }
+
+  .UsuarioSelec{
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    font-size: 25px;
+  }
+  
+  .nombreUsuario{
+    margin-bottom: 0vh;
+    font-size: 20px;
+  }
+
+  .certificados2 p{
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .chetCerti{
+    width: 
+  }
+
+  .descargar{
+    width: 80%;
+    height: 37%;
+    padding: 1vh 3vw;
+    margin: 50% 10%;
+    border: 20px solid #0c243d;
+  }
+
+  .descargar h2{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .date{
+    width: 95%;
+    height: 5vh;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .continue1{
+    width: 38%;
+    height: 5vh;
+    margin: 1vh 4vw;
+    font-size: 12px;
+
+  }
+
+  .cancel1{
+    width: 38%;
+    height: 5vh;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .desactivar{
+    width: 80%;
+    height: 26%;
+    margin: 60% 10%;
+    border: 20px solid #0c243d;
+  }
+
+  .desactivar h2{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .continue3{
+    width: 38%;
+    height: 5vh;
+    margin: 0vh 4vw;
+    font-size: 12px;
+  }
+
+  .cancel3{
+    width: 38%;
+    height: 5vh;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .modulCer{
+    width: 85%;
+    height: 30vh;
+    margin: 60% 5%;
+    border: 15px solid #0c243d;
+  }
+
+  .modulCer i{
+    margin: -1vh 88%;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .modulCer h2{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .paraMi{
+    width: 80%;
+    height: 5vh;
+    font-size: 11px;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+  }
+
+  .otraP{
+    width: 80%;
+    height: 5vh;
+    font-size: 11px;
+    margin-left: 5vw;
+  }
 }
   
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px){
@@ -2105,6 +2593,35 @@ h1{
     letter-spacing: 1px;
     word-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
+}
+  .alerta{
+  height: 25vh;
+  width:60vw; 
+  margin: 2vh 20%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #b71819;
+  text-aling: center;
+  height: 4vh;
+  width: 12vw;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
 }
 
 .footer1 p{
@@ -2504,17 +3021,18 @@ h1{
 }
   .botonAñadir{
     width: 18vw;
-    height: 6vh;
+    height: 5vh;
     margin-left: 42vw;
     margin-bottom: 40px;
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     background-color: #b71819;
     color: white;
     border: none;
-    border-radius: 4%;
+    border-radius: 6%;
     font-size:20px;
+    text-transform: uppercase;
 }
  .modulCer{
   margin: auto 23%;
