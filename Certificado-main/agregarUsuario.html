@@ -8,7 +8,8 @@
     <title>Registrar nuevo usuario</title>
     <link rel="icon" href="../img/logoicono.png">
 </head>
-<div class="header1">
+    <header>
+        <div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
                 <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
@@ -32,30 +33,30 @@
             <form id="form" class="registro">
                 <label> Nombres</label>
                 <br>
-                  <input id="nombres" type="text" placeholder="Nombres" autofocus="true" autocomplete="on" required name="nombre"><br>
+                  <input id="nombres" type="text" placeholder="Nombres" autofocus autocomplete="on" required name="nombre"><br>
                   <label> Apellidos</label>
                 <br>
-                  <input id="apellidos" type="text" placeholder="Apellidos" autofocus="true" autocomplete="on" required name="email"><br>
+                  <input id="apellidos" type="text" placeholder="Apellidos" autocomplete="on" required name="email"><br>
                   <label>Correo institucional</label>
               <br>
-                <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus="true" autocomplete="on" required name="email"><br>
-                <label></i>Documento de identidad</label><br>
+                <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autocomplete="on" required name="email"><br>
+                <label>Documento de identidad</label><br>
                 <div class="documentoIden">
                     <select name="tipoDocumento" id="tipoDocumento">
                         <option selected value="0">C.C</option>
                     </select>
-                    <input maxlength="10" oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC" type="number"min="7" placeholder="Documento de identidad" required autofocus="true" autocomplete="on" name="CC">
+                    <input maxlength="10" oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC" type="number" min="7" placeholder="Documento de identidad" required autocomplete="on" name="CC">
                 </div> <br>
 
             <div class="contras">
                 <div class="contras1">
                     <label>Contraseña</label><br>
-                    <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipass" max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true">
+                    <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipass" type="password" placeholder="Contraseña" required>
                    <br>
                 </div>
                 <div class="contras2">
                     <label>Confirmar contraseña</label><br>
-                    <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipassC" max="15" min="8" type="password" placeholder="Confirmar contraseña" required autofocus="true">
+                    <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  id="ipassC" type="password" placeholder="Confirmar contraseña" required>
                    <br>
                 </div>
                 <p class="contra"> La contraseña debe contener 8 carácteres y máximo 15. Debe incluir mayúsculas, minúsculas y números.</p>          
