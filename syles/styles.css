@@ -1,0 +1,3290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.alerta{
+  height: 15vh;
+  width:22vw; 
+  margin: 2vh 40%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #dd0034;
+  text-align: center;
+  height: 3vh;
+  width: 4vw;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+input:focus{
+    outline: 2px outset #dd0034;
+}
+
+.header1{
+    background-color: #0e2b49;
+    height: 5vh;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.divHeader{
+    width: 13vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header1 a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.divHeader i:hover{
+    color: #c6c6c6;
+}
+
+.header1 i{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.mail i{
+    font-size: 15px;
+}
+
+.headerIng{
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.headerIng img{
+    height: 12vh;
+}
+
+.header2{
+    height: 14vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #0e2b49;
+}
+
+.imagenesHeader{
+  display: inline;
+}
+
+.header2 a{
+    text-decoration: none;
+    color: #0e2b49;
+}
+
+.header2 a:hover{
+    color: #dd0034;
+}
+
+.header2 img{
+    height: 10vh;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+.footer1{
+    height: 28vh;
+    padding: 0px 125px;
+    background-color: #0e2b49;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer1 p{
+    margin-left: 300px;
+    width: 50vw;
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 img{
+    height: 15vh;
+    margin-top: 20px;
+}
+
+.footer2{
+    height: 8vh;
+    background-color: #878787;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.backTitle{
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.title1{
+    width: 45%;
+    height: 12vh;
+    background-color: #dd0034;
+    margin-top: 18vh;
+}
+
+.title1 h2{
+    background-color: #dd0034;
+    color: white;
+    padding: 1vh 3vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.title2{
+    width: 52%;
+    height: 12vh;
+    background-color: #161A4A;
+    margin-top: 5vh;
+}
+
+.title2 h2{
+    background-color: #161A4A;
+    color: white;
+    padding: 2vh 3vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.sectionTitulo{
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historialCertificados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo{
+    width: 70%;
+    height: 50px;
+    background-color: #dd0034;
+    margin-top: 200px;
+    color: white;
+    width: 40vw;
+    height: 12vh;
+    padding: 18px 30px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.sectionBotones{
+    width: 90%;
+    height: 30px;
+    margin:60vh 0px 30px 95px;
+    display: inline-block;
+}
+
+.sectionBotones3{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#filtro{
+    height: 30px;
+    width: 200px;
+    margin-left: 1.5vw;
+    margin-inline-end: 58vw;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#filtro:focus{
+    outline: 2px outset #dd0034;
+}
+
+#back{
+    background-color: #dd0034;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 49px;
+    height: 28px;
+    font-size: 20px;
+}
+
+#back a{
+    color: white;
+    text-decoration: none;
+}
+
+#back:hover{
+    background-color: grey;
+}
+
+.tableHistorial{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.tdTitulo{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0c243d;
+    padding-bottom: 15px;
+    border: none;
+}
+
+.tdInvisible{
+    border: none;
+}
+
+td{
+    border-bottom: 3px groove #0e2b49;
+    border-right: 3px groove #0e2b49;
+    padding: 3px;
+}
+
+.tdNombre{
+    width: 50%;
+}
+
+.tdRol{
+    width: 15%;
+}
+
+.tdFecha{
+    width: 15%;
+}
+
+.tdFecha2{
+    width: 10%;
+}
+
+.tdHora{
+    width: 15%;
+}
+
+.tdEstado{
+    width: 15%;
+    font-weight: bold;
+    color: green;
+}
+
+.tdEstado2{
+    width: 15%;
+    font-weight: bold;
+    color: #dd0034;
+}
+
+#editarUsuario{
+    color: #0c243d;
+    padding-inline-end: 20px;
+}
+
+.tdIconos{
+    color: #dd0034;
+    padding-left: 15px;
+}
+
+#editarUsuario:hover{
+    color: grey;
+}
+
+#desactivarUsuario:hover{
+    color:grey;
+}
+.botonAñadir{
+    width: 15vw;
+    height: 8vh;
+    margin-left: 42vw;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #dd0034;
+    color: white;
+    border: none;
+    border-radius: 4%;
+}
+
+.botonAñadir:hover{
+    background-color: gray;
+    color: white;
+    border: none;
+}
+.botonAñadir a{
+  color: white;
+  text-decoration: none;
+}
+
+.sectionTitulo2{
+    width: 100%;
+    height: 55vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/perfilAdministrador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo2{
+    width: 60%;
+    height: 60%;
+    margin-top: 70px;
+}
+
+.divTitulo2 h2{
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.h2Titulo{
+    border: 2px solid #dd0034;
+    width: 50%;
+    height: 40%;
+    padding: 15px;
+    background-color: #dd0034;
+    margin: 20px 0px;
+}
+
+.h2Titulo2{
+    width: 70%;
+    height: 40%;
+    padding: 15px;
+    background-color: #0e2b49;
+}
+.menuAdministrador{
+    margin: 58vh auto;
+    margin-bottom: 2vh;
+    width: 80%;
+}
+
+
+.divAdministrador{
+  display: inline-block;
+  align-items: baseline;
+}
+
+.divAdministrador button{
+    color: white;
+    width: 20vw;
+    height: 40vh;
+    margin-left: 12vw;
+    margin-bottom: 2vh;
+    background-color: #dd0034;
+    text-align: center;
+    font-size: 150px;
+    border-radius: 10%;
+    border: none;
+}
+
+.divAdministrador button:hover{
+    color: white;
+    background-color: grey;
+}
+
+.divAdministrador p{
+    color: black;
+    width: 18vw;
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 2vh auto;
+    margin-left: 12vw;
+    margin-bottom: 10vh;
+}
+
+
+.infoSalario{
+    margin: 30px auto;
+    width: 90%;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.rolSalario{
+    margin-bottom: 10vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+
+.pSalario0{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.pSalario{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.editarSalario{
+    border: 5px outset #dd0034;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 50%;
+    margin: 30px auto;
+    text-align: left;
+}
+
+
+#inputSalario{
+    width: 90%;
+    height: 5vh;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    border-style: none !important;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+#inputSalario:focus{
+    outline: 2px outset #dd0034;
+    
+}
+
+.sectionBotones2{
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.botonVolver{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 10vw;
+    color: white;
+    background-color: #dd0034;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+
+.botonVolver:hover{
+    background-color: grey;
+}
+.contraR{
+    width: 80%;
+    margin:0 10%;
+  }
+
+.botonGuardar{
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 10vw;
+    color: white;
+    background-color: #0c243d;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+
+.botonGuardar:hover{
+    background-color: grey;
+}
+
+.tituloEditar{
+    margin: 20px auto;
+    width: fit-content;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.editarUsuario{
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 50%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.editarUsuario label{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.editarUsuario input{
+    width: 70%;
+    height: 5vh;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.editarUsuario input:focus{
+    outline: 2px solid #dd0034;
+}
+
+.editarUsuario select{
+    width: 70%;
+    height: 5vh;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.estadoUsuario{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.estadoUsuario i{
+    color: green;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.inicioSesion{
+  margin: 55vh 30vw 3vh 30vw;
+  padding: 20px;
+  border: 40px solid #dd0034;
+  border-radius: 10px;
+}
+.inicioSesion h3{
+  text-align: center;
+  color: #0c243d;
+  font-size: 30px;
+}
+
+.inicioSesion label{
+  font-size: 20px;
+  padding-left: 10%;
+}
+
+.inicioSesion i{
+    margin-inline-end: 1vw;
+    color: #171616;
+  }
+
+.form{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 1vh 10%;
+}
+.chet{
+  font-size: 15px;
+}
+.inicioSesion select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0vh 10%;
+}
+.link{
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 37.5%;
+  font-size: 18px;
+  color: #2C6BFF;
+}
+.button1{
+  height: 6vh;
+  margin: 3vh 36%;
+  width: 25%;
+  font-size: 15px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.button1 a{
+  text-decoration: none;
+  color:white;
+}
+.button1:hover{
+  color: white;
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  color: #0c243d;
+  font-size: 35px;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+}
+.registro{
+  margin: 1vh 20% 5vh 20%;
+  
+}
+.registro label{
+  font-size: 24px;
+  margin: 10%;
+  margin-top: 2vh;
+}
+
+.registro input{
+  width: 80%;
+  height: 5vh;
+  margin:1vh 10%;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+}
+.registro select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 1vh 10%;
+  text-align: left;
+  font-size: 15px;
+}
+.contra{
+  font-size: 15px;
+  color: #2C6BFF;
+  text-align: center;
+  margin: 1vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.continue{
+  height: 6vh;
+  margin: 0vh 4.7vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.continue a{
+  text-decoration: none;
+  color:white;
+}
+.continue:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel{
+  height: 6vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel a{
+  text-decoration: none;
+  color:white;
+}
+.cancel:hover{
+  color: white;
+  background-color: grey;
+}
+.certificados{
+  margin: 56vh 10vw 5vh 10vw;
+  font-size: 25px;
+}
+.chetCerti{
+  border: 1px solid black;
+  width: 25%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  box-shadow: 2px 3px gray;
+}
+.descargar{
+  margin: auto 25%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.date{
+  width: 70%;
+  margin-left: 15%;
+  height: 5vh;
+}
+.continue1{
+  height: 6vh;
+  margin: 0vh 6vw;
+  width: 25%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.continue1 a{
+  text-decoration: none;
+  color:white;
+}
+.continue1:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel1{
+  height: 6vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;  
+  letter-spacing: 1px;
+
+}
+.cancel1 a{
+  text-decoration: none;
+  color:white;
+}
+.cancel1:hover{
+  color: white;
+  background-color: grey;
+}
+.cambiarContra{
+  margin: 2vh 10vw;
+  font-size: 18px;
+}
+.cambiarContra input{
+  height: 4vh;
+  width: 80%;
+}
+.continue2{
+  height: 6vh;
+  margin: 0vh 12vw;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.continue2 a{
+  text-decoration: none;
+  color:white;
+}
+.continue2:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel2{
+  height: 6vh;
+  width: 25%;
+  font-size: 18px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel2 a{
+  text-decoration: none;
+  color:white;
+}
+.cancel2:hover{
+  color: white;
+  background-color: grey;
+}
+.divAdministrador i{
+  color: white;
+  text-decoration: none;
+}
+.sectionBotones i{
+  color: white;
+  text-decoration: none;
+}
+
+#cargo{
+  margin-top: 60vh;
+  margin-left:5vw;
+  height:4vh;
+  font-size: 20px;
+  width: 25%;
+}
+#cargo2{
+    margin: 65vh 0vw 2vh 5vw;
+    width: 15vw;
+    height: 5vh;
+    font-size: 18px;
+}
+
+#cargo2:focus{
+    outline: 2px outset #dd0034;
+}
+
+#usuariosSimilares{
+    margin: 2vh 0vw 2vh 5vw;
+    margin-left: 5vw;
+    width: 25vw;
+    height: 5vh;
+    font-size: 18px;
+}
+
+#usuariosSimilares:focus{
+    outline: 2px outset #dd0034;
+}
+
+.usuarioCertificado{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.UsuarioSelec{
+    margin-top: 5vh;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+.nombreUsuario{
+    margin-bottom: 5vh;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.certificados2{
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+  
+.registro2{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.registro2 label{
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 10vh 10%;
+}
+
+.registro2 input{
+    width: 80%;
+    height: 5vh;
+    margin:2vh 10%;
+    border-radius: 5px;
+}
+
+.registro2 select{
+    width: 80%;
+    height: 5vh;
+    border-radius: 5px;
+    margin: 2vh 10%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#tipoDocumento{
+    width: 20%;
+    margin-inline-end: -10vh;
+}
+
+.cedulaRegistro{
+    width: 58%;
+}
+
+.contras{
+    width: 90%;
+    margin: 0 6%;
+    margin-bottom: 2vh;
+}
+
+.contras1{
+    width: 48%;
+    text-align: left;
+    display: inline-block;
+}
+
+.contras2{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.rolContrato{
+    width: 90%;
+    margin: 0 6%;
+    margin-bottom: 2vh;
+}
+
+.rol{
+    width: 48%;
+    text-align: left;
+    display: inline-block;
+}
+
+.iRol{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.Contrato{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+.salarioHora{
+    width: 90%;
+    margin: 0 6%;
+    margin-bottom: 10vh;
+}
+
+.salario{
+    width: 48%;
+    display: inline-block;
+
+}
+
+#checkSalario, #checkPago{
+    width: fit-content;
+    height: 2vh;
+    margin-inline-end: -4vh;
+}
+
+.pagoHora{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+.desactivar{
+  margin: auto 30%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.continue3{
+  height: 6vh;
+  margin: 0vh 4.3vw;
+  width: 25%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+.continue3 a{
+  text-decoration: none;
+  color:white;
+}
+.continue3:hover{
+  color: white;
+  background-color: grey;
+}
+.cancel3{
+  height: 6vh;
+  width: 25%;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+.cancel3 a{
+  text-decoration: none;
+  color:white;
+}
+.cancel3:hover{
+  color: white;
+  background-color: grey;
+}
+.modulCer{
+  margin: auto 32%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  
+}
+.modulCer h2, button{
+  margin: 2vh 4vw;
+}
+.modulCer i{
+  margin: -2vh 88%;
+  padding: 6px;
+  text-align:right;
+  margin-left: 90%;
+  color: #b71819;
+  font-size: 40px;
+}
+.paraMi{
+  height: 7vh;
+  margin: 2vh 2vw;
+  width: 25%;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.paraMi a{
+  text-decoration: none;
+  color:white;
+}
+.paraMi:hover{
+  color: white;
+  background-color: grey;
+}
+.otraP{
+  height: 7vh;
+  width: 45%;
+  margin: 1vh 2vw 1vh 0vw;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  background-color:#0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.otraP a{
+  text-decoration: none;
+  color:white;
+}
+.otraP:hover{
+  color: white;
+  background-color: grey;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+.headerIng{
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.headerIng img{
+  height: 10vh;
+
+}
+  .header2{
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #0e2b49;
+}
+.header2 img{
+    height: 5vh;
+}
+  .alerta{
+  height: 25vh;
+  width:25vw; 
+  margin: 2vh 40%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #dd0034;
+  text-aling: center;
+  height: 4vh;
+  width: 5vw;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+  .footer1{
+    height: 20vh;
+    padding: 0px 80px;
+    background-color: #0e2b49;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer1 p{
+    margin-left: 200px;
+    width: 30vw;
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 img{
+    height: 10vh;
+    margin-top: 10px;
+}
+
+.footer2{
+  width:100%;
+    height: 5vh;
+    background-color: #878787;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px;
+}
+.backTitle{
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.title1{
+    width: 50%;
+    height: 7vh;
+    background-color: #dd0034;
+    margin-top: 10vh;
+}
+
+.title1 h2{
+    background-color: #dd0034;
+    color: white;
+    padding: 1vh 2vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.title2{
+    width: 60%;
+    height: 6vh;
+    background-color: #161A4A;
+    margin-top: 2vh;
+}
+
+.title2 h2{
+    background-color: #161A4A;
+    color: white;
+    padding: 2vh 2vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.sectionTitulo{
+    width: 100%;
+    height: 25vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historialCertificados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo{
+    width: 65%;
+    height: 7vh;
+    background-color: #dd0034;
+    margin-top: 10vh;
+    padding: 2vh 1vw;
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sectionBotones{
+    width: 90%;
+    height: 3vh;
+    margin: 30vh 0px 4vh 3vh;
+    display: inline-block;
+}
+  #back{
+    background-color: #dd0034;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 49px;
+    height: 28px;
+    font-size: 20px;
+}
+  #filtro{
+    height: 3vh;
+    width: 25vw;
+    margin-left: 3vw;
+    margin-inline-end: 47vw;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  .sectionTitulo2{
+    width: 100%;
+    height: 30vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/perfilAdministrador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo2{
+    width: 80%;
+    height: 20vh;
+    margin-top: 10vh;
+}
+
+.divTitulo2 h2{
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.h2Titulo{
+    border: 2px solid #dd0034;
+    width: 60%;
+    height: 40%;
+    padding: 4%;
+    background-color: #dd0034;
+    margin: 20px 0px;
+}
+
+.h2Titulo2{
+    width: 90%;
+    height: 40%;
+    padding: 4%;
+    background-color: #0e2b49;
+}
+  .inicioSesion{
+  margin: 30vh 10vw 3vh 10vw;
+  padding: 4%;
+  border: 30px solid #dd0034;
+  border-radius: 10px;
+}
+.inicioSesion h3{
+  text-align: center;
+  color: #0c243d;
+  font-size: 40px;
+}
+
+.inicioSesion label{
+  font-size: 25px;
+  padding-left: 10%;
+}
+
+.form{
+  width: 80%;
+  height: 4vh;
+  font-size:20px;
+  border-radius: 5px;
+  margin: 1vh 10%;
+}
+.chet{
+  font-size: 15px;
+}
+.inicioSesion select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0vh 10%;
+  font-size:20px;
+}
+.inicioSesion option{
+  font-size: 25px;
+}
+.link{
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 35%;
+  font-size: 25px;
+  color: #2C6BFF;
+}
+  .button1{
+  height: 5vh;
+  margin: 2vh 37%;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+  .registro{
+  margin: 1vh 5% 5vh 5%;
+}
+  .registro h1{
+    font-size: 50px;
+  }
+.registro label{
+  font-size: 30px;
+  margin: 10%;
+  margin-top: 2vh;
+}
+.registro input{
+  width: 80%;
+  height: 4vh;
+  margin:1vh 10%;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.registro select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 1vh 10%;
+  text-align: left;
+  font-size: 25px;
+}
+.contra{
+  font-size: 25px;
+  color: #2C6BFF;
+  text-align: center;
+  margin: 1vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.continue{
+  height: 5vh;
+  margin: 0vh 8vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cancel{
+  height: 5vh;
+  margin: 0vh 2vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.certificados{
+  margin: 28vh 10vw 5vh 10vw;
+  font-size: 25px;
+}
+.chetCerti{
+  border: 1px solid black;
+  width: 40%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  box-shadow: 2px 3px gray;
+}
+.descargar{
+  margin: auto 15%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.date{
+  width: 70%;
+  margin-left: 15%;
+  height: 4vh;
+  font-size: 25px;
+}
+.continue1{
+  height: 5vh;
+  margin: 0vh 9vw;
+  width: 25%;
+  font-size: 25px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel1{
+  height: 5vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+  .cambiarContra{
+  margin: 2vh 10vw;
+  font-size: 30px;
+}
+.cambiarContra input{
+  height: 4vh;
+  width: 80%;
+}
+.continue2{
+  height: 5vh;
+  margin: 0vh 8vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cancel2{
+  height: 5vh;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  .menuAdministrador{
+    margin: 32vh auto;
+    margin-bottom: 2vh;
+    width: 80%;
+}
+.divAdministrador button{
+    color: white;
+    width: 23vw;
+    height: 20vh;
+    margin-left: 12vw;
+    margin-bottom: 2vh;
+    background-color: #dd0034;
+    text-align: center;
+    font-size: 150px;
+    border-radius: 10%;
+    border: none;
+}
+  .divAdministrador p{
+    color: black;
+    width: 21vw;
+    text-align: center;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 2vh auto;
+    margin-left: 12vw;
+    margin-bottom: 4vh;
+}
+  .botonAñadir{
+    width: 18vw;
+    height: 6vh;
+    margin-left: 42vw;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #dd0034;
+    color: white;
+    border: none;
+    border-radius: 4%;
+    font-size:20px;
+}
+ .modulCer{
+  margin: auto 23%;
+  border: 20px solid #0c243d;
+  font-size: 25px;
+  border-radius: 20px;
+  
+}
+.modulCer h2, button{
+  margin: 2vh 3vw;
+}
+.modulCer i{
+  text-align:right;
+  margin-left: 90%;
+  color: #dd0034;
+  font-size: 50px;
+  padding: 1px;
+}
+.paraMi{
+  height: 4vh;
+  margin: 2vh 3vw;
+  width: 25%;
+  font-size: 22px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.otraP{
+  height: 4vh;
+  width: 45%;
+  margin: 1vh 2vw 1vh 0vw;
+  font-size: 22px;
+  color: white;
+  background-color:#0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#tipoDocumento{
+  width: 13%;
+  margin-inline-end: -10vh;
+  height: 4vh;
+}
+  .cedulaRegistro{
+    width: 62%;
+    margin-left: 20%;
+}
+  .contras{
+    width: 90%;
+    margin: 0 2% 0 6%;
+    margin-bottom: 2vh;
+}
+
+.contras1{
+    width: 48%;
+    text-align: left;
+    display: inline-block;
+}
+
+.contras2{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+  .botonVolver{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 20vw;
+    color: white;
+    background-color: #dd0034;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+  .botonGuardar{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 20vw;
+    color: white;
+    background-color: #0c243d;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+  .iden{
+    width: 80%;
+    margin:0 10%;
+  }
+  .editarUsuario{
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 80%;
+    padding: 3vh 5vw;
+    margin: 0 auto;
+}
+
+.editarUsuario label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.editarUsuario input{
+    width: 90%;
+    height: 4vh;
+    margin: 1vh 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+}
+  .editarUsuario select{
+    width: 90%;
+    height: 4vh;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .desactivar{
+  margin: auto 15%;
+  border: 30px solid #0c243d;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 2vh 3vw;
+}
+.continue3{
+  height: 5vh;
+  margin: 0vh 6vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #dd0034;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  .cancel3{
+  height: 5vh;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  
+#cargo2{
+    margin: 30vh 0vw 1vh 5vw;
+    width: 18vw;
+    height: 4vh;
+    font-size: 25px;
+}
+  #usuariosSimilares{
+    margin: 1vh 0vw 1vh 5vw;
+    margin-left: 5vw;
+    width: 28vw;
+    height: 4vh;
+    font-size: 25px;
+}
+  .UsuarioSelec{
+    margin-top: 2vh;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+.nombreUsuario{
+    margin-bottom: 2vh;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+  #cargo{
+  margin-top: 30vh;
+  height:4vh;
+    width:25%;
+    font-size: 25px;
+    margin-left:5vw;
+    margin-bottom: 3vh;
+}
+  .infoSalario{
+    margin: 30px auto;
+    width: 90%;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.rolSalario{
+    margin-bottom: 5vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+
+}
+
+.pSalario0{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.pSalario{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 27px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1vh;
+}
+
+.editarSalario{
+    border: 8px outset #dd0034;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 60%;
+    margin: 3vh auto;
+    text-align: left;
+}
+
+
+#inputSalario{
+    width: 90%;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 2px;
+    border-style: none !important;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+  .divHeader{
+    width: 25vw;
+  }
+
+  .header1 i{
+    font-size: 15px;
+  }
+
+  .header1 a{
+    font-size: 12px;
+  }
+
+.mail i{
+    font-size: 12px;
+}
+
+  .headerIng img{
+    height: 6vh;
+  }
+
+  .imagenesHeader{
+    width: 100vw;
+  }
+
+  .header2{
+    padding: 5px;
+  }
+
+  .header2 a{
+    font-size: 10px;
+    text-align: center;
+    margin-inline-end: 2vw;
+    width: 40vw;
+  }
+
+  .imagenesHeader img{
+    height: 4vh;
+  }
+
+  .footer1{
+    height: 20vh;
+  }
+
+  .footer1 p{
+    margin-left: -15vw;
+    width: 80vw;
+    font-size: 10px;
+  }
+  
+ .alerta{
+  height: 26vh;
+  width:60vw; 
+  margin: 2vh 20%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #dd0034;
+  text-aling: center;
+  height: 4vh;
+  width: 12vw;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+
+  .footer1 img{
+    height: 5vh;
+    margin: 5vh -15vw 2vh -15vw;
+  }
+
+  .footer2{
+    height: fit-content;
+    font-size: 9px;
+    padding: 8px;
+  }
+
+  .backTitle{
+    height: 30vh;
+  }
+  
+  .title1{
+    width: 70vw;
+    height: 8vh;
+    margin-top: 8vh;
+  }
+
+  .title1 h2{
+    font-size: 27px;
+    padding: 2vh 5vw;
+  }
+
+  .title2{
+    margin-top: 3vh;
+    width: 90vw;
+    height: 8vh;
+  }
+
+  .title2 h2{
+    font-size: 30px;
+    padding: 2vh 5vw;
+  }
+  
+  .inicioSesion{
+    width: 90%;
+    height: 70%;
+    margin: 30vh auto 3vh auto;
+    border: 30px solid #dd0034;
+  }
+
+  .inicioSesion h3{
+    font-size: 18px;
+  }
+
+  .formInicio{
+    height: 100%;
+    margin-top: -7vw;
+  }
+
+  .formInicio label{
+    font-size: 14px;
+  }
+
+  .formInicio input, .formInicio select{
+    height: 3vh;
+  }
+
+  .link{
+    font-size: 12px;
+    margin-left: 35%;
+  }
+
+  .button1{
+    height: 5vh;
+    margin: 0vh 33%;
+    width: 25vw;
+    font-size: 10px;
+  }
+  
+  .registro{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .registro2 h1{
+    font-size: 24px;
+  }
+
+  .registro label{
+    font-size: 15px;
+  }
+
+  #tipoDocumento{
+    width: 17vw;
+    margin-inline-end: -5vh;
+    font-size: 12px;
+  }
+
+  .contras2{
+    padding: 0;
+    text-align: center;
+  }
+
+  .contra{
+    font-size: 12px;
+  }
+
+  .botonVolver{
+    width: 24vw;
+    font-size: 14px;
+  }
+
+  .botonGuardar{
+    width: 24vw;
+    font-size: 14px;
+    margin-inline-end: 0vh;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
+  .cambiarContra{
+    font-size: 10px;
+  }
+
+  .cambiarContra p{
+    font-size: 17px;
+  }
+
+  .sectionTitulo{
+    height: 25vh;
+  }
+
+  .divTitulo{
+    margin-top: 10vh;
+    width: 85vw;
+    height: 8vh;
+    padding: 2vh 5vw;
+    text-align: right;
+    font-size: 25px;
+  }
+
+  .certificados{
+    margin: 26vh 5vw 5vh 5vw;
+    width: 90%;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .chetCerti{
+    width: 45vw;
+    font-size: 18px;
+  }
+
+  .button1{
+    margin-top: 2vh;
+  }
+
+  main h1{
+    font-size: 18px;
+  }
+
+  .cambiarContra{
+    width: 70%;
+    margin-bottom: 3vh;
+  }
+
+  .cambiarContra p{
+    text-align: justify;
+    font-size: 15px;
+    margin: 2vh auto;
+  }
+
+  .formContra label{
+    font-size: 15px;
+  }
+
+  .formContra input{
+    border: 2px outset gray;
+    border-radius: 1px;
+  }
+
+  .contraInput{
+    margin: 1vh auto;
+  }
+
+  .sectionBotones{
+    width: 90%;
+    height: fit-content;
+    margin: 30vh 5vw 1vh 5vw;
+    justify-content: space-between;
+  }
+
+  #filtro{
+  width: 35vw;
+  margin-left: 0;
+  margin-right: 43vw;
+  font-size: 14px;
+  }
+
+  #back{
+    font-size: 15px;
+    width: 10vw;
+    margin: 0;
+  }
+  
+  .tableHistorial{
+    width: 90%;
+    margin-top: 2vh;
+  }
+
+  .tableHistorial td{
+    font-size: 12px;
+  }
+  
+  .tdTitulo{
+    font-size: 12px;
+  }
+
+  .tdRol{
+    width: 60%;
+  }
+
+  .tdIconos{
+    width: 40%;
+    padding: 2px;
+  }
+  
+  #editarUsuario{
+    padding-inline-end: 0vw;
+    float: left;
+  }
+  
+  #desactivarUsuario{
+    float: left;
+  }
+  
+  .botonAñadir{
+    margin-top: -5vh;
+    margin-left: 38vw;
+    width: 23vw;
+    height: 6vh;
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  .tituloEditar{
+    font-size: 28px;
+    margin: 3vh auto;
+  }
+
+  .editarUsuario{
+    width: 90%;
+    padding: 3vh 4vw;
+  }
+
+  .editarUsuario label{
+    font-size: 20px;
+  }
+
+  .editarUsuario input{
+    width: 90%;
+    height: 4vh;
+  }
+
+  .editarUsuario select{
+    width: 90%;
+    height: 4vh;
+  }
+
+  .estadoUsuario{
+    font-size: 20px;
+}
+
+  .estadoUsuario input{
+    height: 1vh;
+}
+
+.estadoUsuario i{
+    font-size: 15px;
+    padding: 2px;
+}
+
+  .contra{
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  .contras2{
+    margin-left: -5vw;
+  }
+  
+  .contras2 label{
+    margin-inline: -10vw;
+    font-size: 14px;
+  }
+
+  .contras input{
+     width: 90%;
+  }
+
+  .Contrato{
+    margin-inline: -5vw;
+  }
+
+  .Contrato label{
+    margin-left: 3vw;
+  }
+
+  .rolContrato select{
+     width: 90%;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  .pagoHora{
+    margin-inline: -5vw;
+  }
+  
+  .salarioHora{
+    margin-bottom: 0;
+  }
+  
+  .salarioHora label{
+    margin-inline: 8vw;
+    font-size: 14px;
+  }
+
+  .pagoHora label{
+    margin-inline: 7vw;
+  }
+  
+  .salarioHora input{
+     width: 90%;
+  }
+
+  .sectionBotones2{
+      margin: 1vh auto;
+  }
+
+  .sectionTitulo2{
+    height: 30vh;
+  }
+
+  .divTitulo2{
+    width: 100%;
+  }
+  
+  .divTitulo2 h2{
+    font-size: 20px;
+    align-content: center;
+  }
+
+  .h2Titulo{
+    width: 55%;
+    height: 6vh;
+  }
+  
+  .h2Titulo2{
+    width: 80%;
+    height: 6vh;
+  }
+
+  .menuAdministrador{
+    width: 100%;
+    margin-top: 35vh;
+  }
+
+  .divAdministrador button{
+    width: 40vw;
+    height: 20vh;
+    margin-left: 4vw;
+    margin-bottom: 2vh;
+    font-size: 100px;
+  }
+
+  .divAdministrador p{
+    width: 40vw;
+    font-size: 16px;
+    margin: 2vh auto;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
+  }
+
+  #cargo{
+    margin-top: 32vh;
+    margin-bottom: 3vh ;
+    width: 50vw;
+    font-size: 15px;
+  }
+
+  .pSalario0{
+    font-size: 24px;  
+  }
+  
+  .rolSalario{
+    margin-bottom: 3vw;
+    font-size: 20px;
+  }
+
+  .editarSalario{
+    width: 90%;
+    border: 10px outset ##dd0034;
+  }
+
+  .editarSalario p{
+    font-size: 24px;
+    margin-left: 5vw;
+  }
+
+  #inputSalario{
+    width: 85%;
+    margin-left: 5vw;
+  }
+
+  #cargo2{
+    margin-top: 32vh;
+    margin-bottom: 1vh ;
+    width: 40vw;
+    font-size: 15px;
+  }
+
+  #usuariosSimilares{
+    width: 60vw;
+    font-size: 15px;
+  }
+
+  .UsuarioSelec{
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    font-size: 25px;
+  }
+  
+  .nombreUsuario{
+    margin-bottom: 0vh;
+    font-size: 20px;
+  }
+
+  .certificados2 p{
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .chetCerti{
+    width: 
+  }
+
+  .descargar{
+    width: 80%;
+    height: 37%;
+    padding: 1vh 3vw;
+    margin: 50% 10%;
+    border: 20px solid #0c243d;
+  }
+
+  .descargar h2{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .date{
+    width: 95%;
+    height: 5vh;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .continue1{
+    width: 38%;
+    height: 5vh;
+    margin: 1vh 4vw;
+    font-size: 12px;
+
+  }
+
+  .cancel1{
+    width: 38%;
+    height: 5vh;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .desactivar{
+    width: 80%;
+    height: 26%;
+    margin: 60% 10%;
+    border: 20px solid #0c243d;
+  }
+
+  .desactivar h2{
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .continue3{
+    width: 38%;
+    height: 5vh;
+    margin: 0vh 4vw;
+    font-size: 12px;
+  }
+
+  .cancel3{
+    width: 38%;
+    height: 5vh;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .modulCer{
+    width: 85%;
+    height: 30vh;
+    margin: 60% 5%;
+    border: 15px solid #0c243d;
+  }
+
+  .modulCer i{
+    margin: -1vh 88%;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .modulCer h2{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .paraMi{
+    width: 80%;
+    height: 5vh;
+    font-size: 11px;
+    margin-left: 5vw;
+    margin-bottom: 1vh;
+  }
+
+  .otraP{
+    width: 80%;
+    height: 5vh;
+    font-size: 11px;
+    margin-left: 5vw;
+  }
+}
+  
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+.headerIng{
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.headerIng img{
+  height: 10vh;
+
+}
+  .header2{
+    height: 13vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #0e2b49;
+}
+.header2 img{
+    height: 5vh;
+}
+  .footer1{
+    height: 20vh;
+    padding: 0px 80px;
+    background-color: #0e2b49;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .alerta{
+  height: 25vh;
+  width:60vw; 
+  margin: 2vh 20%;
+  border: 20px solid #0e2b49;
+  border-radius: 10px;
+  background-color: white;
+  position: fixed;
+  top: calc(80vh - 400px);
+  left: 1vw;
+  overflow: hidden;  
+  padding: 1vh 0.5vw;
+} 
+.textAlerta{
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnAlerta{
+  color: white;
+  background-color: #b71819;
+  text-aling: center;
+  height: 4vh;
+  width: 12vw;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.footer1 p{
+    margin-left: 200px;
+    width: 30vw;
+    color: white;
+    text-decoration: none;
+}
+
+.footer1 img{
+    height: 10vh;
+    margin-top: 10px;
+}
+
+.footer2{
+  width:100%;
+    height: 5vh;
+    background-color: #878787;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 4px;
+}
+.backTitle{
+    width: 100%;
+    height: 38vh;
+    margin-top: 10px;
+    background-image:linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.title1{
+    width: 50%;
+    height: 6vh;
+    background-color: #b71819;
+    margin-top: 9vh;
+}
+
+.title1 h2{
+    background-color: #b71819;
+    color: white;
+    padding: 1vh 2vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.title2{
+    width: 60%;
+    height: 6vh;
+    background-color: #161A4A;
+    margin-top: 5vh;
+}
+
+.title2 h2{
+    background-color: #161A4A;
+    color: white;
+    padding: 2vh 2vw;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.sectionTitulo{
+    width: 100%;
+    height: 32vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/historialCertificados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo{
+    width: 65%;
+    height: 13.5vh;
+    background-color: #b71819;
+    margin-top: 12vh;
+    padding: 2vh 1vw;
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sectionBotones{
+    width: 90%;
+    height: 4vh;
+    margin: 35vh 0px 4vh 3vh;
+    display: inline-block;
+}
+  #back{
+    background-color: #b71819;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 4vw;
+    height: 4vh;
+    font-size: 20px;
+}
+  #filtro{
+    height: 4vh;
+    width: 25vw;
+    margin-left: 3vw;
+    margin-inline-end: 47vw;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+  .sectionTitulo2{
+    width: 100%;
+    height: 40vh;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #ffc0cb4b 40%, white), url(../img/perfilAdministrador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 3px gray;
+    position: absolute;
+    display: inline-block;
+}
+
+.divTitulo2{
+    width: 80%;
+    height: 11vh;
+    margin-top: 10vh;
+}
+
+.divTitulo2 h2{
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.h2Titulo{
+    border: 2px solid #b71819;
+    width: 60%;
+    height: 12vh;
+    padding: 2%;
+    background-color: #b71819;
+  
+}
+
+.h2Titulo2{
+    width: 90%;
+    height: 13vh;
+    padding: 4%;
+    margin-top:3vh;
+    background-color: #0e2b49;
+}
+  .inicioSesion{
+  margin: 34vh 15vw 3vh 15vw;
+  padding: 4%;
+  border: 30px solid #b71819;
+  border-radius: 10px;
+}
+.inicioSesion h3{
+  text-align: center;
+  color: #0c243d;
+  font-size: 40px;
+}
+
+.inicioSesion label{
+  font-size: 25px;
+  padding-left: 10%;
+}
+
+.form{
+  width: 80%;
+  height: 5vh;
+  font-size:20px;
+  border-radius: 5px;
+  margin: 1vh 10%;
+}
+.chet{
+  font-size: 15px;
+}
+.inicioSesion select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0vh 10%;
+  font-size:20px;
+}
+.inicioSesion option{
+  font-size: 25px;
+}
+.link{
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 35%;
+  font-size: 22px;
+  color: #2C6BFF;
+}
+  .button1{
+  height: 6vh;
+  margin: 2vh 37%;
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+  .registro{
+  margin: 1vh 5% 5vh 5%;
+}
+  .registro h1{
+    font-size: 50px;
+  }
+.registro label{
+  font-size: 33px;
+  margin: 10%;
+  margin-top: 2vh;
+}
+.registro input{
+  width: 80%;
+  height: 5vh;
+  margin:1vh 10%;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.registro select{
+  width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 1vh 10%;
+  text-align: left;
+  font-size: 25px;
+}
+.contra{
+  font-size: 22px;
+  color: #2C6BFF;
+  text-align: center;
+  margin: 1vh 10%;
+}
+.boton{
+  display: flex;
+  margin: 2vh 10%;
+}
+.continue{
+  height: 6vh;
+  margin: 0vh 8vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cancel{
+  height: 6vh;
+  margin: 0vh 2vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.certificados{
+  margin: 32vh 10vw 5vh 10vw;
+  font-size: 25px;
+}
+.chetCerti{
+  border: 1px solid black;
+  width: 40%;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  box-shadow: 2px 3px gray;
+}
+.descargar{
+  margin: auto 15%;
+  border: 30px solid #0c243d;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 3vh 3vw;
+}
+.date{
+  width: 70%;
+  margin-left: 15%;
+  height: 4vh;
+  font-size: 25px;
+}
+.continue1{
+  height: 5vh;
+  margin: 0vh 9vw;
+  width: 25%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.cancel1{
+  height: 5vh;
+  margin: 0vh 1vw;
+  width: 25%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+  .cambiarContra{
+  margin: 1vh 10vw;
+  font-size: 30px;
+}
+.cambiarContra input{
+  height: 6vh;
+  width: 80%;
+  display: flex;
+}
+  
+  
+.continue2{
+  height: 7vh;
+  margin: 0vh 8vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cancel2{
+  height: 7vh;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  .menuAdministrador{
+    margin: 45vh auto;
+    margin-bottom: 2vh;
+    width: 80%;
+}
+.divAdministrador button{
+    color: white;
+    width: 23vw;
+    height: 37vh;
+    margin-left: 12vw;
+    margin-bottom: 2vh;
+    background-color: #b71819;
+    text-align: center;
+    font-size: 150px;
+    border-radius: 10%;
+    border: none;
+}
+  .divAdministrador p{
+    color: black;
+    width: 21vw;
+    text-align: center;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 2vh auto;
+    margin-left: 12vw;
+    margin-bottom: 4vh;
+}
+  .botonAñadir{
+    width: 18vw;
+    height: 5vh;
+    margin-left: 42vw;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #b71819;
+    color: white;
+    border: none;
+    border-radius: 6%;
+    font-size:20px;
+    text-transform: uppercase;
+}
+ .modulCer{
+  margin: auto 23%;
+  border: 20px solid #0c243d;
+  font-size: 25px;
+  border-radius: 20px;
+  
+}
+.modulCer h2, button{
+  margin: 2vh 3vw;
+}
+.modulCer i{
+  text-align:right;
+  margin-left: 90%;
+  color: #b71819;
+  font-size: 50px;
+  padding: 1px;
+}
+.paraMi{
+  height: 6vh;
+  margin: 2vh 3vw;
+  width: 25%;
+  font-size: 22px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.otraP{
+  height: 6vh;
+  width: 45%;
+  margin: 1vh 2vw 1vh 0vw;
+  font-size: 22px;
+  color: white;
+  background-color:#0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+#tipoDocumento{
+  width: 13%;
+  margin-inline-end: -10vh;
+  height: 4vh;
+}
+  .cedulaRegistro{
+    width: 62%;
+    margin-left: 20%;
+}
+  .contras{
+    width: 90%;
+    margin: 0 2% 0 6%;
+    margin-bottom: 2vh;
+}
+
+.contras1{
+    width: 48%;
+    text-align: left;
+    display: inline-block;
+}
+
+.contras2{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+  .botonVolver{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 20vw;
+    color: white;
+    background-color: #b71819;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+  .botonGuardar{
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 20vw;
+    color: white;
+    background-color: #0c243d;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px gray;
+    margin-inline-end: 20px;
+}
+  .iden{
+    width: 80%;
+    margin:0 10%;
+  }
+  .editarUsuario{
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 80%;
+    padding: 3vh 5vw;
+    margin: 0 auto;
+}
+
+.editarUsuario label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.editarUsuario input{
+    width: 90%;
+    height: 5vh;
+    margin: 1vh 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+}
+  .editarUsuario select{
+    width: 90%;
+    height: 4vh;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  .desactivar{
+  margin: auto 15%;
+  border: 30px solid #0c243d;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 2vh 3vw;
+}
+.continue3{
+  height: 6vh;
+  margin: 0vh 6vw;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #b71819;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  .cancel3{
+  height: 6vh;
+  width: 30%;
+  font-size: 25px;
+  color: white;
+  background-color:  #0c243d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+  
+#cargo2{
+    margin: 38vh 0vw 1vh 5vw;
+    width: 18vw;
+    height: 6vh;
+    font-size: 25px;
+}
+  #usuariosSimilares{
+    margin: 1vh 0vw 1vh 5vw;
+    margin-left: 5vw;
+    width: 28vw;
+    height: 6vh;
+    font-size: 25px;
+}
+  .UsuarioSelec{
+    margin-top: 2vh;
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0c243d;
+}
+
+.nombreUsuario{
+    margin-bottom: 2vh;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: bold;
+}
+  #cargo{
+  margin-top: 38vh;
+  height:6vh;
+    width:25%;
+    font-size: 25px;
+    margin-left:5vw;
+    margin-bottom: 3vh;
+}
+  .infoSalario{
+    margin: 30px auto;
+    width: 90%;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.rolSalario{
+    margin-bottom: 5vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+
+}
+
+.pSalario0{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.pSalario{
+    color: #0c243d;
+    font-weight: bold;
+    font-size: 27px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1vh;
+}
+
+.editarSalario{
+    border: 8px outset #b71819;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px grey;
+    width: 60%;
+    margin: 3vh auto;
+    text-align: left;
+}
+
+
+#inputSalario{
+    width: 90%;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 2px;
+    border-style: none !important;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0c243d;
+}
+}

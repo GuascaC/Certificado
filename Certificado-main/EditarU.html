@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../syles/styles.css">
+    <title>Editar usuario</title>
+    <link rel="icon" href="../img/logoicono.png">
+</head>
+<body>
+    <header>
+        <div class="header1">
+                <div class="divHeader">
+                    <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                    <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                    <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+        </div>
+        <div class="header2">
+            <div>
+            <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+            </div>
+            <a onclick="redirigir07()" href="./CContraseñaAd.html"><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
+            <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
+        </div>
+    </header>
+    <main>
+        <h2 class="tituloEditar">Editar Usuario</h2>
+        <section class="editarUsuario">
+            <label>Nombre Completo</label><br>
+            <input id="NombreCom" type="text"><br><br>
+            <label>Cédula</label><br>
+            <input id="cedula" type="number"><br><br>
+            <label>Rol</label><br>
+            <select name="opcion" required id="iRol">
+                <option value="" selected>Seleccione una opción</option>
+                <option value="aprendiz">Aprendiz</option>
+                <option value="profesorC">Profesor Cátedra</option>
+                <option value="administrativo">Administrativo</option>
+                <option value="profesorP">Profesor Planta</option>
+                <option value="talleri">Tallerista</option>
+            </select><br><br>
+            <label>Salario/Pago por hora</label><br>
+            <input id="salario" type="number" placeholder=""><br><br>
+            <label>Tiempo de contrato</label><br>
+            <input id="tcontrato" type="text" placeholder=""><br><br>
+            <label>Tiempo en la institución</label><br>
+            <input id="tinstitucion" type="text" placeholder=""><br><br>
+            <p class="estadoUsuario"><i class="fa-solid fa-circle"></i> Usuario activo</p>
+        </section>
+        <section class="sectionBotones2">
+            <button class="botonGuardar"><a href="./URegistrados.html">Guardar</a></button>
+            <button class="botonVolver"><a href="./URegistrados.html">Cancelar</a></button>
+        </section>
+    </main>
+  <footer>
+        <div class ="footer1">
+            <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
+        </div>
+        <div class="footer2">
+            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+      <script src="../Scripts/Redirigir.js"></script>
+</body>
+</html>

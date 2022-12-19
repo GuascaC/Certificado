@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../syles/styles.css">
+    <title>Editar salario</title>
+    <link rel="icon" href="../img/logoicono.png">
+</head>
+<body>
+<div class="header1">
+            <div class="divHeader">
+                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
+        </div>
+        <div class="header2">
+            <div>
+            <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+            </div>
+            <a onclick="redirigir07()" href="./CContraseñaAd.html"><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
+            <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
+</div>
+    <main>
+        <section class="sectionTitulo">
+            <div class="divTitulo">
+                <h2>Editar Salario</h2> 
+            </div>
+        </section>
+            <select id="cargo">
+                <option selected value="0">Cargo</option>
+                <option value="1">Docentes cátedra</option>      
+                <option value="2">Administrativos</option>      
+                <option value="3">Docentes planta</option>       
+                <option value="4">Talleristas bienestar</option>      
+                <option value="5">Aprendices</option>          
+            </select>
+          <p class="pSalario0">Rol Seleccionado:</p>
+          <p id="rolSalario" class="rolSalario">Ninguno</p>
+          <form class="editarSalario">
+            <section class="infoSalario">
+            <p class="pSalario">Nuevo Salario:</p>
+            <input type="number" id="inputSalario">
+            <p class="pSalario">Este cambio se verá reflejado a partir de:</p>
+            <input type="date" id="inputSalario">
+            </section>
+          </form>
+        <section class="sectionBotones2">
+            <button class="botonVolver"><a href="./perfiladministrador.html"> Volver</a></button>
+            <button class="botonGuardar"><a href="./perfiladministrador.html">Guardar</a></button>
+        </section>
+    </main>
+<footer>
+        <div class="footer1">
+            <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
+        </div>
+        <div class="footer2">
+            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
+        </div>
+</footer>
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+    <script src="../Scripts/Redirigir.js"></script>
+    <script src="../Scripts/edtsalario.js"></script>
+</body>
+</html>
