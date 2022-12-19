@@ -48,13 +48,13 @@
       <label>Contraseña</label><br>
       <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass" type="password" placeholder="Contraseña" required><br>
       <label>Confirmar contraseña</label><br>
-      <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipassC" type="password" placeholder="Contraseña" required autofocus="true"><br>
+      <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipassC" type="password" placeholder="Contraseña" required><br>
       <p class="contra"> La contraseña debe contener 8 carácteres y máximo 15. Debe incluir mayúsculas, minúsculas y
         números.</p>
       <br>
       <section class="sectionBotones3">
-            <button class="botonGuardar"><a href="./Docente.html">Continuar</a></button>
-            <button class="botonVolver"><a href="../index.html">Cancelar</a></button>
+            <button class="botonGuardar" onclick="redirigir15()">Continuar</button>
+            <button class="botonVolver" onclick="redirigir06()">Cancelar</button>
         </section>
     </form>
   </section>
