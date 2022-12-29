@@ -39,7 +39,8 @@ const validFieldsForm = () => {
 
 let validFields = {
   email: false,
-  pass: false
+  pass: false,
+  rol: false
 
 }
 
@@ -57,6 +58,13 @@ pass.addEventListener('change', (e) => {
   const inputPass = e.target.value;
   const patronPass = /([a-zA-Z0-9]{8,})$/g;
   validFields.pass = inputPass.match(patronPass) ? true : false;
+  console.log(Object.values(validFields));
+});
+rol.addEventListener('change', function(e) {
+  validFields.rol = rol.selectedIndex > 0 ? true : false;
+  if (validFields.rol == false) {
+    modalAlerta("Seleccione un rol")
+  }
   console.log(Object.values(validFields));
 });
 

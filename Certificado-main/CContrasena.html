@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../syles/styles.css">
-    <title>Cambiar contraseña</title>
-    <link rel="icon" href="../img/logoicono.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../syles/styles.css">
+  <title>Cambiar contraseña</title>
+  <link rel="icon" href="../img/logoicono.png">
 </head>
+
 <body>
-<header>
+  <header>
     <div class="header1">
-            <div class="divHeader">
-                <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
-                <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
-                <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
-                <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-                <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i>  Mail corporativo</a>   
-        </div>
-        <div class="header2">
-            <div>
-            <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
-            </div>
-            <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
-        </div>
-    </header>
-    <main>
-      <h1>Cambiar Contraseña</h1>
-      
-      <section class="cambiarContra">
-            <p>Recuerde que su contraseña debe tener entre 8 y 15 carácteres incluidas mayúsculas, minúsculas y números.</p><br>
-            <form id="form" class="formContra">
-                <label>Contraseña Antigüa</label><br>
-                <input class="contraInput" id="ipass" type="password" required autofocus><br><br>
-                
-              <label>Contraseña Nueva</label><br>
-                <input class="contraInput" id="ipass" type="password" required><br><br>
-              
-                <label>Confirmar contraseña</label><br>
-                <input  class="contraInput" id="ipassC" type="password" required><br><br>
-                
-                <section class="sectionBotones2">
-            <button class="botonGuardar" onclick="redirigir09()">Guardar</button>
-            <button class="botonVolver" onclick="redirigir09()">Cancelar</button>
+      <div class="divHeader">
+        <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+        <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+        <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+        <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
+    </div>
+    <div class="header2">
+      <div>
+        <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+      </div>
+      <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+    </div>
+  </header>
+  <main>
+    <h1>Cambiar Contraseña</h1>
+
+    <section class="cambiarContra">
+      <p>Recuerde que su contraseña debe tener entre 8 y 15 carácteres incluidas mayúsculas, minúsculas y números.</p>
+      <br>
+      <form id="form" class="formContra">
+        <label>Contraseña Antigüa</label><br>
+        <input class="contraInput" id="ipassA" type="password" required autofocus><br><br>
+
+        <label>Contraseña Nueva</label><br>
+        <input class="contraInput" id="ipass" type="password" required><br><br>
+
+        <label>Confirmar contraseña</label><br>
+        <input class="contraInput" id="ipassC" type="password" required><br><br>
+
+        <section class="sectionBotones2">
+          <button class="botonGuardar" onclick="redirigir09()">Guardar</button>
+          <button class="botonVolver" onclick="redirigir09()">Cancelar</button>
         </section>
-            </form>
-        </section>
-    </main>
+      </form>
+    </section>
+  </main>
   <footer>
-        <div class="footer1">
-            <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
-            <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
-        </div>
-        <div class="footer2">
-            <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
-        </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
-    <script src="../Scripts/validateR.js"></script>
-    <script src="../Scripts/Redirigir.js"></script>
+    <div class="footer1">
+      <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+      <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738
+      </p>
+    </div>
+    <div class="footer2">
+      <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá
+        Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación.
+        Registro Icfes 2738.</p>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="../Scripts/validateR.js"></script>
+  <script src="../Scripts/Redirigir.js"></script>
+  <script src="../Scripts/CContraseña.js"></script>
 </body>
+
 </html>

@@ -21,12 +21,11 @@
     <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
   </div>
   <div class="headerIng">
-            <div>
-            <img src="./img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
-            </div>
-            <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
-        </div>
-  </header>
+    <div>
+      <img src="./img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+    </div>
+    <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+  </div>
   <main>
     <section class="backTitle">
       <div class="title1">
@@ -42,12 +41,12 @@
       <br><br>
       <form id="form">
         <label><i class="fa-solid fa-user"></i> Usuario</label><br>
-        <input class="form" type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus="true"
+        <input class="form" type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus
           autocomplete="on" required name="email"><br><br>
         <label><i class="fa-solid fa-lock"></i>Contraseña</label><br>
         <input class="form" maxlength="15"
           oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
-          max="15" min="8" type="password" placeholder="Contraseña" required autofocus="true"><br><br>
+          type="password" placeholder="Contraseña" required><br><br>
         <label><i class="fa-solid fa-briefcase"></i> Rol </label><br>
         <select id="iRol">
           <option value="0">Seleccione Cargo</option>

@@ -5,15 +5,14 @@ const Rol = document.querySelector("#iRol");
 const pass = document.querySelector("#ipass");
 const passC = document.querySelector("#ipassC");
 const form = document.querySelector("#form");
-const conf = document.getElementById("cntn");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
-    modalAlerta("Información Validada");
-    window.location.href = "../index.html";
+    modalAlerta("Registro finalizado");
+    window.location.href = "../Certificado-main/URegistrados.html";
   } else {
-    modalAlerta("Error");
+    modalAlerta("Error de datos");
   }
 
 });
@@ -32,7 +31,6 @@ let validFields = {
   rol: false,
   pass: false,
   passC: false
-
 }
 
 email.addEventListener('change', function(e) {
@@ -62,6 +60,7 @@ Rol.addEventListener('change', function(e) {
   }
   console.log(Object.values(validFields));
 });
+
 
 pass.addEventListener('change', (e) => {
   const inputPass = e.target.value;

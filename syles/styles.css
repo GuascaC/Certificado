@@ -2405,7 +2405,7 @@ h1{
 
   .editarSalario{
     width: 90%;
-    border: 10px outset ##dd0034;
+    border: 10px outset #dd0034;
   }
 
   .editarSalario p{
@@ -2614,7 +2614,7 @@ h1{
 }
 .btnAlerta{
   color: white;
-  background-color: #b71819;
+  background-color: #dd0034;
   text-aling: center;
   height: 4vh;
   width: 12vw;
@@ -2662,12 +2662,12 @@ h1{
 .title1{
     width: 50%;
     height: 6vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin-top: 9vh;
 }
 
 .title1 h2{
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     padding: 1vh 2vw;
     text-align: right;
@@ -2710,7 +2710,7 @@ h1{
 .divTitulo{
     width: 65%;
     height: 13.5vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     margin-top: 12vh;
     padding: 2vh 1vw;
     color: white;
@@ -2729,7 +2729,7 @@ h1{
     display: inline-block;
 }
   #back{
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     font-weight: bold;
     border: none;
@@ -2777,11 +2777,11 @@ h1{
 }
 
 .h2Titulo{
-    border: 2px solid #b71819;
+    border: 2px solid #dd0034;
     width: 60%;
     height: 12vh;
     padding: 2%;
-    background-color: #b71819;
+    background-color: #dd0034;
   
 }
 
@@ -2795,7 +2795,7 @@ h1{
   .inicioSesion{
   margin: 34vh 15vw 3vh 15vw;
   padding: 4%;
-  border: 30px solid #b71819;
+  border: 30px solid #dd0034;
   border-radius: 10px;
 }
 .inicioSesion h3{
@@ -2893,7 +2893,7 @@ h1{
   width: 30%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -2940,7 +2940,7 @@ h1{
   width: 25%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -2974,7 +2974,7 @@ h1{
   width: 30%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -3001,7 +3001,7 @@ h1{
     height: 37vh;
     margin-left: 12vw;
     margin-bottom: 2vh;
-    background-color: #b71819;
+    background-color: #dd0034;
     text-align: center;
     font-size: 150px;
     border-radius: 10%;
@@ -3027,7 +3027,7 @@ h1{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
-    background-color: #b71819;
+    background-color: #dd0034;
     color: white;
     border: none;
     border-radius: 6%;
@@ -3057,7 +3057,7 @@ h1{
   width: 25%;
   font-size: 22px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -3108,7 +3108,7 @@ h1{
     padding: 10px;
     width: 20vw;
     color: white;
-    background-color: #b71819;
+    background-color: #dd0034;
     border: none;
     border-radius: 2px;
     box-shadow: 2px 2px 3px gray;
@@ -3176,7 +3176,7 @@ h1{
   width: 30%;
   font-size: 25px;
   color: white;
-  background-color:  #b71819;
+  background-color:  #dd0034;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -3263,7 +3263,7 @@ h1{
 }
 
 .editarSalario{
-    border: 8px outset #b71819;
+    border: 8px outset #dd0034;
     border-radius: 5px;
     box-shadow: 10px 10px 10px grey;
     width: 60%;

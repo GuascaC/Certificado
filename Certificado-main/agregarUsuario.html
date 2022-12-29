@@ -30,24 +30,23 @@
         <section class="registro2">
           <br><br>
             <h1>Registrar nuevo usuario</h1>
-            <form id="form" class="registro">
+            <form id="form" class="registro" action="php/based.php" method="post">
                 <label> Nombres</label>
                 <br>
                   <input id="nombres" type="text" placeholder="Nombres" autofocus autocomplete="on" required name="nombre"><br>
                   <label> Apellidos</label>
                 <br>
-                  <input id="apellidos" type="text" placeholder="Apellidos" autocomplete="on" required name="email"><br>
+                  <input id="apellidos" type="text" placeholder="Apellidos" autocomplete="on" required name="apel"><br>
                   <label>Correo institucional</label>
               <br>
-                <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autocomplete="on" required name="email"><br>
+                <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autocomplete="on" required name="mail"><br>
                 <label>Documento de identidad</label><br>
                 <div class="documentoIden">
-                    <select name="tipoDocumento" id="tipoDocumento">
-                        <option selected value="0">C.C</option>
+                    <select id="tipoDocumento" name="t_doc">
+                        <option selected value="Cedula">C.C</option>
                     </select>
-                    <input oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC" type="number" min="7" placeholder="Documento de identidad" required autocomplete="on" name="CC">
+                    <input oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC" type="number" min="7" placeholder="Documento de identidad" required autocomplete="on" name="doc">
                 </div> <br>
-
             <div class="contras">
                 <div class="contras1">
                     <label>Contraseña</label><br>
@@ -65,42 +64,41 @@
             <div class="rolContrato">
                 <div class="rol">
                     <label> Rol </label><br>
-                <select name="opcion" required id="iRol" class="iRol">
+                <select required id="iRol" class="iRol" name="rol">
                   <option value="" selected>Seleccione una opción</option>
-                  <option value="aprendiz">Aprendiz</option>
-                  <option value="profesorC">Profesor Cátedra</option>
-                  <option value="administrativo">Administrativo</option>
-                  <option value="profesorP">Profesor Planta</option>
-                  <option value="talleri">Tallerista</option>
+                  <option value="Aprendiz">Aprendiz</option>
+                  <option value="Profesor Cátedra">Profesor Cátedra</option>
+                  <option value="Administrativo">Administrativo</option>
+                  <option value="ProfesorP">Profesor Planta</option>
+                  <option value="Tallerista">Tallerista</option>
               </select>
                 </div>
                 <div class="Contrato">
                     <label> Tipo de Contrato </label><br>
-                    <select name="opcion" required id="iContrato">
+                    <select required id="iContrato" name="t_contrato">
                       <option value="" selected>Seleccione una opción</option>
-                      <option value="aprendiz">Tiempo completo</option>
-                      <option value="profesorC">Medio tiempo</option>
+                      <option value="Tiempo Completo">Tiempo completo</option>
+                      <option value="Medio Tiempo">Medio tiempo</option>
                   </select>
                 </div>
             </div>
             <div class="salarioHora">
                 <div class="salario">
-                    <input type="checkbox" id="checkSalario">
+                    <input type="checkbox" id="checkSalario" >
                     <label for="checkSalario">Salario</label><br>
-                    <input type="number">
+                    <input type="number" name="t_pago">
                 </div>
                 <div class="pagoHora">
-                    <input type="checkbox" id="checkPago">
+                    <input type="checkbox" id="checkPago" >
                     <label for="checkPago">Pago por hora</label><br>
-                    <input type="number">
+                    <input type="number" name="salario">
                 </div>
             </div>
-               
+            <section class="sectionBotones2">
+                <button class="botonVolver" onclick="redirigir09()">Volver</button>
+                <button class="botonGuardar" type="submit">Guardar</button>
+            </section>
             </form>
-        </section>
-        <section class="sectionBotones2">
-            <button class="botonVolver" onclick="redirigir09()">Volver</button>
-            <button class="botonGuardar" onclick="redirigir09()">Guardar</button>
         </section>
     </main>
   <footer>
