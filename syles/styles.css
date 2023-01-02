@@ -10,8 +10,8 @@ a{
     color: white;
 }
 .alerta{
-  height: 15vh;
-  width:22vw; 
+  height: 25%;
+  width:30%; 
   margin: 2vh 40%;
   border: 20px solid #0e2b49;
   border-radius: 10px;
@@ -20,7 +20,7 @@ a{
   top: calc(80vh - 400px);
   left: 1vw;
   overflow: hidden;  
-  padding: 1vh 0.5vw;
+  padding: 2% 2%;
 } 
 .textAlerta{
   text-align: center;
@@ -31,11 +31,11 @@ a{
   color: white;
   background-color: #dd0034;
   text-align: center;
-  height: 3vh;
-  width: 4vw;
+  height: 50%;
+  width: 35%;
   font-size: 15px;
   border-radius: 5px;
-  margin-left: 35%;
+  margin-left: 30%;
   font-weight: bold;
 }
 input:focus{
@@ -3287,4 +3287,14 @@ h1{
     font-weight: bold;
     color: #0c243d;
 }
+}
+
+@media only screen and (min-device-width: 736px) and (max-device-height: 1200px){
+  .divHeader{
+    width: 9vw;
+  }
+
+  .divHeader a{
+    font-size: 10px;
+  }
 }

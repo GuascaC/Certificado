@@ -1,4 +1,5 @@
 'use strict';
+//Redes sociales
 function redirigir01(){
     window.location.href="https://api.whatsapp.com/send?phone=573107836734&text=Hola!%20Quiero%20informaci%C3%B3n%20de%20la%20universidad.";
 }
@@ -14,13 +15,14 @@ function redirigir04(){
 function redirigir05(){
     window.location.href="https://login.microsoftonline.com/login.srf";
 }
+//Página Principal
 function redirigir06(){
    window.location.href="../index.html";
 }
+//Cambio de Contraseña
 function redirigir07(){
     window.location.href="../Certificado-main/CContraseña.html";
  }
- 
 //Historial
 function redirigir08(){
     window.location.href="../Certificado-main/Historial.html";

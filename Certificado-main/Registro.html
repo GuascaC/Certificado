@@ -19,10 +19,10 @@
   <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
 </div>
 <div class="headerIng">
-            <div>
-            <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
-            </div>
-        </div>
+  <div>
+    <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+  </div>
+</div>
 <main>
   <section class="registro">
     <br><br>
@@ -30,38 +30,43 @@
     <form id="form" class="registro">
       <label> Email</label>
       <br>
-      <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus autocomplete="on"
-        required name="email"><br>
+      <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus autocomplete="on" required
+        name="email"><br>
       <label>Cédula de Ciudadanía</label><br>
       <input maxlength="10" oninput="if(CC.value.length > CC.maxlength) CC.value = CC.value.slice(0, CC.maxLength);"
-        id="iCC" class="cedulaRegistro" type="number" placeholder="Cédula de ciudadanía" required autocomplete="on" name="CC"><br>
+        id="iCC" class="cedulaRegistro" type="number" placeholder="Cédula de ciudadanía" required autocomplete="on"
+        name="CC"><br>
       <label> Rol </label><br>
       <select name="opcion" required id="iRol">
         <option value="" selected>Seleccione una opción</option>
-        <option value="aprendiz">Aprendiz</option>
-        <option value="profesorC">Profesor Cátedra</option>
-        <option value="administrativo">Administrativo</option>
-        <option value="profesorP">Profesor Planta</option>
-        <option value="talleri">Tallerista</option>
+        <option value="1">Aprendiz</option>
+        <option value="2">Profesor Cátedra</option>
+        <option value="3">Administrativo</option>
+        <option value="4">Profesor Planta</option>
+        <option value="5">Tallerista</option>
       </select><br>
 
       <label>Contraseña</label><br>
-      <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass" type="password" placeholder="Contraseña" required><br>
+      <input maxlength="15"
+        oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
+        type="password" placeholder="Contraseña" required><br>
       <label>Confirmar contraseña</label><br>
-      <input maxlength="15" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipassC" type="password" placeholder="Contraseña" required><br>
+      <input maxlength="15"
+        oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipassC"
+        type="password" placeholder="Contraseña" required><br>
       <p class="contra"> La contraseña debe contener 8 carácteres y máximo 15. Debe incluir mayúsculas, minúsculas y
         números.</p>
       <br>
       <section class="sectionBotones3">
-            <button class="botonGuardar" onclick="redirigir15()">Continuar</button>
-            <button class="botonVolver" onclick="redirigir06()">Cancelar</button>
-        </section>
+        <button class="botonGuardar">Continuar</button>
+        <button class="botonVolver" onclick="redirigir06()">Cancelar</button>
+      </section>
     </form>
   </section>
 </main>
 <footer>
   <div class="footer1">
-      <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
+    <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
     <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES
       2738</p>
   </div>

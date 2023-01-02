@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
     modalAlerta("Registro finalizado");
-    window.location.href = "../Certificado-main/URegistrados.html";
+     window.location.href="../index.html";
   } else {
     modalAlerta("Error de datos");
   }
