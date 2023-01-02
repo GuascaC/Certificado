@@ -65,7 +65,7 @@
     $pdf->Ln();
     $pdf->SetLeftMargin(28);
     $pdf->SetFont('Arial','',12);
-    $pdf->Cell(0,7,'Que el señor ________________________ identificado con cédula de ciudadanía',);
+    $pdf->Cell(0,7,'Que el señor@ ________________________ identificad@ con cédula de ciudadanía',);
     $pdf->Ln();
     $pdf->Cell(0,7,'No.___________, está vinculado con la Fundación Universitaria Empresarial de la',);
     $pdf->Ln();

@@ -64,7 +64,7 @@
     $pdf->Cell(0,10,'CERTIFICA',0,0,'C');
     $pdf->Ln();
     $pdf->SetFont('Arial','',11);
-    $pdf->Cell(0,10,'Que el señor ___________, identificado con cédula de ciudadanía No. ________, esta vinculado con ',);
+    $pdf->Cell(0,10,'Que el señor@ ___________, identificad@ con cédula de ciudadanía No. ________, esta vinculado con ',);
     $pdf->Ln();
     $pdf->Cell(0,10,'la Fundación Universitaria Empresarial de la Cámara de Comercio de Bogotá Uniempresarial con NIT',);
     $pdf->Ln();
