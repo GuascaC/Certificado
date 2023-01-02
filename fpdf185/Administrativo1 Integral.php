@@ -1,5 +1,5 @@
 <?php
-	
+	//caracteres especiales
 	require('fpdf.php');
 	
 	class TextNormalizerFPDF extends FPDF
@@ -44,6 +44,7 @@
 			return urldecode($word);
 		}
 	}
+    //caracteristicas
     $pdf = new TextNormalizerFPDF('P','mm','Letter');
     $pdf->AddPage();
     $pdf->Image('001.jpg', 0, 0, 210, 280);
