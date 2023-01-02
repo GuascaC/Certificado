@@ -1,4 +1,5 @@
 'use strict';
+//variables
 const nomAgg = document.getElementById("nombres");
 const apelAgg = document.getElementById("apellidos");
 const mailAgg = document.getElementById("iMail");

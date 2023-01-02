@@ -1,4 +1,5 @@
 <?php
+    //Imprimir Datos de Base de datos
     date_default_timezone_set("America/Bogota");
     include 'conexion.php';
     $nombre = $_POST['nombre'];
