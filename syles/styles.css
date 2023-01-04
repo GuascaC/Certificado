@@ -320,7 +320,7 @@ td{
 }
 
 .tdNombre{
-    width: 50%;
+    width: 40%;
 }
 
 .tdRol{
@@ -332,7 +332,7 @@ td{
 }
 
 .tdFecha2{
-    width: 10%;
+    width: 20%;
 }
 
 .tdHora{
