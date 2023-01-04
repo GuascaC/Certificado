@@ -1,4 +1,3 @@
-<!-- Perfil de administrador -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +11,10 @@
 </head>
 
 <body>
+  <!--encabezado-->
   <header>
     <div class="header1">
-      <div class="divHeader"><!--Encabezado-->
+      <div class="divHeader">
         <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
         <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
         <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
@@ -30,13 +30,14 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
   </header>
+  <!--encabezado titulo-->
   <section class="sectionTitulo2">
     <div class="divTitulo2">
       <h2 class="h2Titulo">Bienvenido al</h2>
       <h2 class="h2Titulo2">Perfil de administrador</h2>
     </div>
   </section>
-  <!-- Menú -->
+  <!--menu perfil administrador-->
   <section class="menuAdministrador">
     <div class="divAdministrador">
       <button onclick="redirigir08()"> <a href="./Historial.html"><i
@@ -44,10 +45,10 @@
       <p>Historial de certificados</p>
     </div>
     <div class="divAdministrador">
-      <button onclick="redirigir09()"><a href="./php/table.php"> <i class="fa-solid fa-users"></i></a></button>
+      <button><a href="./php/table.php"> <i class="fa-solid fa-users"></i></a></button>
       <p>Usuarios registrados</p>
     </div>
-    <!-- Al selecionar ésta opción se abrira una alerta para gener el certificado -->
+
     <div class="divAdministrador">
       <button onclick="window.selecC.showModal();"><i class="fa-solid fa-file"></i></button>
       <p>Generar certificado</p>
@@ -57,12 +58,12 @@
       <p>Editar salarios por cargo</p>
     </div>
   </section>
-<!-- Se crea una alerta por medio de la etiqueta <dialog> para la validación de la descarga del certificado -->
   <dialog id="selecC" class="modulCer">
     <a href="./perfiladministrador.html"><i class="fa-solid fa-rectangle-xmark"></i></a>
     <h2>El certificado es para:</h2>
     <button class="paraMi" onclick="redirigir10()"> Para mí </button>
     <button class="otraP" onclick="redirigir13()"> Para otra persona</button>
+   
   </dialog>
   <footer>
     <div class="footer1">
@@ -77,7 +78,6 @@
     </div>
   </footer>
   <script src="../Scripts/Redirigir.js"></script>
-  <scripts src="../Scripts/ValidateExpDoc.js" ></scripts>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
 </body>
 

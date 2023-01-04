@@ -19,7 +19,7 @@ form.addEventListener("submit", (e) => {
   } else {
     modalAlerta("Error de datos");
   }
-
+  
 });
 const validFieldsForm = () => {
   const values = Object.values(validFields);
@@ -40,7 +40,7 @@ let validFields = {
   salarioAgg: false,
   pagohrAgg:false
 }
-//Eventos para la validación, por medio de expresiones regulares
+//Acciones para la validación
 nomAgg.addEventListener('change', function(e){
     const inputnombagg = e.target.value;
     const patronnombagg = /[a-zA-Z.]{3,}/gm;
@@ -116,7 +116,7 @@ pagohrAgg.addEventListener('change', function(e) {
     validFields.pagohrAgg = inputhr.match(patronhr) ? true : false;
     console.log(Object.values(validFields));
 });
-//Creación de alerta
+//Creación de Alerta
 function modalAlerta(cadena) {
     const alert = document.createElement("div");
     const texto = document.createElement("p");

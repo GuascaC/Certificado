@@ -1,4 +1,3 @@
-<!-- Se edición de salario -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +9,8 @@
     <link rel="icon" href="../img/logoicono.png">
 </head>
 <body>
-<div class="header1"><!--Encabezado-->
+  <!--encabezado-->
+<div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
                 <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
@@ -27,12 +27,13 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
 </div>
     <main>
+      <!--encabezado titulo -->
         <section class="sectionTitulo">
             <div class="divTitulo">
                 <h2>Editar Salario</h2> 
             </div>
         </section>
-        <!-- Lista desplegable para la seleccion de un rol -->
+      <!--Editar salarios dependiendo el cargo elegido-->
             <select id="cargo">
                 <option selected value="0">Cargo</option>
                 <option value="1">Docentes cátedra</option>      
@@ -42,14 +43,11 @@
                 <option value="5">Aprendices</option>          
             </select>
           <p class="pSalario0">Rol Seleccionado:</p>
-          <!-- Se muestra el rol seleccionado de la lista -->
           <p id="rolSalario" class="rolSalario">Ninguno</p>
-          <form class="editarSalario"> <!-- Formulario -->
+          <form class="editarSalario">
             <section class="infoSalario">
-            <!-- Campo para digitar el nuevo salario -->
             <p class="pSalario">Nuevo Salario:</p>
             <input type="number" id="nuevoSalario">
-            <!-- Campo para digitar la fecha de cambio de salario -->
             <p class="pSalario">Este cambio se verá reflejado a partir de:</p>
             <input type="date" id="cambSalario">
             </section>

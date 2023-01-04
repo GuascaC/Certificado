@@ -1,5 +1,4 @@
 <?php
-    //Imprimir Datos de Base de datos
     date_default_timezone_set("America/Bogota");
     include 'conexion.php';
     $nombre = $_POST['nombre'];
@@ -13,7 +12,7 @@
     $salario = $_POST['salario'];
     $date = date("d-m-Y H:i:s");
 
-    $nom = $nombre . $apel;
+    $nom = $nombre . " " . $apel;
 
     $sql = "INSERT INTO usuarios(nom, email, t_doc, doc, rol, t_contrato, t_pago, salario, date) VALUES ('$nom','$mail','$t_doc','$doc','$rol','$t_contrato','$t_pago','$salario','$date')";
 

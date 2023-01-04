@@ -1,4 +1,3 @@
-<!-- Historial de certificados generados -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +10,8 @@
   <link rel="icon" href="../img/logoicono.png">
 </head>
 <body>
-    <div class="header1"><!--Encabezado-->
+  <!--encabezado-->
+    <div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
                 <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
@@ -27,24 +27,27 @@
             <a onclick="redirigir07()" href="./CContrasenaAd.html"><i class="fa-solid fa-pen-to-square"></i> Cambiar Contraseña</a>
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
+  <!--encabezado titulo-->
     <section class="sectionTitulo">
         <div class="divTitulo">
         Historial Certificados
         </div>
     </section> 
+  <!--filtros de busqueda-->
     <section class="sectionBotones">
-    <!-- Se crea una lista desplegable para los filtro de búsqueda -->
     <select id="filtro">
         <option selected value="0">Filtros</option>
-        <option value="">Docentes cátedra</option>      
+        <option value="">Docentes cátedra</option>        <option value="">Docentes cátedra</option>      
         <option value="">Docentes planta</option>       
         <option value="">Talleristas bienestar</option>      
         <option value="">Aprendices</option>      
         <option value="">Retirados</option>      
+     
     </select>
+      
     <button id="back" onclick="redirigir14()"><i class="fa-solid fa-arrow-left"></i></button>
     </section>
-    <!-- Historial -->
+  <!--Historial de los certificados imprimidos o descargados-->
     <table class="tableHistorial">
         <tr>
             <td class="tdTitulo">Certificados Laborales</td>

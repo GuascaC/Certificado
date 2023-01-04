@@ -1,6 +1,6 @@
-<!-- Pantalla de usuarios registrados -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,10 @@
 </head>
 
 <body>
+  <header>
+    <!--encabezado-->
   <div class="header1">
-    <div class="divHeader"><!--Encabezado-->
+    <div class="divHeader">
       <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
       <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
       <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
@@ -28,12 +30,14 @@
       Contraseña</a>
     <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
   </div>
+  </header>
+  <!--encabezado titulo-->
   <section class="sectionTitulo">
     <div class="divTitulo">
       Usuarios registrados
     </div>
   </section>
-  <!-- Lista dsplegable para filtros de búsqueda -->
+  <!--filtros de busqueda por cargos-->
   <section class="sectionBotones">
     <select class=filtroUsuario id="filtro">
       <option selected value="0">Filtros</option>
@@ -47,7 +51,7 @@
     </select>
     <button onclick="redirigir14()" id="back"><i class="fa-solid fa-arrow-left"></i></button>
   </section>
-  <!-- Historial -->
+<!--informe o historial de todos los usuarios registrados-->
   <table class="tableHistorial">
     <tr>
       <td class="tdTitulo">Certificados Laborales</td>
@@ -144,7 +148,6 @@
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
   </table>
-  <!-- Se crea una alerta por medio de la etiqueta <dialog></diaglog> -->
   <dialog id="desactivar" class="desactivar">
     <h2>¿Está seguro de que quiere desactivar este usuario?</h2>
     <br>

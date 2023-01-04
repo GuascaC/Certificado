@@ -1,8 +1,7 @@
-//Inputs para la validación
 const pass = document.getElementById("ipass");
 const passC = document.getElementById("ipassC");
 const passA = document.getElementById("ipassA");
-//Acción cuando se finalice la validación
+
 form, addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
@@ -11,26 +10,30 @@ form, addEventListener("submit", (e) => {
     modalAlerta("Error");
   }
 });
+
 const validFieldsForm = () => {
   const values = Object.values(validFields);
   let response = values.findIndex(e => e === false);
   return response;
 }
+
 //Objeto de Validación
+
 let validFields = {
   passA: false,
   pass: false,
   passC: false
+
 }
-//Validación de Contraseña antigua
+//Contraseña antigua
 passA.addEventListener('change', (e) => {
-  const inputPassA = e.target.value;
-  const patronPassA = /([a-zA-Z0-9]{8,})$/g;
-  validFields.passA = inputPassA.match(patronPassA) ? true : false;
-  console.log(Object.values(validFields));
+
+
 });
 
-//Validación de nueva contraseña
+
+
+//Nueva contraseña
 pass.addEventListener('change', (e) => {
   const inputPass = e.target.value;
   const patronPass = /([a-zA-Z0-9]{8,})$/g;
@@ -41,7 +44,7 @@ pass.addEventListener('change', (e) => {
   }
   console.log(Object.values(validFields));
 });
-//Validación para confirmar la nueva contraseña
+
 passC.addEventListener('change', (event) => {
   if (pass.value === passC.value) {
     validFields.passC = true;
@@ -51,7 +54,7 @@ passC.addEventListener('change', (event) => {
   }
   console.log(Object.values(validFields));
 });
-//Creación de Alerta
+//Alerta
 function modalAlerta(cadena) {
   const alert = document.createElement("div");
   const texto = document.createElement("p");
