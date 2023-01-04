@@ -1,3 +1,4 @@
+<!-- Página para agregar o registrar un nuevo usuario (Solo Aministrador) -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +12,7 @@
 </head>
 <header>
   <div class="header1">
-    <div class="divHeader">
+    <div class="divHeader"><!--Encabezado-->
       <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
       <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
       <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
@@ -19,7 +20,6 @@
     </div>
     <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
   </div>
-  <!--encabezado-->
   <div class="header2">
     <div>
       <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
@@ -30,31 +30,36 @@
   </div>
 </header>
 <main>
-  <!--formulario para registrar nuevo usuario-->
   <section class="registro2">
     <br><br>
     <h1>Registrar nuevo usuario</h1>
-    <form id="form" class="registro" action="php/based.php" method="post">
+    <form id="form" class="registro" action="php/based.php" method="post"> <!--Formulario-->
+      <!-- Campo para digitar el nombre --> 
       <label> Nombres</label>
       <br>
       <input id="nombres" type="text" placeholder="Nombres" autofocus autocomplete="on" required name="nombre"><br>
+      <!-- Campo para digitar el apellido -->
       <label> Apellidos</label>
       <br>
       <input id="apellidos" type="text" placeholder="Apellidos" autocomplete="on" required name="apel"><br>
+      <!-- Campo para digitar el correo institucional -->
       <label>Correo institucional</label>
       <br>
       <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autocomplete="on" required
         name="mail"><br>
+      <!-- Campo para selecionar el tipo de documento de identidad -->
       <label>Documento de identidad</label><br>
       <div class="documentoIden">
         <select id="tipoDocumento" name="t_doc">
           <option selected value="Cedula">C.C</option>
         </select>
+      <!-- Campo para digitar el numero de documento de identidad -->
         <input oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC"
           type="number" min="7" placeholder="Documento de identidad" required autocomplete="on" name="doc">
       </div> <br>
       <div class="contras">
         <div class="contras1">
+          <!-- Campo para digitar la contraseña -->
           <label>Contraseña</label><br>
           <input maxlength="15"
             oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -62,6 +67,7 @@
           <br>
         </div>
         <div class="contras2">
+          <!-- Campo para digitar la contraseña para la confirmación -->
           <label>Confirmar contraseña</label><br>
           <input maxlength="15"
             oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -74,6 +80,7 @@
       <br>
       <div class="rolContrato">
         <div class="rol">
+          <!-- Lista desplegable para la selección de un rol -->
           <label> Rol </label><br>
           <select required id="iRol" class="iRol" name="rol">
             <option value="" selected>Seleccione una opción</option>
@@ -85,6 +92,7 @@
           </select>
         </div>
         <div class="Contrato">
+          <!-- Lista desplegable para la selección de tipo de contrato -->
           <label> Tipo de Contrato </label><br>
           <select required id="iContrato" name="t_contrato">
             <option value="" selected>Seleccione una opción</option>
@@ -93,12 +101,14 @@
           </select>
         </div>
       </div>
+      <!-- Campo para digitar el salario -->
       <div class="salarioHora">
         <div class="salario">
           <input type="checkbox" id="checkSalario">
           <label for="checkSalario">Salario</label><br>
           <input type="number" id="salario" name="t_pago">
         </div>
+        <!-- Campo para digitalizar el pago por hora -->
         <div class="pagoHora">
           <input type="checkbox" id="checkPago">
           <label for="checkPago">Pago por hora</label><br>
@@ -112,7 +122,6 @@
     </form>
   </section>
 </main>
-  <!--footer-->
 <footer>
   <div class="footer1">
     <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">

@@ -1,3 +1,4 @@
+<!-- Página para generar un certificado como aprendiz o practicante -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,8 +11,8 @@
   <link rel="icon" href="../img/logoicono.png">
 </head>
 
-<body><!--encabezado-->
-  <header>
+<body>
+  <header><!--Encabezado-->
     <div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -29,7 +30,6 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-  <!--encabezado titulo-->
   <section class="sectionTitulo">
         <div class="divTitulo">
         Genera tu certificado
@@ -37,9 +37,8 @@
     </section> 
   <section class="certificados">
   <br>
-    <!--cert-->
   <p>El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
-  <form method="post" action="Practicante.php">
+  <form method="post" action="Practicante.php"><!--Generar Certificado-->
     <div class="chetCerti">
     <input class="form-check-input" type="checkbox" id="salario">
     <label for="salario">Salario</label>
@@ -56,11 +55,13 @@
     </div>
     <br>
  <button class="button1" type="submit" id="btn-abrir-modal">Generar</button>
+ <!-- Se crea una alerta por medio de la etiqueta <dialog> para la validación de la descarga del certificado -->
     <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de expedición de tu documento.</h2>
       <br>
       <form>
-        <input type="date" class="date">
+        <!-- Campo para la validación con la fecha de expedición del documento de identidad -->
+        <input id="FechaExp" type="date" class="date">
         <br><br>
         <button class="continue1" type="submit" value="Generate PDF">Continuar</button>
         
@@ -81,6 +82,7 @@
     </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../Scripts/Redirigir.js"></script>
+  <scripts src="../Scripts/ValidateExpDoc.js" ></scripts>
   <script src="../Scripts/Modal.js"></script>
 </body>
 </html>

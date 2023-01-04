@@ -1,4 +1,5 @@
 <?php
+//conexion
 
     include 'conexion.php';
 
@@ -62,7 +63,7 @@
     </thead>
     <tbody>
         <?php
-
+//duplicar segun cantidad de registros
             $sql = "SELECT * FROM usuarios";
             $consulta = mysqli_query($con ,$sql );
 

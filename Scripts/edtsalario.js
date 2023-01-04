@@ -1,3 +1,4 @@
+// Se trae el Input para cambio de texto
 const cargoselec = document.getElementById("cargo");
 cargoselec.addEventListener('change', function(e) {
   if (cargoselec.value == 1) {
@@ -14,7 +15,7 @@ cargoselec.addEventListener('change', function(e) {
     document.getElementById("rolSalario").innerHTML = "Ninguno";
   }
 });
-//Validación
+//Acción cuando se finalice la validación
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
@@ -33,14 +34,18 @@ let validFields = {
   nsalario: false,
   cmbSlr: false
 }
+//Se crea una variable que trae un input
 const nuevoSalario = document.getElementById("nuevoSalario");
+//validación para el salario por meido de expresiones regulares
 nuevoSalario.addEventListener('change', (e) => {
   const inputsalario = e.target.value;
   const patronsalario = /([0-9]{6,})$/g;
   validFields.nsalario = inputsalario.match(patronsalario) ? true : false;
   console.log(Object.values(validFields));
 })
+//Se crea una variable que trae un input
 const cambSalario = document.getElementById("cambSalario");
+//Validación por medio de fecha
 cambSalario.addEventListener('change', (e) => {
   validFields.cmbSlr = cambSalario.constructor ? true : false;
   console.log(Object.values(validFields));

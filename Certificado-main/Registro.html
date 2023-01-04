@@ -1,6 +1,6 @@
+<!-- Página para registrarse como usuario -->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,9 @@
   <link rel="stylesheet" href="../syles/styles.css">
   <title>Registro</title>
   <link rel="icon" href="../img/logoicono.png">
-</head> 
- <body> 
-<header><!--encabezado-->
+</head>
 <div class="header1">
-  <div class="divHeader">
+  <div class="divHeader"><!--Encabezado-->
     <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
     <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
     <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
@@ -25,21 +23,23 @@
     <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
   </div>
 </div>
-</header>
 <main>
-  <!--formulario de registro-->
   <section class="registro">
     <br><br>
     <h1>Regístrate</h1>
+    <!-- Formulario para el registro -->
     <form id="form" class="registro">
-      <label> Correo Institucional</label>
+      <!-- Campo para ingresar el email institucional -->
+      <label> Email</label>
       <br>
       <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus autocomplete="on" required
         name="email"><br>
+      <!-- Campo para ingresar el documento de identidad (Cédula de ciudadanía) -->
       <label>Cédula de Ciudadanía</label><br>
       <input maxlength="10" oninput="if(CC.value.length > CC.maxlength) CC.value = CC.value.slice(0, CC.maxLength);"
         id="iCC" class="cedulaRegistro" type="number" placeholder="Cédula de ciudadanía" required autocomplete="on"
         name="CC"><br>
+        <!-- Lista desplegable para la seleccion de un rol -->
       <label> Rol </label><br>
       <select name="opcion" required id="iRol">
         <option value="" selected>Seleccione una opción</option>
@@ -49,11 +49,12 @@
         <option value="4">Profesor Planta</option>
         <option value="5">Tallerista</option>
       </select><br>
-
+      <!-- Campo para ingresar la contraseña -->
       <label>Contraseña</label><br>
       <input maxlength="15"
         oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
         type="password" placeholder="Contraseña" required><br>
+        <!-- Campo para confirmar la contraseña -->
       <label>Confirmar contraseña</label><br>
       <input maxlength="15"
         oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipassC"
@@ -62,12 +63,12 @@
         números.</p>
       <br>
       <section class="sectionBotones3">
-        <button class="botonGuardar">Continuar</button>
-        <button class="botonVolver" onclick="redirigir06()">Cancelar</button>
+        <button class="botonGuardar">Continuar</button> <!-- Botón para finalizar y guardar el registro -->
+        <button class="botonVolver" onclick="redirigir06()">Cancelar</button><!-- Botón para cancelar y finalizar el registro -->
       </section>
     </form>
   </section>
-</main><!--footer-->
+</main>
 <footer>
   <div class="footer1">
     <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
@@ -83,6 +84,6 @@
 <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
 <script src="../Scripts/validateR.js"></script>
 <script src="../Scripts/Redirigir.js"></script>
- </body>
+</body>
 
 </html>

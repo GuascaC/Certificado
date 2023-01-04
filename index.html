@@ -1,15 +1,18 @@
+<!--Página Principal -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./syles/styles.css"> 
+  <link rel="stylesheet" href="./syles/styles.css">
   <title>Inicio de sesión</title>
   <link rel="icon" href="./img/logoicono.png">
 </head>
+
 <body>
-  <div class="header1">
+  <div class="header1" ><!--Encabezado-->
     <div class="divHeader">
       <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
       <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
@@ -18,14 +21,13 @@
     </div>
     <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
   </div>
-  <!--encabezado-->
   <div class="headerIng">
     <div>
       <img src="./img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
     </div>
+    <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
   </div>
   <main>
-    <!--encabezado titulo-->
     <section class="backTitle">
       <div class="title1">
         <h2>Obtén ahora tu</h2>
@@ -35,20 +37,22 @@
       </div>
     </section>
     <br><br><br>
-    <!--formulario inicio sesión-->
     <section class="inicioSesion">
-      <h3>Iniciar sesión</h3>
+      <h3>Iniciar sesión</h3> <!--Inicio Sesión-->
       <br><br>
-      <form id="form" class="formInicio">
+      <form id="form"> <!--Formulario-->
+        <!-- Campo para ingresar el correo institucional -->
         <label><i class="fa-solid fa-user"></i> Usuario</label><br>
         <input class="form" type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus
           autocomplete="on" required name="email"><br><br>
+        <!-- Campo para ingresar la contraseña -->
         <label><i class="fa-solid fa-lock"></i>Contraseña</label><br>
         <input class="form" maxlength="15"
           oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
           type="password" placeholder="Contraseña" required><br><br>
+        <!-- Lista desplegable para la seleccion de un rol -->
         <label><i class="fa-solid fa-briefcase"></i> Rol </label><br>
-        <select id="iRol">
+        <select id="iRol">    
           <option value="0">Seleccione Cargo</option>
           <option value="1">Administrativos</option>
           <option value="2">Profesores de planta</option>
@@ -57,13 +61,13 @@
           <option value="5">Talleristas bienestar</option>
         </select>
         <br><br>
+        <!--Enlace para redirrecion a la pagina de registro-->
         <a class="link" href="./Certificado-main/Registro.html">Registrate aquí</a><br><br>
         <button type="submit" class="button1">Ingresar</button>
       </form>
     </section>
   </main>
   <br><br>
-  <!--footer-->
   <footer>
     <div class="footer1">
       <img src="./img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
@@ -76,7 +80,7 @@
         Registro Icfes 2738.</p>
     </div>
   </footer>
-  <script src="./Scripts/validateI.js"></script>
+  <script src="./Scripts/validateI.js"></script> <!--Script para la validación para inicio de sesión-->
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="./Scripts/Redirigir.js"></script>
 </body>
