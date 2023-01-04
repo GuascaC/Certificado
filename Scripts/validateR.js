@@ -1,4 +1,3 @@
-//variables
 'use strict';
 const email = document.querySelector("#iMail");
 const CC = document.querySelector("#iCC");

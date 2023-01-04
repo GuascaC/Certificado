@@ -11,6 +11,8 @@
 </head>
 
 <body>
+  <header>
+    <!--encabezado-->
   <div class="header1">
     <div class="divHeader">
       <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -28,11 +30,14 @@
       Contraseña</a>
     <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
   </div>
+  </header>
+  <!--encabezado titulo-->
   <section class="sectionTitulo">
     <div class="divTitulo">
       Usuarios registrados
     </div>
   </section>
+  <!--filtros de busqueda por cargos-->
   <section class="sectionBotones">
     <select class=filtroUsuario id="filtro">
       <option selected value="0">Filtros</option>
@@ -46,7 +51,7 @@
     </select>
     <button onclick="redirigir14()" id="back"><i class="fa-solid fa-arrow-left"></i></button>
   </section>
-
+<!--informe o historial de todos los usuarios registrados-->
   <table class="tableHistorial">
     <tr>
       <td class="tdTitulo">Certificados Laborales</td>

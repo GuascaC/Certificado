@@ -1,4 +1,3 @@
-//Variable
 const cargoselec = document.getElementById("cargo");
 cargoselec.addEventListener('change', function(e) {
   if (cargoselec.value == 1) {

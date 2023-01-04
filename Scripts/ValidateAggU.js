@@ -1,5 +1,5 @@
 'use strict';
-//variables
+//Se trae todos los inputs para la validación
 const nomAgg = document.getElementById("nombres");
 const apelAgg = document.getElementById("apellidos");
 const mailAgg = document.getElementById("iMail");
@@ -11,7 +11,7 @@ const rolAgg = document.getElementById("iRol");
 const tcontratoAgg = document.getElementById("iContrato");
 const salarioAgg = document.getElementById("salario");
 const pagohrAgg = document.getElementById("pago_hora");
-
+//Acción cuando se finalice la validación
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
@@ -19,17 +19,14 @@ form.addEventListener("submit", (e) => {
   } else {
     modalAlerta("Error de datos");
   }
-
+  
 });
-
 const validFieldsForm = () => {
   const values = Object.values(validFields);
   let response = values.findIndex(e => e === false);
   return response;
 }
-
 //Objeto de Validación
-
 let validFields = {
   nomAgg: false,
   apelAgg: false,
@@ -43,6 +40,7 @@ let validFields = {
   salarioAgg: false,
   pagohrAgg:false
 }
+//Acciones para la validación
 nomAgg.addEventListener('change', function(e){
     const inputnombagg = e.target.value;
     const patronnombagg = /[a-zA-Z.]{3,}/gm;
@@ -118,7 +116,7 @@ pagohrAgg.addEventListener('change', function(e) {
     validFields.pagohrAgg = inputhr.match(patronhr) ? true : false;
     console.log(Object.values(validFields));
 });
-
+//Creación de Alerta
 function modalAlerta(cadena) {
     const alert = document.createElement("div");
     const texto = document.createElement("p");

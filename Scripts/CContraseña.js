@@ -1,4 +1,3 @@
-//Variables
 const pass = document.getElementById("ipass");
 const passC = document.getElementById("ipassC");
 const passA = document.getElementById("ipassA");
