@@ -1,5 +1,6 @@
+//Validación para agregar un nuevo usuario (sólo administrador)
 'use strict';
-//Se trae todos los inputs para la validación
+// Se traen todos los campos o inputs a validar por medio de variables
 const nomAgg = document.getElementById("nombres");
 const apelAgg = document.getElementById("apellidos");
 const mailAgg = document.getElementById("iMail");
@@ -11,15 +12,18 @@ const rolAgg = document.getElementById("iRol");
 const tcontratoAgg = document.getElementById("iContrato");
 const salarioAgg = document.getElementById("salario");
 const pagohrAgg = document.getElementById("pago_hora");
-//Acción cuando se finalice la validación
+const form = document.getElementById("form");
+//Eventos que se ejecutarán después de la validación
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  console.log(e)
+  console.log(formData);
   if (validFieldsForm() === -1) {
     modalAlerta("Registro finalizado");
   } else {
     modalAlerta("Error de datos");
   }
-  
+
 });
 const validFieldsForm = () => {
   const values = Object.values(validFields);
@@ -40,7 +44,7 @@ let validFields = {
   salarioAgg: false,
   pagohrAgg:false
 }
-//Acciones para la validación
+//Campos a validar
 nomAgg.addEventListener('change', function(e){
     const inputnombagg = e.target.value;
     const patronnombagg = /[a-zA-Z.]{3,}/gm;
@@ -71,7 +75,7 @@ CC.addEventListener('change', function(e) {
     const patronCC = /^[0-9]{10}$/gm;
     if (CC.value.length > 10) {
       CC.value = CC.value.slice(0, 10);
-    }
+    }//Condicional
     validFields.numdiAgg = inputCC.match(patronCC) ? true : false;
     console.log(Object.values(validFields));
 });
@@ -116,7 +120,7 @@ pagohrAgg.addEventListener('change', function(e) {
     validFields.pagohrAgg = inputhr.match(patronhr) ? true : false;
     console.log(Object.values(validFields));
 });
-//Creación de Alerta
+// Se crea una alerta
 function modalAlerta(cadena) {
     const alert = document.createElement("div");
     const texto = document.createElement("p");

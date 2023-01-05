@@ -1,4 +1,7 @@
-//Validación
+//Validación para la fecha de expedición
+'use strict';
+//formulario a validar
+const form =getElementById("form")
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (validFieldsForm() === -1) {
@@ -7,6 +10,7 @@ form.addEventListener("submit", (e) => {
     modalAlerta("Error. Elija una fecha");
   }
 });
+//Acción al validar todos campos
 const validFieldsForm = () => {
   const values = Object.values(validFields);
   let response = values.findIndex(e => e === false);
@@ -16,7 +20,9 @@ const validFieldsForm = () => {
 let validFields = {
   FechaExp: false
 }
+// Se trae el input para la validación
 const FechaExp = document.getElementById("FechaExp");
+// Se crea un evento para la validación de la fecha de expedición
 FechaExp.addEventListener('change', (e) => {
   validFields.FechaExp = FechaExp.constructor ? true : false;
   if(validFields==false){
@@ -24,7 +30,7 @@ FechaExp.addEventListener('change', (e) => {
   }
   console.log(Object.values(validFields));
 })
-
+//Se crea una alerta
 function modalAlerta(cadena) {
   const alert = document.createElement("div");
   const texto = document.createElement("p");
