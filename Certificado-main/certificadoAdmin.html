@@ -1,3 +1,4 @@
+<!-- Página para generar un certificado como administrador -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,10 +9,9 @@
   <title>Genera tu certificado</title>
   <link rel="icon" href="../img/logoicono.png">
 </head>
-
 <body>
+  <!-- Encabezado -->
 <header>
-  <!--encabezado-->
         <div class="header1">
                 <div class="divHeader">
                     <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -29,28 +29,30 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-  <!--encabezado titulo-->
   <section class="sectionTitulo">
         <div class="divTitulo">
         Genera tu certificado
         </div>
     </section> 
-  <!--genera certificdo a perfil administrador-->
   <section class="certificados">
   <br>
   <p>El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
+  <!-- Formulario para generar el certificado -->
   <form method="post" action="">
     <div class="chetCerti">
+      <!-- Informacion opcional para el documento a generar --> 
     <input class="form-check-input" type="checkbox" id="salario">
     <label for="salario">Salario</label>
     </div>
       <br>
-    <div class="chetCerti">  
+    <div class="chetCerti">
+      <!-- Informacion opcional para el documento a generar -->   
     <input class="form-check-input" type="checkbox" id="tipoContrato">
     <label for="tipoContrato">Tipo de Contrato</label>
     </div>
       <br>
     <div class="chetCerti">
+      <!-- Informacion opcional para el documento a generar --> 
     <input class="form-check-input" type="checkbox" id="fechaIngreso">
     <label for="fechaIngreso">Fecha de Ingreso</label><br>
     </div>
@@ -59,14 +61,15 @@
         <button class="botonVolver" type="submit"><a href="./perfiladministrador.html">Volver</a></button>
         <button class="botonGuardar" type="submit" id="btn-abrir-modal">Generar</button>
     </section>
-
-  
+  <!-- Se crea una alerta con la etiqueta <dialog></dialog> para confirmar la descarga -->
  <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de Expedición de tu Documento</h2>
       <br>
-      <form>
+      <form id="form" >
+        <!-- Campo para validar la fecha de expedición del documento -->
         <input id="FechaExp" type="date" class="date">
         <br><br>
+        <!-- Boton para finalizar con la validación y proceder con la descarga -->
         <button type="submit" class="continue">Continuar</button>
         
       </form>
@@ -85,6 +88,7 @@
     </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../Scripts/Redirigir.js"></script>
+  <script src="../Scripts/ValidateExpDoc.js" ></script>
   <script src="../Scripts/Modal.js"></script>
 </body>
 </html>

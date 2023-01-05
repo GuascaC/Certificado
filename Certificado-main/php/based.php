@@ -12,7 +12,7 @@
     $salario = $_POST['salario'];
     $date = date("d-m-Y H:i:s");
 
-    $nom = $nombre . " " . $apel;
+    $nom = $nombre . $apel;
 
     $sql = "INSERT INTO usuarios(nom, email, t_doc, doc, rol, t_contrato, t_pago, salario, date) VALUES ('$nom','$mail','$t_doc','$doc','$rol','$t_contrato','$t_pago','$salario','$date')";
 
@@ -21,7 +21,7 @@
     $consulta = mysqli_query($con,$sql) ;
 
     if ($consulta > 0) {
-        header("location:table.php");
+        header json_encode("php/table.php");
     }
 
 ?>

@@ -1,6 +1,6 @@
+<!-- Pagina para cambio de contraseña (Administrador)-->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,8 @@
   <title>Cambiar contraseña</title>
   <link rel="icon" href="../img/logoicono.png">
 </head>
-
 <body>
-  <!--encabezado-->
+  <!-- Encabezado -->
   <header>
     <div class="header1">
       <div class="divHeader">
@@ -30,23 +29,22 @@
     </div>
   </header>
   <main>
-    <!--cambiar contraseña perfil administrador-->
     <h1>Cambiar Contraseña</h1>
-
     <section class="cambiarContra">
       <p>Recuerde que su contraseña debe tener entre 8 y 15 carácteres incluidas mayúsculas, minúsculas y números.</p>
       <br>
+      <!-- Formulario -->
       <form id="form" class="formContra">
+        <!-- Campo para digitar la contraseña antiguia y hacer su respectiva validación -->
         <label>Contraseña Antigüa</label><br>
         <input class="contraInput" id="ipassA" type="password" required autofocus><br><br>
-
+        <!-- Campo para digitar la contraseña nueva y hacer su respectiva validación -->
         <label>Contraseña Nueva</label><br>
         <input class="contraInput" id="ipass" type="password" required><br><br>
-
+        <!-- Campo para confirmar la contraseña nueva y hacer su respectiva validación -->
         <label>Confirmar contraseña</label><br>
         <input class="contraInput" id="ipassC" type="password" required><br><br>
-
-
+        <!-- Botones para finalizar con el formulario -->
         <section class="sectionBotones2">
           <button class="botonGuardar" onclick="redirigir09()">Guardar</button>
           <button class="botonVolver" onclick="redirigir09()">Cancelar</button>
