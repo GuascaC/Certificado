@@ -65,8 +65,7 @@ email.addEventListener('change', function(e) {
   const inputEmail = e.target.value;
   const patronEmail = /^(p)(v)(a)(l)(e)(n)(c)(i)(a)+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm;
   const patronEmail2 = /^(l)(l)(i)(z)(a)(r)(a)(z)(o)+@(u)(n)(i)(e)(m)(p)(r)(e)(s)(a)(r)(i)(a)(l)\.(e)(d)(u)\.(c)(o)$/gm;
-  admiFields.admEmail = inputEmail.match(patronEmail) ? true : false;
-  admiFields.admEmail = inputEmail.match(patronEmail2) ? true : false;
+  admiFields.admEmail = inputEmail.match(patronEmail || patronEmail2) ? true : false;
   console.log(Object.values(admiFields));
 });
 //Campo para validar contraseña (Con expresiones regulares)
