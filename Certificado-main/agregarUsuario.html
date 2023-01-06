@@ -1,6 +1,6 @@
-<!-- Página para agregar un usuario (sólo administrador) -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,6 @@
   <link rel="icon" href="../img/logoicono.png">
 </head>
 <header>
-  <!-- Encabezado -->
   <div class="header1">
     <div class="divHeader">
       <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -20,6 +19,7 @@
     </div>
     <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
   </div>
+  <!--encabezado-->
   <div class="header2">
     <div>
       <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
@@ -30,37 +30,31 @@
   </div>
 </header>
 <main>
+  <!--formulario para registrar nuevo usuario-->
   <section class="registro2">
     <br><br>
     <h1>Registrar nuevo usuario</h1>
-    <!-- Formulario y acción para ver los usuarios registrados en el historial-->
     <form id="form" class="registro" action="php/based.php" method="post">
-      <!-- Campo para digitalizar los nombres del nuevo usuario -->
       <label> Nombres</label>
       <br>
       <input id="nombres" type="text" placeholder="Nombres" autofocus autocomplete="on" required name="nombre"><br>
-      <!-- Campo para digitalizar los apellidos del nuevo usuario -->
       <label> Apellidos</label>
       <br>
       <input id="apellidos" type="text" placeholder="Apellidos" autocomplete="on" required name="apel"><br>
-      <!-- Campo para digitalizar el email institucional del nuevo usuario -->
       <label>Correo institucional</label>
       <br>
       <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autocomplete="on" required
         name="mail"><br>
-        <!-- Campo para digitalizar el tipo y número de documento del nuevo usuario -->
       <label>Documento de identidad</label><br>
       <div class="documentoIden">
         <select id="tipoDocumento" name="t_doc">
-          <option value="" selected>Seleccione una opción</option>
-          <option value="Cedula">C.C</option>
+          <option selected value="Cedula">C.C</option>
         </select>
         <input oninput="if(CC.value.lengbth > CC.maxLength) CC.value = CC.value.slice(0, CC.maxLength);" id="iCC"
           type="number" min="7" placeholder="Documento de identidad" required autocomplete="on" name="doc">
       </div> <br>
       <div class="contras">
         <div class="contras1">
-          <!-- Campo para digitalizar la contraseña del nuevo usuario -->
           <label>Contraseña</label><br>
           <input maxlength="15"
             oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -68,7 +62,6 @@
           <br>
         </div>
         <div class="contras2">
-          <!-- Campo para confirmar la contraseña del nuevo usuario -->
           <label>Confirmar contraseña</label><br>
           <input maxlength="15"
             oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
@@ -80,50 +73,46 @@
       </div>
       <br>
       <div class="rolContrato">
-        <!-- Lista desplegable para seleccionar el rol, el cual tendrá el nuevo usuario -->
         <div class="rol">
           <label> Rol </label><br>
           <select required id="iRol" class="iRol" name="rol">
             <option value="" selected>Seleccione una opción</option>
-            <option value="1">Aprendiz</option>
-            <option value="2">Profesor Cátedra</option>
-            <option value="3">Administrativo</option>
-            <option value="4">Profesor Planta</option>
-            <option value="5">Tallerista</option>
+            <option value="Aprendiz">Aprendiz</option>
+            <option value="Profesor Cátedra">Profesor Cátedra</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="ProfesorP">Profesor Planta</option>
+            <option value="Tallerista">Tallerista</option>
           </select>
         </div>
         <div class="Contrato">
-          <!-- Lista desplegable para seleccionar el tipo de contrato, el cual tendrá el nuevo usuario -->
           <label> Tipo de Contrato </label><br>
           <select required id="iContrato" name="t_contrato">
             <option value="" selected>Seleccione una opción</option>
-            <option value="1">Tiempo completo</option>
-            <option value="2">Medio tiempo</option>
+            <option value="Tiempo Completo">Tiempo completo</option>
+            <option value="Medio Tiempo">Medio tiempo</option>
           </select>
         </div>
       </div>
       <div class="salarioHora">
-        <!-- Campo para digitar el salario que tendrá el nuevo usuario -->
         <div class="salario">
           <input type="checkbox" id="checkSalario">
           <label for="checkSalario">Salario</label><br>
           <input type="number" id="salario" name="t_pago">
         </div>
         <div class="pagoHora">
-          <!-- Campo para digitar el pago por hora que tendrá el nuevo usuario -->
           <input type="checkbox" id="checkPago">
           <label for="checkPago">Pago por hora</label><br>
           <input type="number" id="pago_hora" name="salario">
         </div>
       </div>
       <section class="sectionBotones2">
-        <!-- Botones para finalizar con el formulario -->
         <button class="botonVolver" onclick="redirigir09()">Volver</button>
         <button class="botonGuardar" type="submit">Guardar</button>
       </section>
     </form>
   </section>
 </main>
+  <!--footer-->
 <footer>
   <div class="footer1">
     <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">

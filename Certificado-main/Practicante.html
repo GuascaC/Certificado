@@ -1,6 +1,6 @@
-<!-- Página para generar un certificado como practicante y/o aprendiz -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,8 @@
   <title>Genera tu certificado</title>
   <link rel="icon" href="../img/logoicono.png">
 </head>
-<!-- Encabezado -->
-<body>
+
+<body><!--encabezado-->
   <header>
     <div class="header1">
             <div class="divHeader">
@@ -29,6 +29,7 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
+  <!--encabezado titulo-->
   <section class="sectionTitulo">
         <div class="divTitulo">
         Genera tu certificado
@@ -36,37 +37,31 @@
     </section> 
   <section class="certificados">
   <br>
+    <!--cert-->
   <p>El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
-  <!-- Formulario para descargar y/o genrar el certificado -->
   <form method="post" action="Practicante.php">
     <div class="chetCerti">
     <input class="form-check-input" type="checkbox" id="salario">
-    <!-- Informacion opcional para el documento a generar -->
     <label for="salario">Salario</label>
     </div>
       <br>
-    <div class="chetCerti">
-      <!-- Informacion opcional para el documento a generar -->  
+    <div class="chetCerti">  
     <input class="form-check-input" type="checkbox" id="tipoContrato">
     <label for="tipoContrato">Tipo de Contrato</label>
     </div>
       <br>
     <div class="chetCerti">
-      <!-- Informacion opcional para el documento a generar -->
     <input class="form-check-input" type="checkbox" id="fechaIngreso">
     <label for="fechaIngreso">Fecha de Ingreso</label><br>
     </div>
     <br>
  <button class="button1" type="submit" id="btn-abrir-modal">Generar</button>
- <!-- Se crea una alerta con la etiqueta <dialog></dialog> para confirmar la descarga -->
     <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de expedición de tu documento.</h2>
       <br>
-      <form id="form" >
-        <!-- Campo para validar la fecha de expedición del documento -->
-        <input id="FechaExp" type="date" class="date">
+      <form>
+        <input type="date" class="date">
         <br><br>
-        <!-- Boton para finalizar con la validación y proceder con la descarga -->
         <button class="continue1" type="submit" value="Generate PDF">Continuar</button>
         
       </form>
@@ -86,7 +81,6 @@
     </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../Scripts/Redirigir.js"></script>
-  <script src="../Scripts/ValidateExpDoc.js" ></script>
   <script src="../Scripts/Modal.js"></script>
 </body>
 </html>

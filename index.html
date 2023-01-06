@@ -1,17 +1,14 @@
-<!-- Página principal -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./syles/styles.css">
+  <link rel="stylesheet" href="./syles/styles.css"> 
   <title>Inicio de sesión</title>
   <link rel="icon" href="./img/logoicono.png">
 </head>
-
 <body>
-  <!-- Encabezado -->
   <div class="header1">
     <div class="divHeader">
       <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -21,13 +18,14 @@
     </div>
     <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
   </div>
+  <!--encabezado-->
   <div class="headerIng">
     <div>
       <img src="./img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
     </div>
-    <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
   </div>
   <main>
+    <!--encabezado titulo-->
     <section class="backTitle">
       <div class="title1">
         <h2>Obtén ahora tu</h2>
@@ -37,21 +35,18 @@
       </div>
     </section>
     <br><br><br>
+    <!--formulario inicio sesión-->
     <section class="inicioSesion">
       <h3>Iniciar sesión</h3>
       <br><br>
-      <!-- Formulario para el inicio sesión -->
-      <form id="form">
-        <!-- Campo para digitar el usuario -->
+      <form id="form" class="formInicio">
         <label><i class="fa-solid fa-user"></i> Usuario</label><br>
         <input class="form" type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus
           autocomplete="on" required name="email"><br><br>
-          <!-- Campo para digitar la contraseña -->
         <label><i class="fa-solid fa-lock"></i>Contraseña</label><br>
         <input class="form" maxlength="15"
           oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
           type="password" placeholder="Contraseña" required><br><br>
-          <!-- Lista desplegable para seleccionar el rol -->
         <label><i class="fa-solid fa-briefcase"></i> Rol </label><br>
         <select id="iRol">
           <option value="0">Seleccione Cargo</option>
@@ -68,6 +63,7 @@
     </section>
   </main>
   <br><br>
+  <!--footer-->
   <footer>
     <div class="footer1">
       <img src="./img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">

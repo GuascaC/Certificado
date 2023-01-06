@@ -1,4 +1,4 @@
-<!-- Editar un Usuario (Sólo administrador)-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <!-- Encabezado -->
+      <!--encabezado-->
         <div class="header1">
                 <div class="divHeader">
                     <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -30,15 +30,13 @@
         </div>
     </header>
     <main>
+      <!--editar usuario a travez del perfil administrador -->
         <h2 class="tituloEditar">Editar Usuario</h2>
         <section class="editarUsuario">
-            <!-- Campo para digitar nombres y apellidos para su respectiva validación -->
             <label>Nombre Completo</label><br>
             <input id="NombreCom" type="text"><br><br>
-            <!-- Campo para digitar el número de documento de identidad para su respectiva validación -->
             <label>Cédula</label><br>
             <input id="cedula" type="number"><br><br>
-            <!-- Lista desplegable para seleccionar un rol -->
             <label>Rol</label><br>
             <select name="opcion" required id="iRol">
                 <option value="" selected>Seleccione una opción</option>
@@ -48,22 +46,21 @@
                 <option value="profesorP">Profesor Planta</option>
                 <option value="talleri">Tallerista</option>
             </select><br><br>
-            <!-- Campo para digitar o editar el salario para su respectiva validación -->
             <label>Salario/Pago por hora</label><br>
             <input id="salario" type="number" placeholder=""><br><br>
-            <!-- Campo para digitar el tiempo de contrato para su respectiva validación -->
             <label>Tiempo de contrato</label><br>
             <input id="tcontrato" type="text" placeholder=""><br><br>
-            <!-- Campo para digitar el tiempo de institución para su respectiva validación -->
             <label>Tiempo en la institución</label><br>
             <input id="tinstitucion" type="text" placeholder=""><br><br>
             <p class="estadoUsuario"><i class="fa-solid fa-circle"></i> Usuario activo</p>
         </section>
+      <!--botones para guardar o cancelar los cambios a los usuarios -->
         <section class="sectionBotones2">
-            <button class="botonGuardar" onclick="redirigir09()">Guardar</button>
-            <button class="botonVolver" onclick="redirigir09()">Cancelar</button>
+            <a href="php/table.php"><button class="botonGuardar">Guardar</button></a>
+            <a href="php/table.php"><button class="botonVolver">Cancelar</button></a>
         </section>
     </main>
+  <!--footer-->
   <footer>
         <div class ="footer1">
             <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">

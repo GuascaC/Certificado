@@ -73,7 +73,7 @@
     <tr>
       <td class="tdNombre"><?php echo $resultado["nom"] ?></td>
       <td class="tdRol"><?php echo $resultado["rol"] ?></td>
-      <td class="tdEstado">Activo</td>
+      <td class="tdEstado"><p>Activo</p></td>
       <td class="tdFecha2"><?php echo $resultado["date"] ?></td>
       <td class="tdIconos"><a href="../EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
@@ -108,6 +108,7 @@
   </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../../Scripts/Redirigir.js"></script>
+  <script src="../../Scripts/Ureg.js"></script>
 </body>
 
 </html>

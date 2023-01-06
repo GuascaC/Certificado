@@ -11,6 +11,7 @@
 
 <body>
 <header>
+  <!--encabezado-->
         <div class="header1">
                 <div class="divHeader">
                     <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -28,12 +29,13 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
+  <!--encabezado titulo-->
   <section class="sectionTitulo">
         <div class="divTitulo">
         Genera tu certificado
         </div>
     </section> 
-    <!-- Lista desplegable para seleccionar el cargo para quien va dirigido el certificado -->
+  <!--generar certificados desde el perfil administrador para cualquier empleado-->
     <select id="cargo2">
         <option selected value="0">Cargo</option>
         <option value="1">Docentes cátedra</option>      
@@ -42,7 +44,6 @@
         <option value="4">Talleristas bienestar</option>      
         <option value="5">Aprendices</option>          
     </select> <br>
-    <!-- Lista desplegable para seleccionar el nombre o la peronsa para quien va dirigido el certificado -->
     <select id="usuariosSimilares">
         <option selected value="0">Usuarios similares</option>
         <option value="1">Nombre completo</option>      
@@ -52,29 +53,24 @@
         <option value="5">Nombre completo</option>          
     </select>
     <section class="usuarioCertificado">
-        <!-- Texto para visualizar el nombre del ususario para quien va dirigido el certificado laboral -->
         <h2 class="UsuarioSelec">Usuario seleccionado:</h2><br>
         <h2 class="nombreUsuario">Nombre completo.</h2>
     </section>
   <section class="certificados2">
   <br>
   <p class="infoCert">El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
-  <!-- Formulario -->
   <form method="post" action="">
     <div class="chetCerti">
-      <!-- Informacion opcional para el documento a generar -->
     <input class="form-check-input" type="checkbox" id="salario">
     <label for="salario">Salario</label>
     </div>
       <br>
     <div class="chetCerti">  
-      <!-- Informacion opcional para el documento a generar -->
     <input class="form-check-input" type="checkbox" id="tipoContrato">
     <label for="tipoContrato">Tipo de Contrato</label>
     </div>
       <br>
     <div class="chetCerti">
-      <!-- Informacion opcional para el documento a generar -->
     <input class="form-check-input" type="checkbox" id="fechaIngreso">
     <label for="fechaIngreso">Fecha de Ingreso</label><br>
     </div>
@@ -83,16 +79,16 @@
         <button class="botonVolver" type="submit"><a href="./perfiladministrador.html"> Volver</a></button>
         <button class="botonGuardar" type="submit" id="btn-abrir-modal">Generar</button>
     </section>
-<!-- Se crea una alerta con la etiqueta <dialog></dialog> para confirmar la descarga -->
+
+  
  <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de expedición de tu documento.</h2>
       <br>
-      <form id="form" >
-        <!-- Campo para validar la fecha de expedición del documento -->
+      <form>
         <input id="FechaExp" type="date" class="date">
         <br><br>
-        <!-- Boton para finalizar con la validación y proceder con la descarga -->
         <button class="continue1" type="submit" value="Generate PDF">Continuar</button>
+        
       </form>
       
       <button id="btn-cerrar-modal" class="cancel1"><a href="Catedratico.html">Cerrar</a></button>
@@ -110,7 +106,6 @@
     </footer>
   <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
   <script src="../Scripts/Redirigir.js"></script>
-  <script src="../Scripts/ValidateExpDoc.js" ></script>
   <script src="../Scripts/Modal.js"></script>
 </body>
 </html>

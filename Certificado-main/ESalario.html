@@ -1,4 +1,3 @@
-<!-- Página para Editar el salario por cargo -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,6 +9,7 @@
     <link rel="icon" href="../img/logoicono.png">
 </head>
 <body>
+  <!--encabezado-->
 <div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -27,13 +27,13 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
 </div>
     <main>
-        <!-- Encabezado -->
+      <!--encabezado titulo -->
         <section class="sectionTitulo">
             <div class="divTitulo">
                 <h2>Editar Salario</h2> 
             </div>
         </section>
-        <!-- Lista desplegable para la selección de un rol -->
+      <!--Editar salarios dependiendo el cargo elegido-->
             <select id="cargo">
                 <option selected value="0">Cargo</option>
                 <option value="1">Docentes cátedra</option>      
@@ -43,20 +43,15 @@
                 <option value="5">Aprendices</option>          
             </select>
           <p class="pSalario0">Rol Seleccionado:</p>
-          <!-- Texto para visualizar el rol seleccionado -->
           <p id="rolSalario" class="rolSalario">Ninguno</p>
-          <!-- Formulario para la edición de un salario -->
           <form class="editarSalario">
             <section class="infoSalario">
-                <!-- Campo para digitar el nuevo salario -->
             <p class="pSalario">Nuevo Salario:</p>
             <input type="number" id="nuevoSalario">
-                <!-- Campo para digitar la fecha la cual se visualizara el cambio -->
             <p class="pSalario">Este cambio se verá reflejado a partir de:</p>
             <input type="date" id="cambSalario">
             </section>
           </form>
-          <!-- Botones para finalizar con el formulario -->
         <section class="sectionBotones2">
             <button class="botonVolver" onclick="redirigir14()"> Volver</button>
             <button class="botonGuardar" onclick="redirigir14()">Guardar</button>

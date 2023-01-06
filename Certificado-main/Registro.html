@@ -1,4 +1,3 @@
-<!-- Página para registro -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,8 +8,9 @@
   <link rel="stylesheet" href="../syles/styles.css">
   <title>Registro</title>
   <link rel="icon" href="../img/logoicono.png">
-</head>
-<!-- Encabezado -->
+</head> 
+ <body> 
+<header><!--encabezado-->
 <div class="header1">
   <div class="divHeader">
     <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -25,23 +25,21 @@
     <img src="../img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
   </div>
 </div>
+</header>
 <main>
+  <!--formulario de registro-->
   <section class="registro">
     <br><br>
     <h1>Regístrate</h1>
-    <!-- Formulario para el registro -->
     <form id="form" class="registro">
-      <!-- Campo para digitar el email corporativo o institucional -->
-      <label> Email</label>
+      <label> Correo Institucional</label>
       <br>
       <input id="iMail" type="email" placeholder="Correo electrónico Institucional" autofocus autocomplete="on" required
         name="email"><br>
-      <!-- Campo para digitar el numero de documento -->
       <label>Cédula de Ciudadanía</label><br>
       <input maxlength="10" oninput="if(CC.value.length > CC.maxlength) CC.value = CC.value.slice(0, CC.maxLength);"
         id="iCC" class="cedulaRegistro" type="number" placeholder="Cédula de ciudadanía" required autocomplete="on"
         name="CC"><br>
-      <!-- Lista desplegable para seleccionar un rol -->
       <label> Rol </label><br>
       <select name="opcion" required id="iRol">
         <option value="" selected>Seleccione una opción</option>
@@ -51,12 +49,11 @@
         <option value="4">Profesor Planta</option>
         <option value="5">Tallerista</option>
       </select><br>
-      <!-- Campo para digitar la contraseña -->
+
       <label>Contraseña</label><br>
       <input maxlength="15"
         oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
         type="password" placeholder="Contraseña" required><br>
-      <!-- Campo para confirmar la contraseña -->
       <label>Confirmar contraseña</label><br>
       <input maxlength="15"
         oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipassC"
@@ -65,13 +62,12 @@
         números.</p>
       <br>
       <section class="sectionBotones3">
-        <!-- Botones parma finalizar con el formulario -->
         <button class="botonGuardar">Continuar</button>
         <button class="botonVolver" onclick="redirigir06()">Cancelar</button>
       </section>
     </form>
   </section>
-</main>
+</main><!--footer-->
 <footer>
   <div class="footer1">
     <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
@@ -87,6 +83,6 @@
 <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
 <script src="../Scripts/validateR.js"></script>
 <script src="../Scripts/Redirigir.js"></script>
-</body>
+ </body>
 
 </html>

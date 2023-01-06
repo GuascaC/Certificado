@@ -43,7 +43,3 @@ function redirigir11(){
 function redirigir12(){
     window.location.href="../Certificado-main/agregarUsuario.html";
 }
-//Perfil Administrador
-function redirigir14(){
-    window.location.href="../Certificado-main/perfiladministrador.html";
-}

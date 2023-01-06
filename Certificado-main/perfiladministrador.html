@@ -1,4 +1,3 @@
-<!-- Página principal para el perfil de administrador -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
 </head>
 
 <body>
-  <!-- Encabezado -->
+  <!--encabezado-->
   <header>
     <div class="header1">
       <div class="divHeader">
@@ -31,43 +30,40 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
   </header>
+  <!--encabezado titulo-->
   <section class="sectionTitulo2">
     <div class="divTitulo2">
       <h2 class="h2Titulo">Bienvenido al</h2>
       <h2 class="h2Titulo2">Perfil de administrador</h2>
     </div>
   </section>
+  <!--menu perfil administrador-->
   <section class="menuAdministrador">
     <div class="divAdministrador">
-      <!-- Botón para redirigir a la sección de "historial de certificados" -->
       <button onclick="redirigir08()"> <a href="./Historial.html"><i
             class="fa-solid fa-clock-rotate-left"></i></a></button>
       <p>Historial de certificados</p>
     </div>
     <div class="divAdministrador">
-      <!-- Botón para redirección a la página "usuarios registrados" -->
-      <button onclick="redirigir09()"><a href="./php/table.php"> <i class="fa-solid fa-users"></i></a></button>
+      <button><a href="./php/table.php"> <i class="fa-solid fa-users"></i></a></button>
       <p>Usuarios registrados</p>
     </div>
 
     <div class="divAdministrador">
-      <!-- Botón para generar un certificado laboral -->
       <button onclick="window.selecC.showModal();"><i class="fa-solid fa-file"></i></button>
       <p>Generar certificado</p>
     </div>
     <div class="divAdministrador">
-      <!-- Botón para redirección a la página "Editar salarios" -->
       <button onclick="redirigir11()"><a href="./ESalario.html"> <i class="fa-solid fa-pen-to-square"></i></a></button>
       <p>Editar salarios por cargo</p>
     </div>
   </section>
-  <!-- Se crea una alerta para confirmar la generación de un certificado -->
   <dialog id="selecC" class="modulCer">
     <a href="./perfiladministrador.html"><i class="fa-solid fa-rectangle-xmark"></i></a>
     <h2>El certificado es para:</h2>
-    <!-- Botón para finalizar con la descarga del pdf -->
     <button class="paraMi" onclick="redirigir10()"> Para mí </button>
     <button class="otraP" onclick="redirigir13()"> Para otra persona</button>
+   
   </dialog>
   <footer>
     <div class="footer1">
