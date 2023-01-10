@@ -20,7 +20,7 @@
 
     echo $sql;
 
-    $consulta = mysqli_query($con,$sql) ;
+    $consulta = mysqli_query($cone,$sql) ;
 
     if ($consulta > 0) {
         header("location:table.php");

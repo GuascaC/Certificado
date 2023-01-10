@@ -64,7 +64,7 @@
         <?php
 
             $sql = "SELECT * FROM usuarios";
-            $consulta = mysqli_query($con ,$sql );
+            $consulta = mysqli_query($cone ,$sql );
 
             if (mysqli_num_rows ($consulta) > 0)  {
             while ($resultado = mysqli_fetch_assoc($consulta)){
