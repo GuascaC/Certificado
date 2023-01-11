@@ -1,6 +1,6 @@
-//Validaciónpara iniciom de sesión
+//Validación para inicio de sesión
 'use strict';
-//Se crean variables para tarer los Inputs a validar
+//Se crean variables para traer los Inputs a validar
 const email = document.querySelector("#iMail");
 const pass = document.querySelector("#ipass");
 const form = document.querySelector("#form");
@@ -9,8 +9,8 @@ const rol = document.querySelector("#iRol");
 //Dependiendo del rol seleccionado se redirigirá a la pág correspondiente
 form, addEventListener("submit", (e) => {
   e.preventDefault();
-  if (AdmiFieldsForm() === -1) {
-    if (rol.value == 1) {
+  if (validFieldsForm() === -1) {
+    if (AdmiFieldsForm()) {
       console.log("1");
       window.location.href = "../../Certificado-main/perfiladministrador.html";
     }
@@ -36,7 +36,7 @@ const validFieldsForm = () => {
   let response = values.findIndex(e => e === false);
   return response;
 }
-//acción cuando todos los campos esténcompletos (Objeto de validación de Administrador)
+//acción cuando todos los campos estén completos (Objeto de validación de Administrador)
 const AdmiFieldsForm = () => {
   const values = Object.values(admiFields);
   let response = values.findIndex(e => e === false);
@@ -91,17 +91,11 @@ pass.addEventListener('change', (e) => {
 //Se valida si se selecciona un elemento de la lista desplegable
 rol.addEventListener('change', function(e) {
   validFields.rol = rol.selectedIndex > 0 ? true : false;
-  if (validFields.rol == false && rol.value==0) {
-    modalAlerta("Seleccione un rol")
-  }
   console.log(Object.values(validFields));
 });
 //ROL DE ADMINISTRADOR
 rol.addEventListener('change', function(e) {
   admiFields.admRol = rol.selectedIndex == 1 ? true : false;
-  if (admiFields.admRol == false) {
-    modalAlerta("Seleccione un rol")
-  }
   console.log(Object.values(admiFields));
 });
 //Creación de alerta
