@@ -7,23 +7,28 @@
   <link rel="stylesheet" href="./syles/styles.css"> 
   <title>Inicio de sesión</title>
   <link rel="icon" href="./img/logoicono.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-  <div class="header1">
-    <div class="divHeader">
-      <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
-      <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
-      <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
-      <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+  <header>
+    <div class="header1">
+      <!--encabezado redes sociales-->
+      <div class="divHeader">
+        <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
+        <a onclick="redirigir02()"><i class="fa-brands fa-instagram"></i></a>
+        <a onclick="redirigir03()"><i class="fa-brands fa-facebook-f"></i></a>
+        <a onclick="redirigir04()"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
     </div>
-    <a class="mail" onclick="redirigir05()"><i class="fa-solid fa-envelope"></i> Mail corporativo</a>
-  </div>
-  <!--encabezado-->
-  <div class="headerIng">
-    <div>
-      <img src="./img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+    <!--Encabezado-->
+    <div class="headerIng">
+      <div>
+        <img src="./img/LogoUECCB.png" alt="Logo Uniempresarial y logo Cámara de comercio">
+      </div>
     </div>
-  </div>
+  </header>
   <main>
     <!--encabezado titulo-->
     <section class="backTitle">
@@ -41,12 +46,16 @@
       <br><br>
       <form id="form" class="formInicio">
         <label><i class="fa-solid fa-user"></i> Usuario</label><br>
-        <input class="form" type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus
-          autocomplete="on" required name="email"><br><br>
+        <input class="form" type="email" id="iMail" placeholder="Correo electrónico Institucional" autofocus autocomplete="on" required name="email">   
+        <br><br>
         <label><i class="fa-solid fa-lock"></i>Contraseña</label><br>
+        <div class="form2">
         <input class="form" maxlength="15"
           oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ipass"
-          type="password" placeholder="Contraseña" required><br><br>
+          type="password" placeholder="Contraseña" required>
+        <img onclick="PassV02()" src="./img/visible.png">
+          
+          </div><br><br>
         <label><i class="fa-solid fa-briefcase"></i> Rol </label><br>
         <select id="iRol">
           <option value="0">Seleccione Cargo</option>
@@ -73,12 +82,12 @@
     <div class="footer2">
       <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá
         Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación.
-        Registro Icfes 2738.</p>
+        Registro Icfes 2738.
+      </p>
     </div>
   </footer>
   <script src="./Scripts/validateI.js"></script>
-  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script> <!--Linki de conexión íconos-->
   <script src="./Scripts/Redirigir.js"></script>
 </body>
-
 </html>

@@ -37,7 +37,7 @@
       Usuarios registrados
     </div>
   </section>
-  <!--filtros de busqueda por cargos-->
+  <!--Filtros de búsqueda por cargos-->
   <section class="sectionBotones">
     <select class=filtroUsuario id="filtro">
       <option selected value="0">Filtros</option>
@@ -49,9 +49,10 @@
       <option value="">Retirados</option>
 
     </select>
+    <!--Botón para volver al menú-->
     <button onclick="redirigir14()" id="back"><i class="fa-solid fa-arrow-left"></i></button>
   </section>
-<!--informe o historial de todos los usuarios registrados-->
+<!--Tabla de informe o historial de todos los usuarios registrados-->
   <table class="tableHistorial">
     <tr>
       <td class="tdTitulo">Certificados Laborales</td>
@@ -64,7 +65,9 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado">Activo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
     <tr>
@@ -80,7 +83,9 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado">Activo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
     <tr>
@@ -88,7 +93,9 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado2">Desactivo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
     <tr>
@@ -96,7 +103,9 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado2">Desactivo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><i id="editarUsuario" class="fa-solid fa-user-pen"></i><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
     <tr>
@@ -112,7 +121,9 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado">Activo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
     <tr>
@@ -128,7 +139,9 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado2">Desactivo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
     <tr>
@@ -144,17 +157,21 @@
       <td class="tdRol">Rol</td>
       <td class="tdEstado2">Desactivo</td>
       <td class="tdFecha2">Fecha</td>
-      <td class="tdIconos"><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a><i
+      <td class="tdIconos">
+        <!--Botón editar usuario--><a href="./EditarU.html"><i id="editarUsuario" class="fa-solid fa-user-pen"></i></a> 
+        <!--Botón desactivar usuario--><i
           onclick="window.desactivar.showModal();" class="fa-solid fa-user-slash"></i></td>
     </tr>
   </table>
+  <!--Modal que impide que se desactive un usuario por error-->
   <dialog id="desactivar" class="desactivar">
     <h2>¿Está seguro de que quiere desactivar este usuario?</h2>
     <br>
     <button onclick="window.desactivar.close();" class="continue3">Desactivar</button>
     <button onclick="window.desactivar.close();" class="cancel3">Cancelar</button>
   </dialog>
-  <button onclick="redirigir12()" class="botonAñadir">Agregar</button>
+  <button onclick="redirigir12()" class="botonAñadir">Agregar</button> <!--Botón añadir usuario nuevo-->
+  <!--Footer-->
   <footer>
     <div class="footer1">
       <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
@@ -167,7 +184,7 @@
         Registro Icfes 2738.</p>
     </div>
   </footer>
-  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script><!--Link conexión íconos-->
   <script src="../Scripts/Redirigir.js"></script>
 </body>
 

@@ -675,6 +675,26 @@ td{
   border-radius: 5px;
   margin: 1vh 10%;
 }
+.form2{
+  position: relative;
+}
+.form2 img{
+    position: absolute;
+    right: 10%;
+    top: 32%;
+    cursor: pointer;
+    padding: 2px 10px;
+    width: 2.5vw;
+  height: 3vh;
+}
+.form2 input{  
+width: 80%;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 2vh 10%;
+  padding: 7px;
+}
+
 .chet{
   font-size: 15px;
 }

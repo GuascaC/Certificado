@@ -9,7 +9,7 @@
     <link rel="icon" href="../img/logoicono.png">
 </head>
 <body>
-  <!--encabezado-->
+  <!--Encabezado-->
 <div class="header1">
             <div class="divHeader">
                 <a onclick="redirigir01()"><i class="fa-brands fa-whatsapp"></i></a>
@@ -34,6 +34,7 @@
             </div>
         </section>
       <!--Editar salarios dependiendo el cargo elegido-->
+      <!--Selección de cargo-->
             <select id="cargo">
                 <option selected value="0">Cargo</option>
                 <option value="1">Docentes cátedra</option>      
@@ -42,8 +43,10 @@
                 <option value="4">Talleristas bienestar</option>      
                 <option value="5">Aprendices</option>          
             </select>
+      <!--Se renderiza el rol seleccionado-->
           <p class="pSalario0">Rol Seleccionado:</p>
           <p id="rolSalario" class="rolSalario">Ninguno</p>
+      <!--Formulario de esditar salario-->
           <form class="editarSalario">
             <section class="infoSalario">
             <p class="pSalario">Nuevo Salario:</p>
@@ -52,12 +55,13 @@
             <input type="date" id="cambSalario">
             </section>
           </form>
-        <section class="sectionBotones2">
+        <section class="sectionBotones2"> <!--Contenedor de botones-->
             <button class="botonVolver" onclick="redirigir14()"> Volver</button>
             <button class="botonGuardar" onclick="redirigir14()">Guardar</button>
         </section>
     </main>
 <footer>
+  <!--Footer-->
         <div class="footer1">
             <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
@@ -66,7 +70,7 @@
             <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
         </div>
 </footer>
-    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script> <!--Link de conexión íconos-->
     <script src="../Scripts/Redirigir.js"></script>
     <script src="../Scripts/edtsalario.js"></script>
 </body>

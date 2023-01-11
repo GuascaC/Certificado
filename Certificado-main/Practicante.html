@@ -37,8 +37,9 @@
     </section> 
   <section class="certificados">
   <br>
-    <!--cert-->
+    <!--Generar certificado practicante-->
   <p>El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
+    <!--Opciones a elegir en el certificado-->
   <form method="post" action="Practicante.php">
     <div class="chetCerti">
     <input class="form-check-input" type="checkbox" id="salario">
@@ -56,6 +57,7 @@
     </div>
     <br>
  <button class="button1" type="submit" id="btn-abrir-modal">Generar</button>
+    <!--Confirmación de fecha de documento antes de descargar el certificado por seguridad-->
     <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de expedición de tu documento.</h2>
       <br>

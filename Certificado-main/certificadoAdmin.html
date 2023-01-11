@@ -35,11 +35,12 @@
         Genera tu certificado
         </div>
     </section> 
-  <!--genera certificdo a perfil administrador-->
+  <!--Genera certificado a perfil administrador-->
   <section class="certificados">
   <br>
   <p>El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
-  <form method="post" action="">
+  <!--Opciones a elegir en el certificado-->
+    <form method="post" action="">
     <div class="chetCerti">
     <input class="form-check-input" type="checkbox" id="salario">
     <label for="salario">Salario</label>
@@ -55,12 +56,12 @@
     <label for="fechaIngreso">Fecha de Ingreso</label><br>
     </div>
     <br>
-    <section class="sectionBotones2">
+    <section class="sectionBotones2"><!--Contenedor de botones-->
         <button class="botonVolver" type="submit"><a href="./perfiladministrador.html">Volver</a></button>
         <button class="botonGuardar" type="submit" id="btn-abrir-modal">Generar</button>
     </section>
 
-  
+  <!--Confirmación de fecha de documento antes de descargar el certificado por seguridad-->
  <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de Expedición de tu Documento</h2>
       <br>
@@ -75,6 +76,7 @@
   </form>
   </section>
   <footer>
+    <!--Footer-->
         <div class="footer1">
             <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
             <p>Institución de educación superior sujeta a la inspección y vigilancia del Ministerio de Educación / SNIES 2738</p>
@@ -83,7 +85,7 @@
             <p>Todos los derechos reservados © 2020 -2022 Fundación Universitaria de la Cámara de Comercio de Bogotá Uniempresarial | Términos, politicas y Condiciones de Servicio Resolución 598 del Ministerio de Educación. Registro Icfes 2738.</p>
         </div>
     </footer>
-  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script> <!-- Link coneción íconos-->
   <script src="../Scripts/Redirigir.js"></script>
   <script src="../Scripts/Modal.js"></script>
 </body>

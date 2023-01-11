@@ -29,21 +29,23 @@
             <a onclick="redirigir06()"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
         </div>
     </header>
-  <!--encabezado titulo-->
+  <!--Encabezado titulo-->
   <section class="sectionTitulo">
         <div class="divTitulo">
         Genera tu certificado
         </div>
     </section> 
-  <!--generar certificados desde el perfil administrador para cualquier empleado-->
+  <!--Generar certificados desde el perfil administrador para cualquier empleado-->
+    <!--Filtro para buscar empleados por cargos-->
     <select id="cargo2">
         <option selected value="0">Cargo</option>
-        <option value="1">Docentes cátedra</option>      
-        <option value="2">Administrativos</option>      
-        <option value="3">Docentes planta</option>       
+        <option value="1">Docentes cátedra</option> 
+        <option value="2">Administrativos</option>  
+        <option value="3">Docentes planta</option> 
         <option value="4">Talleristas bienestar</option>      
-        <option value="5">Aprendices</option>          
+        <option value="5">Aprendices</option>     
     </select> <br>
+  <!--Filtro que muestra los empleados con el cargo seleccionado anteriormente-->
     <select id="usuariosSimilares">
         <option selected value="0">Usuarios similares</option>
         <option value="1">Nombre completo</option>      
@@ -52,6 +54,7 @@
         <option value="4">Nombre completo</option>      
         <option value="5">Nombre completo</option>          
     </select>
+  <!--Section en el que se muestra el usuario seleccionado-->
     <section class="usuarioCertificado">
         <h2 class="UsuarioSelec">Usuario seleccionado:</h2><br>
         <h2 class="nombreUsuario">Nombre completo.</h2>
@@ -59,6 +62,7 @@
   <section class="certificados2">
   <br>
   <p class="infoCert">El certificado contendrá su nombre y documento de identidad. En caso de requerir algún dato adicional, seleccione a continuación.</p><br>
+    <!--Opciones a elegir en el certificado-->
   <form method="post" action="">
     <div class="chetCerti">
     <input class="form-check-input" type="checkbox" id="salario">
@@ -75,12 +79,11 @@
     <label for="fechaIngreso">Fecha de Ingreso</label><br>
     </div>
     <br>
-    <section class="sectionBotones2">
+    <section class="sectionBotones2"> <!--Contenedor botones-->
         <button class="botonVolver" type="submit"><a href="./perfiladministrador.html"> Volver</a></button>
         <button class="botonGuardar" type="submit" id="btn-abrir-modal">Generar</button>
     </section>
-
-  
+<!--Confirmación de fecha de documento antes de descargar el certificado por seguridad-->
  <dialog id="modal" class="descargar">
       <h2>Para continuar, valida la fecha de expedición de tu documento.</h2>
       <br>

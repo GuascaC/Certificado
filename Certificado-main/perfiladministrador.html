@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!--encabezado-->
+  <!--Encabezado-->
   <header>
     <div class="header1">
       <div class="divHeader">
@@ -37,27 +37,31 @@
       <h2 class="h2Titulo2">Perfil de administrador</h2>
     </div>
   </section>
-  <!--menu perfil administrador-->
+  <!--Menú perfil administrador-->
   <section class="menuAdministrador">
+    <!--Botón menú-->
     <div class="divAdministrador">
       <button onclick="redirigir08()"> <a href="./Historial.html"><i
             class="fa-solid fa-clock-rotate-left"></i></a></button>
       <p>Historial de certificados</p>
     </div>
+    <!--Botón menú-->
     <div class="divAdministrador">
-      <button><a href="./php/table.php"> <i class="fa-solid fa-users"></i></a></button>
+      <button onclick="redirigir09()"><a href="./php/table.php"> <i class="fa-solid fa-users"></i></a></button>
       <p>Usuarios registrados</p>
     </div>
-
+  <!--Botón menú-->
     <div class="divAdministrador">
       <button onclick="window.selecC.showModal();"><i class="fa-solid fa-file"></i></button>
       <p>Generar certificado</p>
     </div>
+    <!--Botón menú-->
     <div class="divAdministrador">
       <button onclick="redirigir11()"><a href="./ESalario.html"> <i class="fa-solid fa-pen-to-square"></i></a></button>
       <p>Editar salarios por cargo</p>
     </div>
   </section>
+  <!--Modal que permite eligir al usuario si se quiere generar un certificado para alguien más o para si mismo-->
   <dialog id="selecC" class="modulCer">
     <a href="./perfiladministrador.html"><i class="fa-solid fa-rectangle-xmark"></i></a>
     <h2>El certificado es para:</h2>
@@ -65,6 +69,7 @@
     <button class="otraP" onclick="redirigir13()"> Para otra persona</button>
    
   </dialog>
+  <!--Footer-->
   <footer>
     <div class="footer1">
       <img src="../img/LogoFooter.png" alt="Logo uniempresarial y cámara de comercio">
